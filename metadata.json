@@ -1,0 +1,6 @@
+{
+  "name": "Handwritten Notes OCR & Benchmark System",
+  "description": "Auditable handwritten English OCR and study notes generation system with rigorous benchmark evaluation, immutable raw OCR preservation, and provenance tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
