@@ -708,6 +708,35 @@ app.post('/api/providers', (req, res) => {
   res.status(201).json(newProvider);
 });
 
+// 3b. PATCH /api/providers/:id
+app.patch('/api/providers/:id', (req, res) => {
+  const { id } = req.params;
+  const updates = req.body;
+  const provider = providers.find((p) => p.id === id);
+
+  if (!provider) {
+    return res.status(404).json({ error: 'Provider not found' });
+  }
+
+  if (updates.api_key !== undefined) {
+    provider.api_key = updates.api_key;
+    provider.has_api_key = Boolean(updates.api_key);
+    
+    // Specifically for Gemini, since we use process.env in server.ts
+    if (id === 'gemini-flash') {
+      process.env.GEMINI_API_KEY = updates.api_key;
+    }
+  }
+
+  // Update any other fields
+  if (updates.base_url) provider.base_url = updates.base_url;
+  if (updates.model) provider.model = updates.model;
+  if (updates.label) provider.label = updates.label;
+  if (updates.enabled !== undefined) provider.enabled = updates.enabled;
+
+  res.json(provider);
+});
+
 // 4. GET /api/jobs (list all jobs)
 app.get('/api/jobs', (req, res) => {
   const list = Array.from(jobsMap.values()).map((job) => ({
