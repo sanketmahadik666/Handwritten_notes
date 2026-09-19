@@ -1,0 +1,725 @@
+{
+  "document_id": "a01-132x-8cd00347724f",
+  "source_image": "a01-132x.png",
+  "source_path": "a01-132x.png",
+  "source_image_sha256": "8cd00347724f254fe6719cf04b9feffd54d1433e3eb6bdabeeb7ca2e83790fd7",
+  "image_metadata": {
+    "width": 2479,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 9,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          284.0,
+          20.0
+        ],
+        [
+          2218.0,
+          31.0
+        ],
+        [
+          2218.0,
+          127.0
+        ],
+        [
+          284.0,
+          116.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          284.0,
+          20.0
+        ],
+        [
+          2218.0,
+          31.0
+        ],
+        [
+          2218.0,
+          127.0
+        ],
+        [
+          284.0,
+          116.0
+        ]
+      ],
+      "detector_score": 0.8254421638130784,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a01-132x-8cd00347724f",
+        "detector_index": 9,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "\"That conot continme withant eithe development",
+      "recognition_score": 0.929558277130127,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 8,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          323.0,
+          214.0
+        ],
+        [
+          2143.0,
+          217.0
+        ],
+        [
+          2143.0,
+          307.0
+        ],
+        [
+          323.0,
+          305.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          323.0,
+          214.0
+        ],
+        [
+          2143.0,
+          217.0
+        ],
+        [
+          2143.0,
+          307.0
+        ],
+        [
+          323.0,
+          305.0
+        ]
+      ],
+      "detector_score": 0.8817790501339277,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a01-132x-8cd00347724f",
+        "detector_index": 8,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "being limited or an adjustment being made",
+      "recognition_score": 0.9873517751693726,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 7,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          284.0,
+          385.0
+        ],
+        [
+          2184.0,
+          377.0
+        ],
+        [
+          2185.0,
+          488.0
+        ],
+        [
+          284.0,
+          496.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          284.0,
+          385.0
+        ],
+        [
+          2184.0,
+          377.0
+        ],
+        [
+          2185.0,
+          488.0
+        ],
+        [
+          284.0,
+          496.0
+        ]
+      ],
+      "detector_score": 0.835639208109705,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a01-132x-8cd00347724f",
+        "detector_index": 7,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "in finoncing.\" The Govenment decided to ad just",
+      "recognition_score": 0.9422070980072021,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 6,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          284.0,
+          576.0
+        ],
+        [
+          2164.0,
+          563.0
+        ],
+        [
+          2164.0,
+          661.0
+        ],
+        [
+          285.0,
+          674.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          284.0,
+          576.0
+        ],
+        [
+          2164.0,
+          563.0
+        ],
+        [
+          2164.0,
+          661.0
+        ],
+        [
+          285.0,
+          674.0
+        ]
+      ],
+      "detector_score": 0.808405752732478,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a01-132x-8cd00347724f",
+        "detector_index": 6,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "the financing - whiah Mr. Powell cdaimed was",
+      "recognition_score": 0.9387845993041992,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 5,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          287.0,
+          754.0
+        ],
+        [
+          2148.0,
+          746.0
+        ],
+        [
+          2149.0,
+          842.0
+        ],
+        [
+          287.0,
+          850.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          287.0,
+          754.0
+        ],
+        [
+          2148.0,
+          746.0
+        ],
+        [
+          2149.0,
+          842.0
+        ],
+        [
+          287.0,
+          850.0
+        ]
+      ],
+      "detector_score": 0.8540455554538304,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a01-132x-8cd00347724f",
+        "detector_index": 5,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "maepinning - not wndemining - the zevice.",
+      "recognition_score": 0.8561223745346069,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 4,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          291.0,
+          925.0
+        ],
+        [
+          2212.0,
+          904.0
+        ],
+        [
+          2213.0,
+          1017.0
+        ],
+        [
+          293.0,
+          1039.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          291.0,
+          925.0
+        ],
+        [
+          2212.0,
+          904.0
+        ],
+        [
+          2213.0,
+          1017.0
+        ],
+        [
+          293.0,
+          1039.0
+        ]
+      ],
+      "detector_score": 0.7483365461089471,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a01-132x-8cd00347724f",
+        "detector_index": 4,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Anowering the attach on \"economic chouges\"",
+      "recognition_score": 0.9411910176277161,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 3,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          284.0,
+          1108.0
+        ],
+        [
+          2128.0,
+          1100.0
+        ],
+        [
+          2128.0,
+          1196.0
+        ],
+        [
+          284.0,
+          1204.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          284.0,
+          1108.0
+        ],
+        [
+          2128.0,
+          1100.0
+        ],
+        [
+          2128.0,
+          1196.0
+        ],
+        [
+          284.0,
+          1204.0
+        ]
+      ],
+      "detector_score": 0.8418952685302338,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a01-132x-8cd00347724f",
+        "detector_index": 3,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "for welfare, Mr. Powell said that all these",
+      "recognition_score": 0.9723459482192993,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 2,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          282.0,
+          1266.0
+        ],
+        [
+          2301.0,
+          1276.0
+        ],
+        [
+          2300.0,
+          1390.0
+        ],
+        [
+          281.0,
+          1379.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          282.0,
+          1266.0
+        ],
+        [
+          2301.0,
+          1276.0
+        ],
+        [
+          2300.0,
+          1390.0
+        ],
+        [
+          281.0,
+          1379.0
+        ]
+      ],
+      "detector_score": 0.7802076872715287,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a01-132x-8cd00347724f",
+        "detector_index": 2,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "foods would still be free in faurilies neccioing",
+      "recognition_score": 0.9537914395332336,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 1,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          281.0,
+          1460.0
+        ],
+        [
+          1988.0,
+          1457.0
+        ],
+        [
+          1988.0,
+          1555.0
+        ],
+        [
+          282.0,
+          1558.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          281.0,
+          1460.0
+        ],
+        [
+          1988.0,
+          1457.0
+        ],
+        [
+          1988.0,
+          1555.0
+        ],
+        [
+          282.0,
+          1558.0
+        ]
+      ],
+      "detector_score": 0.835597425270203,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a01-132x-8cd00347724f",
+        "detector_index": 1,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "regular National tosistance graus.",
+      "recognition_score": 0.889846920967102,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 0,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          325.0,
+          2094.0
+        ],
+        [
+          489.0,
+          2101.0
+        ],
+        [
+          486.0,
+          2166.0
+        ],
+        [
+          322.0,
+          2159.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          325.0,
+          2094.0
+        ],
+        [
+          489.0,
+          2101.0
+        ],
+        [
+          486.0,
+          2166.0
+        ],
+        [
+          322.0,
+          2159.0
+        ]
+      ],
+      "detector_score": 0.8730789796306916,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a01-132x-8cd00347724f",
+        "detector_index": 0,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999178647994995,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "\"That conot continme withant eithe development\nbeing limited or an adjustment being made\nin finoncing.\" The Govenment decided to ad just\nthe financing - whiah Mr. Powell cdaimed was\nmaepinning - not wndemining - the zevice.\nAnowering the attach on \"economic chouges\"\nfor welfare, Mr. Powell said that all these\nfoods would still be free in faurilies neccioing\nregular National tosistance graus.\nName:",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 182.9905000049621,
+    "detection_ms": 9606.381699995836,
+    "sorting_ms": 0.5365000106394291,
+    "cropping_ms": 30.5952999915462,
+    "recognition_ms": 9526.553000003332,
+    "serialization_ms": 477.00240000267513
+  },
+  "status": "success",
+  "errors": []
+}

@@ -1,0 +1,792 @@
+{
+  "document_id": "a01-063u-fbae891ff95c",
+  "source_image": "a01-063u.png",
+  "source_path": "a01-063u.png",
+  "source_image_sha256": "fbae891ff95ce3130b8e95af00a647eba0bc39a387bd5d0b070f76267ca20c7c",
+  "image_metadata": {
+    "width": 2372,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 10,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          337.0,
+          36.0
+        ],
+        [
+          2042.0,
+          39.0
+        ],
+        [
+          2042.0,
+          127.0
+        ],
+        [
+          337.0,
+          124.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          337.0,
+          36.0
+        ],
+        [
+          2042.0,
+          39.0
+        ],
+        [
+          2042.0,
+          127.0
+        ],
+        [
+          337.0,
+          124.0
+        ]
+      ],
+      "detector_score": 0.8668591691922434,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a01-063u-fbae891ff95c",
+        "detector_index": 10,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "But he said discussicns u an a hishes",
+      "recognition_score": 0.9137476086616516,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 9,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          335.0,
+          212.0
+        ],
+        [
+          2231.0,
+          214.0
+        ],
+        [
+          2231.0,
+          302.0
+        ],
+        [
+          335.0,
+          300.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          335.0,
+          212.0
+        ],
+        [
+          2231.0,
+          214.0
+        ],
+        [
+          2231.0,
+          302.0
+        ],
+        [
+          335.0,
+          300.0
+        ]
+      ],
+      "detector_score": 0.8615533248922187,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a01-063u-fbae891ff95c",
+        "detector_index": 9,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "level than in the past wight Be meful.",
+      "recognition_score": 0.9451282024383545,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 8,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          317.0,
+          382.0
+        ],
+        [
+          2229.0,
+          398.0
+        ],
+        [
+          2228.0,
+          491.0
+        ],
+        [
+          317.0,
+          475.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          317.0,
+          382.0
+        ],
+        [
+          2229.0,
+          398.0
+        ],
+        [
+          2228.0,
+          491.0
+        ],
+        [
+          317.0,
+          475.0
+        ]
+      ],
+      "detector_score": 0.840797350237591,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a01-063u-fbae891ff95c",
+        "detector_index": 8,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "The Puesiclent will probabuy dis auss the",
+      "recognition_score": 0.925995409488678,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 7,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          332.0,
+          573.0
+        ],
+        [
+          2339.0,
+          579.0
+        ],
+        [
+          2339.0,
+          667.0
+        ],
+        [
+          332.0,
+          661.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          332.0,
+          573.0
+        ],
+        [
+          2339.0,
+          579.0
+        ],
+        [
+          2339.0,
+          667.0
+        ],
+        [
+          332.0,
+          661.0
+        ]
+      ],
+      "detector_score": 0.858004088398578,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a01-063u-fbae891ff95c",
+        "detector_index": 7,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "puoblem with Dr. Brentano, the west German",
+      "recognition_score": 0.9466627836227417,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 6,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          322.0,
+          757.0
+        ],
+        [
+          2318.0,
+          757.0
+        ],
+        [
+          2318.0,
+          845.0
+        ],
+        [
+          322.0,
+          845.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          322.0,
+          757.0
+        ],
+        [
+          2318.0,
+          757.0
+        ],
+        [
+          2318.0,
+          845.0
+        ],
+        [
+          322.0,
+          845.0
+        ]
+      ],
+      "detector_score": 0.8847027210645827,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a01-063u-fbae891ff95c",
+        "detector_index": 6,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Fcreign Minisle, who is due in Washington",
+      "recognition_score": 0.9186928868293762,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 5,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          330.0,
+          925.0
+        ],
+        [
+          2357.0,
+          933.0
+        ],
+        [
+          2356.0,
+          1028.0
+        ],
+        [
+          330.0,
+          1020.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          330.0,
+          925.0
+        ],
+        [
+          2357.0,
+          933.0
+        ],
+        [
+          2356.0,
+          1028.0
+        ],
+        [
+          330.0,
+          1020.0
+        ]
+      ],
+      "detector_score": 0.8367429278397589,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a01-063u-fbae891ff95c",
+        "detector_index": 5,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "nest weeeh. A big slice of Germany's n aidl\"",
+      "recognition_score": 0.8929435610771179,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 4,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          309.0,
+          1116.0
+        ],
+        [
+          2173.0,
+          1116.0
+        ],
+        [
+          2173.0,
+          1201.0
+        ],
+        [
+          309.0,
+          1201.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          309.0,
+          1116.0
+        ],
+        [
+          2173.0,
+          1116.0
+        ],
+        [
+          2173.0,
+          1201.0
+        ],
+        [
+          309.0,
+          1201.0
+        ]
+      ],
+      "detector_score": 0.8918498781126487,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a01-063u-fbae891ff95c",
+        "detector_index": 4,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "is the early payment of a zlo million",
+      "recognition_score": 0.9387027621269226,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 3,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          314.0,
+          1292.0
+        ],
+        [
+          2188.0,
+          1289.0
+        ],
+        [
+          2188.0,
+          1377.0
+        ],
+        [
+          314.0,
+          1380.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          314.0,
+          1292.0
+        ],
+        [
+          2188.0,
+          1289.0
+        ],
+        [
+          2188.0,
+          1377.0
+        ],
+        [
+          314.0,
+          1380.0
+        ]
+      ],
+      "detector_score": 0.8502665613367595,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a01-063u-fbae891ff95c",
+        "detector_index": 3,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "dept to Anerica. lunited States officials",
+      "recognition_score": 0.9367225170135498,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 2,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          322.0,
+          1467.0
+        ],
+        [
+          2234.0,
+          1465.0
+        ],
+        [
+          2234.0,
+          1568.0
+        ],
+        [
+          322.0,
+          1571.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          322.0,
+          1467.0
+        ],
+        [
+          2234.0,
+          1465.0
+        ],
+        [
+          2234.0,
+          1568.0
+        ],
+        [
+          322.0,
+          1571.0
+        ]
+      ],
+      "detector_score": 0.7917836036523452,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a01-063u-fbae891ff95c",
+        "detector_index": 2,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "quichly point aut that this is money due",
+      "recognition_score": 0.9346786737442017,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 1,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          312.0,
+          1645.0
+        ],
+        [
+          1283.0,
+          1651.0
+        ],
+        [
+          1283.0,
+          1747.0
+        ],
+        [
+          312.0,
+          1741.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          312.0,
+          1645.0
+        ],
+        [
+          1283.0,
+          1651.0
+        ],
+        [
+          1283.0,
+          1747.0
+        ],
+        [
+          312.0,
+          1741.0
+        ]
+      ],
+      "detector_score": 0.8422104174554442,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a01-063u-fbae891ff95c",
+        "detector_index": 1,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "to America answay.",
+      "recognition_score": 0.9421263933181763,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 0,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          368.0,
+          2085.0
+        ],
+        [
+          524.0,
+          2085.0
+        ],
+        [
+          524.0,
+          2149.0
+        ],
+        [
+          368.0,
+          2149.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          368.0,
+          2085.0
+        ],
+        [
+          524.0,
+          2085.0
+        ],
+        [
+          524.0,
+          2149.0
+        ],
+        [
+          368.0,
+          2149.0
+        ]
+      ],
+      "detector_score": 0.894428714359593,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a01-063u-fbae891ff95c",
+        "detector_index": 0,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999502301216125,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "But he said discussicns u an a hishes\nlevel than in the past wight Be meful.\nThe Puesiclent will probabuy dis auss the\npuoblem with Dr. Brentano, the west German\nFcreign Minisle, who is due in Washington\nnest weeeh. A big slice of Germany's n aidl\"\nis the early payment of a zlo million\ndept to Anerica. lunited States officials\nquichly point aut that this is money due\nto America answay.\nName:",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 132.39470002008602,
+    "detection_ms": 9919.938900013221,
+    "sorting_ms": 0.5364999815355986,
+    "cropping_ms": 33.751800016034395,
+    "recognition_ms": 11884.13109999965,
+    "serialization_ms": 344.79520001332276
+  },
+  "status": "success",
+  "errors": []
+}

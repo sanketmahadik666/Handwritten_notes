@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "documents": [
+    {
+      "source_image": "a01-000u.png",
+      "verified": true,
+      "reference_text": "A move to stop Mr. Gaitskell from\nnominating any more Labour life Peers\nis to be made at a meeting of Labour\nMPs tomorrow. Mr. Michael Foot has\nput down a resolution on the subject\nand he is to be backed by Mr. Will\nGriffiths, MP for Manchester Exchange.",
+      "exclusion": {
+        "status": "applied",
+        "reason": "printed trailing Name field excluded",
+        "source": "manual_ground_truth_annotation",
+        "exclude_trailing_raw_lines": ["Name:"]
+      }
+    }
+  ]
+}

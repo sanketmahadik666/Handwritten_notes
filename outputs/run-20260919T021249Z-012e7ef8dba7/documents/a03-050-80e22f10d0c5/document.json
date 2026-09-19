@@ -1,0 +1,792 @@
+{
+  "document_id": "a03-050-80e22f10d0c5",
+  "source_image": "a03-050.png",
+  "source_path": "a03-050.png",
+  "source_image_sha256": "80e22f10d0c5cff9247c01d5d9dc05b1f82c74458fe80f6916a07af2fcb85358",
+  "image_metadata": {
+    "width": 2479,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 10,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          344.0,
+          0.0
+        ],
+        [
+          2208.0,
+          8.0
+        ],
+        [
+          2208.0,
+          103.0
+        ],
+        [
+          343.0,
+          95.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          344.0,
+          0.0
+        ],
+        [
+          2208.0,
+          8.0
+        ],
+        [
+          2208.0,
+          103.0
+        ],
+        [
+          343.0,
+          95.0
+        ]
+      ],
+      "detector_score": 0.8647896526651658,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a03-050-80e22f10d0c5",
+        "detector_index": 10,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Ou the ohne hond, tr. Pearsan eteels",
+      "recognition_score": 0.9294710159301758,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 9,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          362.0,
+          183.0
+        ],
+        [
+          2180.0,
+          191.0
+        ],
+        [
+          2179.0,
+          287.0
+        ],
+        [
+          361.0,
+          279.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          362.0,
+          183.0
+        ],
+        [
+          2180.0,
+          191.0
+        ],
+        [
+          2179.0,
+          287.0
+        ],
+        [
+          361.0,
+          279.0
+        ]
+      ],
+      "detector_score": 0.8452024075882685,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a03-050-80e22f10d0c5",
+        "detector_index": 9,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "in meeting people in formaley, but many",
+      "recognition_score": 0.8959883451461792,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 8,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          362.0,
+          369.0
+        ],
+        [
+          2190.0,
+          372.0
+        ],
+        [
+          2190.0,
+          460.0
+        ],
+        [
+          361.0,
+          457.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          362.0,
+          369.0
+        ],
+        [
+          2190.0,
+          372.0
+        ],
+        [
+          2190.0,
+          460.0
+        ],
+        [
+          361.0,
+          457.0
+        ]
+      ],
+      "detector_score": 0.863948666209085,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a03-050-80e22f10d0c5",
+        "detector_index": 8,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "shill wegord hin u as some sort of croos",
+      "recognition_score": 0.9247478246688843,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 7,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          375.0,
+          545.0
+        ],
+        [
+          2200.0,
+          553.0
+        ],
+        [
+          2200.0,
+          643.0
+        ],
+        [
+          374.0,
+          635.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          375.0,
+          545.0
+        ],
+        [
+          2200.0,
+          553.0
+        ],
+        [
+          2200.0,
+          643.0
+        ],
+        [
+          374.0,
+          635.0
+        ]
+      ],
+      "detector_score": 0.8213296373072093,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a03-050-80e22f10d0c5",
+        "detector_index": 7,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "between an cgghead and a mirricnongy\".",
+      "recognition_score": 0.9087528586387634,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 6,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          380.0,
+          721.0
+        ],
+        [
+          1996.0,
+          731.0
+        ],
+        [
+          1996.0,
+          835.0
+        ],
+        [
+          379.0,
+          824.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          380.0,
+          721.0
+        ],
+        [
+          1996.0,
+          731.0
+        ],
+        [
+          1996.0,
+          835.0
+        ],
+        [
+          379.0,
+          824.0
+        ]
+      ],
+      "detector_score": 0.8402751801100427,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a03-050-80e22f10d0c5",
+        "detector_index": 6,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "mis party advices ave now wyiny ho",
+      "recognition_score": 0.9410311579704285,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 5,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          367.0,
+          902.0
+        ],
+        [
+          2223.0,
+          907.0
+        ],
+        [
+          2223.0,
+          995.0
+        ],
+        [
+          367.0,
+          989.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          367.0,
+          902.0
+        ],
+        [
+          2223.0,
+          907.0
+        ],
+        [
+          2223.0,
+          995.0
+        ],
+        [
+          367.0,
+          989.0
+        ]
+      ],
+      "detector_score": 0.8571008568163251,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a03-050-80e22f10d0c5",
+        "detector_index": 5,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "coruecdt that in age. The wow the has",
+      "recognition_score": 0.9108423590660095,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 4,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          380.0,
+          1080.0
+        ],
+        [
+          1921.0,
+          1080.0
+        ],
+        [
+          1921.0,
+          1175.0
+        ],
+        [
+          380.0,
+          1175.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          380.0,
+          1080.0
+        ],
+        [
+          1921.0,
+          1080.0
+        ],
+        [
+          1921.0,
+          1175.0
+        ],
+        [
+          380.0,
+          1175.0
+        ]
+      ],
+      "detector_score": 0.829150882245459,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a03-050-80e22f10d0c5",
+        "detector_index": 4,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "gone; he is having eroons on",
+      "recognition_score": 0.9188407063484192,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 3,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          372.0,
+          1263.0
+        ],
+        [
+          2262.0,
+          1255.0
+        ],
+        [
+          2262.0,
+          1343.0
+        ],
+        [
+          372.0,
+          1351.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          372.0,
+          1263.0
+        ],
+        [
+          2262.0,
+          1255.0
+        ],
+        [
+          2262.0,
+          1343.0
+        ],
+        [
+          372.0,
+          1351.0
+        ]
+      ],
+      "detector_score": 0.8391015231885045,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a03-050-80e22f10d0c5",
+        "detector_index": 3,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "hele vision hechniques and is being coached",
+      "recognition_score": 0.9029010534286499,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 2,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          364.0,
+          1444.0
+        ],
+        [
+          1293.0,
+          1433.0
+        ],
+        [
+          1294.0,
+          1532.0
+        ],
+        [
+          365.0,
+          1543.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          364.0,
+          1444.0
+        ],
+        [
+          1293.0,
+          1433.0
+        ],
+        [
+          1294.0,
+          1532.0
+        ],
+        [
+          365.0,
+          1543.0
+        ]
+      ],
+      "detector_score": 0.8286834392912851,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a03-050-80e22f10d0c5",
+        "detector_index": 2,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "by speech expeh.",
+      "recognition_score": 0.8480639457702637,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 1,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          327.0,
+          2089.0
+        ],
+        [
+          489.0,
+          2096.0
+        ],
+        [
+          486.0,
+          2163.0
+        ],
+        [
+          325.0,
+          2156.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          327.0,
+          2089.0
+        ],
+        [
+          489.0,
+          2096.0
+        ],
+        [
+          486.0,
+          2163.0
+        ],
+        [
+          325.0,
+          2156.0
+        ]
+      ],
+      "detector_score": 0.866069764615135,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a03-050-80e22f10d0c5",
+        "detector_index": 1,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999520182609558,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 0,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          594.0,
+          2144.0
+        ],
+        [
+          891.0,
+          2144.0
+        ],
+        [
+          891.0,
+          2235.0
+        ],
+        [
+          594.0,
+          2235.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          594.0,
+          2144.0
+        ],
+        [
+          891.0,
+          2144.0
+        ],
+        [
+          891.0,
+          2235.0
+        ],
+        [
+          594.0,
+          2235.0
+        ]
+      ],
+      "detector_score": 0.9071023668293492,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a03-050-80e22f10d0c5",
+        "detector_index": 0,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "u. uani",
+      "recognition_score": 0.7458406686782837,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "Ou the ohne hond, tr. Pearsan eteels\nin meeting people in formaley, but many\nshill wegord hin u as some sort of croos\nbetween an cgghead and a mirricnongy\".\nmis party advices ave now wyiny ho\ncoruecdt that in age. The wow the has\ngone; he is having eroons on\nhele vision hechniques and is being coached\nby speech expeh.\nName:\nu. uani",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 161.8767000036314,
+    "detection_ms": 9410.197299992433,
+    "sorting_ms": 0.5809000285807997,
+    "cropping_ms": 29.276099987328053,
+    "recognition_ms": 10765.86079999106,
+    "serialization_ms": 443.44259999343194
+  },
+  "status": "success",
+  "errors": []
+}

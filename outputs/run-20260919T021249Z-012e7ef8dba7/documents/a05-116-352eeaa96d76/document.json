@@ -1,0 +1,859 @@
+{
+  "document_id": "a05-116-352eeaa96d76",
+  "source_image": "a05-116.png",
+  "source_path": "a05-116.png",
+  "source_image_sha256": "352eeaa96d76242bd8ebc51463a1f8c453b4c151d3e9fe52d173fb8c7fd16eee",
+  "image_metadata": {
+    "width": 2479,
+    "height": 2479,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 11,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          331.0,
+          209.0
+        ],
+        [
+          2167.0,
+          209.0
+        ],
+        [
+          2167.0,
+          297.0
+        ],
+        [
+          331.0,
+          297.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          331.0,
+          209.0
+        ],
+        [
+          2167.0,
+          209.0
+        ],
+        [
+          2167.0,
+          297.0
+        ],
+        [
+          331.0,
+          297.0
+        ]
+      ],
+      "detector_score": 0.8699324837414304,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a05-116-352eeaa96d76",
+        "detector_index": 11,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "This was to nemniniscent of the uursemaiar",
+      "recognition_score": 0.8985835313796997,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 10,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          336.0,
+          398.0
+        ],
+        [
+          2161.0,
+          392.0
+        ],
+        [
+          2161.0,
+          478.0
+        ],
+        [
+          336.0,
+          483.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          336.0,
+          398.0
+        ],
+        [
+          2161.0,
+          392.0
+        ],
+        [
+          2161.0,
+          478.0
+        ],
+        [
+          336.0,
+          483.0
+        ]
+      ],
+      "detector_score": 0.8625542604019566,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a05-116-352eeaa96d76",
+        "detector_index": 10,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "ana her ihegitimate baby. Far the mucat",
+      "recognition_score": 0.8568124175071716,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 9,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          320.0,
+          571.0
+        ],
+        [
+          2021.0,
+          558.0
+        ],
+        [
+          2022.0,
+          656.0
+        ],
+        [
+          321.0,
+          669.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          320.0,
+          571.0
+        ],
+        [
+          2021.0,
+          558.0
+        ],
+        [
+          2022.0,
+          656.0
+        ],
+        [
+          321.0,
+          669.0
+        ]
+      ],
+      "detector_score": 0.7591470346086068,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a05-116-352eeaa96d76",
+        "detector_index": 9,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "port, r. Goarser mntheved his woers",
+      "recognition_score": 0.8267343640327454,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 8,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          320.0,
+          754.0
+        ],
+        [
+          2122.0,
+          736.0
+        ],
+        [
+          2123.0,
+          831.0
+        ],
+        [
+          321.0,
+          850.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          320.0,
+          754.0
+        ],
+        [
+          2122.0,
+          736.0
+        ],
+        [
+          2123.0,
+          831.0
+        ],
+        [
+          321.0,
+          850.0
+        ]
+      ],
+      "detector_score": 0.7812263730298011,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a05-116-352eeaa96d76",
+        "detector_index": 8,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "thwangh a clione- riddlen Feveign O ffice",
+      "recognition_score": 0.8247735500335693,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 7,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          323.0,
+          927.0
+        ],
+        [
+          2249.0,
+          927.0
+        ],
+        [
+          2249.0,
+          1012.0
+        ],
+        [
+          323.0,
+          1012.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          323.0,
+          927.0
+        ],
+        [
+          2249.0,
+          927.0
+        ],
+        [
+          2249.0,
+          1012.0
+        ],
+        [
+          323.0,
+          1012.0
+        ]
+      ],
+      "detector_score": 0.8687169508081414,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a05-116-352eeaa96d76",
+        "detector_index": 7,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "brief. me wesenbles the ele phat seal, an",
+      "recognition_score": 0.9331175684928894,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 6,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          310.0,
+          1105.0
+        ],
+        [
+          2128.0,
+          1103.0
+        ],
+        [
+          2128.0,
+          1190.0
+        ],
+        [
+          310.0,
+          1193.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          310.0,
+          1105.0
+        ],
+        [
+          2128.0,
+          1103.0
+        ],
+        [
+          2128.0,
+          1190.0
+        ],
+        [
+          310.0,
+          1193.0
+        ]
+      ],
+      "detector_score": 0.8434906764866147,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a05-116-352eeaa96d76",
+        "detector_index": 6,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "wes otherwive endeaving cueatme whose",
+      "recognition_score": 0.8807249069213867,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 5,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          317.0,
+          1291.0
+        ],
+        [
+          2244.0,
+          1283.0
+        ],
+        [
+          2244.0,
+          1371.0
+        ],
+        [
+          318.0,
+          1379.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          317.0,
+          1291.0
+        ],
+        [
+          2244.0,
+          1283.0
+        ],
+        [
+          2244.0,
+          1371.0
+        ],
+        [
+          318.0,
+          1379.0
+        ]
+      ],
+      "detector_score": 0.8641050268202517,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a05-116-352eeaa96d76",
+        "detector_index": 5,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "articulatian is hiniled, we ane lold, to a",
+      "recognition_score": 0.8986212611198425,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 4,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          336.0,
+          1464.0
+        ],
+        [
+          2236.0,
+          1467.0
+        ],
+        [
+          2236.0,
+          1555.0
+        ],
+        [
+          336.0,
+          1552.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          336.0,
+          1464.0
+        ],
+        [
+          2236.0,
+          1467.0
+        ],
+        [
+          2236.0,
+          1555.0
+        ],
+        [
+          336.0,
+          1552.0
+        ]
+      ],
+      "detector_score": 0.8487137547267545,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a05-116-352eeaa96d76",
+        "detector_index": 4,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "series of heavy rishs. Sir lyun lugoed-",
+      "recognition_score": 0.9194005131721497,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 3,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          325.0,
+          1645.0
+        ],
+        [
+          2298.0,
+          1640.0
+        ],
+        [
+          2298.0,
+          1728.0
+        ],
+        [
+          326.0,
+          1733.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          325.0,
+          1645.0
+        ],
+        [
+          2298.0,
+          1640.0
+        ],
+        [
+          2298.0,
+          1728.0
+        ],
+        [
+          326.0,
+          1733.0
+        ]
+      ],
+      "detector_score": 0.8653061407196907,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a05-116-352eeaa96d76",
+        "detector_index": 3,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Thomas, M.P. for leicerler N.E., a former",
+      "recognition_score": 0.9170099496841431,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 2,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          351.0,
+          1826.0
+        ],
+        [
+          2370.0,
+          1820.0
+        ],
+        [
+          2371.0,
+          1908.0
+        ],
+        [
+          351.0,
+          1914.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          351.0,
+          1826.0
+        ],
+        [
+          2370.0,
+          1820.0
+        ],
+        [
+          2371.0,
+          1908.0
+        ],
+        [
+          351.0,
+          1914.0
+        ]
+      ],
+      "detector_score": 0.8669510917967644,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a05-116-352eeaa96d76",
+        "detector_index": 2,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Labow So liciter- Genesal, and lus. Baoubover",
+      "recognition_score": 0.834790825843811,
+      "recognition_order": 11,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 1,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          315.0,
+          2092.0
+        ],
+        [
+          475.0,
+          2092.0
+        ],
+        [
+          475.0,
+          2159.0
+        ],
+        [
+          315.0,
+          2159.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          315.0,
+          2092.0
+        ],
+        [
+          475.0,
+          2092.0
+        ],
+        [
+          475.0,
+          2159.0
+        ],
+        [
+          315.0,
+          2159.0
+        ]
+      ],
+      "detector_score": 0.9188633626078372,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a05-116-352eeaa96d76",
+        "detector_index": 1,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999102354049683,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0011",
+      "detector_index": 0,
+      "sorted_index": 11,
+      "raw_polygon": [
+        [
+          716.0,
+          2205.0
+        ],
+        [
+          1101.0,
+          2211.0
+        ],
+        [
+          1099.0,
+          2309.0
+        ],
+        [
+          715.0,
+          2303.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          716.0,
+          2205.0
+        ],
+        [
+          1101.0,
+          2211.0
+        ],
+        [
+          1099.0,
+          2309.0
+        ],
+        [
+          715.0,
+          2303.0
+        ]
+      ],
+      "detector_score": 0.8794812908429295,
+      "crop_path": "crops/line-0011.png",
+      "crop_provenance": {
+        "source_document": "a05-116-352eeaa96d76",
+        "detector_index": 0,
+        "sorted_index": 11,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "U. Maii",
+      "recognition_score": 0.8418135046958923,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "This was to nemniniscent of the uursemaiar\nana her ihegitimate baby. Far the mucat\nport, r. Goarser mntheved his woers\nthwangh a clione- riddlen Feveign O ffice\nbrief. me wesenbles the ele phat seal, an\nwes otherwive endeaving cueatme whose\narticulatian is hiniled, we ane lold, to a\nseries of heavy rishs. Sir lyun lugoed-\nThomas, M.P. for leicerler N.E., a former\nLabow So liciter- Genesal, and lus. Baoubover\nName:\nU. Maii",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 171.8933000229299,
+    "detection_ms": 9595.382799976505,
+    "sorting_ms": 0.6354999786708504,
+    "cropping_ms": 35.387400013860315,
+    "recognition_ms": 13082.348299998557,
+    "serialization_ms": 415.87860000436194
+  },
+  "status": "success",
+  "errors": []
+}

@@ -1,0 +1,792 @@
+{
+  "document_id": "a01-020u-a7d5a9112ed3",
+  "source_image": "a01-020u.png",
+  "source_path": "a01-020u.png",
+  "source_image_sha256": "a7d5a9112ed3db31bea3d7c31771ff3aa62483e69cd78d02b5a93fff4f303fe2",
+  "image_metadata": {
+    "width": 2373,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 10,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          363.0,
+          52.0
+        ],
+        [
+          2247.0,
+          33.0
+        ],
+        [
+          2248.0,
+          121.0
+        ],
+        [
+          364.0,
+          140.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          363.0,
+          52.0
+        ],
+        [
+          2247.0,
+          33.0
+        ],
+        [
+          2248.0,
+          121.0
+        ],
+        [
+          364.0,
+          140.0
+        ]
+      ],
+      "detector_score": 0.8626401873274914,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a01-020u-a7d5a9112ed3",
+        "detector_index": 10,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "hr. Macleod went an wihn the cautesence",
+      "recognition_score": 0.8661062717437744,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 9,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          360.0,
+          230.0
+        ],
+        [
+          2188.0,
+          214.0
+        ],
+        [
+          2189.0,
+          302.0
+        ],
+        [
+          361.0,
+          318.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          360.0,
+          230.0
+        ],
+        [
+          2188.0,
+          214.0
+        ],
+        [
+          2189.0,
+          302.0
+        ],
+        [
+          361.0,
+          318.0
+        ]
+      ],
+      "detector_score": 0.8830770583486235,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a01-020u-a7d5a9112ed3",
+        "detector_index": 9,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "at Lancasle Hause deopite the cvisis",
+      "recognition_score": 0.9442664384841919,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 8,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          360.0,
+          406.0
+        ],
+        [
+          2301.0,
+          398.0
+        ],
+        [
+          2302.0,
+          486.0
+        ],
+        [
+          361.0,
+          494.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          360.0,
+          406.0
+        ],
+        [
+          2301.0,
+          398.0
+        ],
+        [
+          2302.0,
+          486.0
+        ],
+        [
+          361.0,
+          494.0
+        ]
+      ],
+      "detector_score": 0.8746826406384544,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a01-020u-a7d5a9112ed3",
+        "detector_index": 8,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "which had Blown up. He has now evealed",
+      "recognition_score": 0.9942167401313782,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 7,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          353.0,
+          584.0
+        ],
+        [
+          2350.0,
+          576.0
+        ],
+        [
+          2350.0,
+          664.0
+        ],
+        [
+          353.0,
+          672.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          353.0,
+          584.0
+        ],
+        [
+          2350.0,
+          576.0
+        ],
+        [
+          2350.0,
+          664.0
+        ],
+        [
+          353.0,
+          672.0
+        ]
+      ],
+      "detector_score": 0.8608342746632921,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a01-020u-a7d5a9112ed3",
+        "detector_index": 7,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "his full plans to the Africans and libexato",
+      "recognition_score": 0.9225570559501648,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 6,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          350.0,
+          760.0
+        ],
+        [
+          2316.0,
+          741.0
+        ],
+        [
+          2317.0,
+          844.0
+        ],
+        [
+          351.0,
+          863.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          350.0,
+          760.0
+        ],
+        [
+          2316.0,
+          741.0
+        ],
+        [
+          2317.0,
+          844.0
+        ],
+        [
+          351.0,
+          863.0
+        ]
+      ],
+      "detector_score": 0.8370238109514913,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a01-020u-a7d5a9112ed3",
+        "detector_index": 6,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "atlending. These plans do not give the",
+      "recognition_score": 0.9530736804008484,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 5,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          371.0,
+          940.0
+        ],
+        [
+          2171.0,
+          932.0
+        ],
+        [
+          2171.0,
+          1028.0
+        ],
+        [
+          371.0,
+          1036.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          371.0,
+          940.0
+        ],
+        [
+          2171.0,
+          932.0
+        ],
+        [
+          2171.0,
+          1028.0
+        ],
+        [
+          371.0,
+          1036.0
+        ]
+      ],
+      "detector_score": 0.8694835889906828,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a01-020u-a7d5a9112ed3",
+        "detector_index": 5,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Africams the oveall majority they are",
+      "recognition_score": 0.9451503157615662,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 4,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          368.0,
+          1116.0
+        ],
+        [
+          2355.0,
+          1116.0
+        ],
+        [
+          2355.0,
+          1219.0
+        ],
+        [
+          368.0,
+          1219.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          368.0,
+          1116.0
+        ],
+        [
+          2355.0,
+          1116.0
+        ],
+        [
+          2355.0,
+          1219.0
+        ],
+        [
+          368.0,
+          1219.0
+        ]
+      ],
+      "detector_score": 0.8501205328661358,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a01-020u-a7d5a9112ed3",
+        "detector_index": 4,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "seehing. African delegates are studying",
+      "recognition_score": 0.9338381886482239,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 3,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          337.0,
+          1302.0
+        ],
+        [
+          2224.0,
+          1284.0
+        ],
+        [
+          2225.0,
+          1387.0
+        ],
+        [
+          338.0,
+          1406.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          337.0,
+          1302.0
+        ],
+        [
+          2224.0,
+          1284.0
+        ],
+        [
+          2225.0,
+          1387.0
+        ],
+        [
+          338.0,
+          1406.0
+        ]
+      ],
+      "detector_score": 0.8148474035556564,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a01-020u-a7d5a9112ed3",
+        "detector_index": 3,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "them today. The canfesence will meet",
+      "recognition_score": 0.9566917419433594,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 2,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          322.0,
+          1486.0
+        ],
+        [
+          2158.0,
+          1470.0
+        ],
+        [
+          2158.0,
+          1558.0
+        ],
+        [
+          323.0,
+          1573.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          322.0,
+          1486.0
+        ],
+        [
+          2158.0,
+          1470.0
+        ],
+        [
+          2158.0,
+          1558.0
+        ],
+        [
+          323.0,
+          1573.0
+        ]
+      ],
+      "detector_score": 0.8545670246323096,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a01-020u-a7d5a9112ed3",
+        "detector_index": 2,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "to discuss the fmction of a proposed",
+      "recognition_score": 0.9444186091423035,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 1,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          340.0,
+          1656.0
+        ],
+        [
+          1196.0,
+          1651.0
+        ],
+        [
+          1197.0,
+          1746.0
+        ],
+        [
+          341.0,
+          1752.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          340.0,
+          1656.0
+        ],
+        [
+          1196.0,
+          1651.0
+        ],
+        [
+          1197.0,
+          1746.0
+        ],
+        [
+          341.0,
+          1752.0
+        ]
+      ],
+      "detector_score": 0.8982901606284929,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a01-020u-a7d5a9112ed3",
+        "detector_index": 1,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Hause of Chiefs.",
+      "recognition_score": 0.9224013686180115,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 0,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          368.0,
+          2085.0
+        ],
+        [
+          524.0,
+          2085.0
+        ],
+        [
+          524.0,
+          2149.0
+        ],
+        [
+          368.0,
+          2149.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          368.0,
+          2085.0
+        ],
+        [
+          524.0,
+          2085.0
+        ],
+        [
+          524.0,
+          2149.0
+        ],
+        [
+          368.0,
+          2149.0
+        ]
+      ],
+      "detector_score": 0.9178456781212136,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a01-020u-a7d5a9112ed3",
+        "detector_index": 0,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999284744262695,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "hr. Macleod went an wihn the cautesence\nat Lancasle Hause deopite the cvisis\nwhich had Blown up. He has now evealed\nhis full plans to the Africans and libexato\natlending. These plans do not give the\nAfricams the oveall majority they are\nseehing. African delegates are studying\nthem today. The canfesence will meet\nto discuss the fmction of a proposed\nHause of Chiefs.\nName:",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 183.02150000818074,
+    "detection_ms": 11648.811899998691,
+    "sorting_ms": 0.5080999981146306,
+    "cropping_ms": 34.397799987345934,
+    "recognition_ms": 11698.222899984103,
+    "serialization_ms": 339.8063000058755
+  },
+  "status": "success",
+  "errors": []
+}

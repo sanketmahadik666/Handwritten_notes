@@ -1,0 +1,725 @@
+{
+  "document_id": "a01-087u-f8eb7015acdc",
+  "source_image": "a01-087u.png",
+  "source_path": "a01-087u.png",
+  "source_image_sha256": "f8eb7015acdc0a4958dce2f5b7baa2e4b23d27b1feac95bbcf840f9acc5ff1ca",
+  "image_metadata": {
+    "width": 2401,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 9,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          362.0,
+          44.0
+        ],
+        [
+          2269.0,
+          33.0
+        ],
+        [
+          2269.0,
+          129.0
+        ],
+        [
+          363.0,
+          140.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          362.0,
+          44.0
+        ],
+        [
+          2269.0,
+          33.0
+        ],
+        [
+          2269.0,
+          129.0
+        ],
+        [
+          363.0,
+          140.0
+        ]
+      ],
+      "detector_score": 0.8091233882920301,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a01-087u-f8eb7015acdc",
+        "detector_index": 9,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Mr. Brawn, passicuale and warm- hearted,",
+      "recognition_score": 0.9601452946662903,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 8,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          378.0,
+          220.0
+        ],
+        [
+          2207.0,
+          220.0
+        ],
+        [
+          2207.0,
+          305.0
+        ],
+        [
+          378.0,
+          305.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          378.0,
+          220.0
+        ],
+        [
+          2207.0,
+          220.0
+        ],
+        [
+          2207.0,
+          305.0
+        ],
+        [
+          378.0,
+          305.0
+        ]
+      ],
+      "detector_score": 0.860049193458366,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a01-087u-f8eb7015acdc",
+        "detector_index": 8,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "led Labow's attach on the highe health",
+      "recognition_score": 0.9633919596672058,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 7,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          370.0,
+          400.0
+        ],
+        [
+          2142.0,
+          395.0
+        ],
+        [
+          2142.0,
+          483.0
+        ],
+        [
+          370.0,
+          488.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          370.0,
+          400.0
+        ],
+        [
+          2142.0,
+          395.0
+        ],
+        [
+          2142.0,
+          483.0
+        ],
+        [
+          370.0,
+          488.0
+        ]
+      ],
+      "detector_score": 0.8699882266961944,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a01-087u-f8eb7015acdc",
+        "detector_index": 7,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "chaiges. Mr. Powell, whire- faced and",
+      "recognition_score": 0.943162739276886,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 6,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          365.0,
+          581.0
+        ],
+        [
+          2026.0,
+          573.0
+        ],
+        [
+          2026.0,
+          661.0
+        ],
+        [
+          365.0,
+          669.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          365.0,
+          581.0
+        ],
+        [
+          2026.0,
+          573.0
+        ],
+        [
+          2026.0,
+          661.0
+        ],
+        [
+          365.0,
+          669.0
+        ]
+      ],
+      "detector_score": 0.8606039915266481,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a01-087u-f8eb7015acdc",
+        "detector_index": 6,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "autwaraly memotianal, replied with a",
+      "recognition_score": 0.9484315514564514,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 5,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          344.0,
+          757.0
+        ],
+        [
+          2272.0,
+          762.0
+        ],
+        [
+          2271.0,
+          847.0
+        ],
+        [
+          344.0,
+          842.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          344.0,
+          757.0
+        ],
+        [
+          2272.0,
+          762.0
+        ],
+        [
+          2271.0,
+          847.0
+        ],
+        [
+          344.0,
+          842.0
+        ]
+      ],
+      "detector_score": 0.8686010850955079,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a01-087u-f8eb7015acdc",
+        "detector_index": 5,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "taltistical shatement - and ended by inciting",
+      "recognition_score": 0.9487734436988831,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 4,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          352.0,
+          938.0
+        ],
+        [
+          2243.0,
+          938.0
+        ],
+        [
+          2243.0,
+          1026.0
+        ],
+        [
+          352.0,
+          1026.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          352.0,
+          938.0
+        ],
+        [
+          2243.0,
+          938.0
+        ],
+        [
+          2243.0,
+          1026.0
+        ],
+        [
+          352.0,
+          1026.0
+        ]
+      ],
+      "detector_score": 0.8619176932384718,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a01-087u-f8eb7015acdc",
+        "detector_index": 4,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Labaur MP, to angry uproar. Oue dealt",
+      "recognition_score": 0.9286388754844666,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 3,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          360.0,
+          1111.0
+        ],
+        [
+          2334.0,
+          1108.0
+        ],
+        [
+          2334.0,
+          1196.0
+        ],
+        [
+          360.0,
+          1199.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          360.0,
+          1111.0
+        ],
+        [
+          2334.0,
+          1108.0
+        ],
+        [
+          2334.0,
+          1196.0
+        ],
+        [
+          360.0,
+          1199.0
+        ]
+      ],
+      "detector_score": 0.8315087026073285,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a01-087u-f8eb7015acdc",
+        "detector_index": 3,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "with the humam iosue behind the hhealthe",
+      "recognition_score": 0.909691333770752,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 2,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          354.0,
+          1294.0
+        ],
+        [
+          2145.0,
+          1289.0
+        ],
+        [
+          2145.0,
+          1377.0
+        ],
+        [
+          355.0,
+          1382.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          354.0,
+          1294.0
+        ],
+        [
+          2145.0,
+          1289.0
+        ],
+        [
+          2145.0,
+          1377.0
+        ],
+        [
+          355.0,
+          1382.0
+        ]
+      ],
+      "detector_score": 0.851451421225185,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a01-087u-f8eb7015acdc",
+        "detector_index": 2,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Seovice; the othe tried to show that the",
+      "recognition_score": 0.9298914670944214,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 1,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          365.0,
+          1475.0
+        ],
+        [
+          2163.0,
+          1467.0
+        ],
+        [
+          2163.0,
+          1558.0
+        ],
+        [
+          365.0,
+          1566.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          365.0,
+          1475.0
+        ],
+        [
+          2163.0,
+          1467.0
+        ],
+        [
+          2163.0,
+          1558.0
+        ],
+        [
+          365.0,
+          1566.0
+        ]
+      ],
+      "detector_score": 0.8232351745375885,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a01-087u-f8eb7015acdc",
+        "detector_index": 1,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "balance- oheet must alway came first.",
+      "recognition_score": 0.9405462741851807,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 0,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          365.0,
+          2082.0
+        ],
+        [
+          523.0,
+          2082.0
+        ],
+        [
+          523.0,
+          2147.0
+        ],
+        [
+          365.0,
+          2147.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          365.0,
+          2082.0
+        ],
+        [
+          523.0,
+          2082.0
+        ],
+        [
+          523.0,
+          2147.0
+        ],
+        [
+          365.0,
+          2147.0
+        ]
+      ],
+      "detector_score": 0.8507141375464723,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a01-087u-f8eb7015acdc",
+        "detector_index": 0,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999163746833801,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "Mr. Brawn, passicuale and warm- hearted,\nled Labow's attach on the highe health\nchaiges. Mr. Powell, whire- faced and\nautwaraly memotianal, replied with a\ntaltistical shatement - and ended by inciting\nLabaur MP, to angry uproar. Oue dealt\nwith the humam iosue behind the hhealthe\nSeovice; the othe tried to show that the\nbalance- oheet must alway came first.\nName:",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 129.33060000068508,
+    "detection_ms": 9722.630999982357,
+    "sorting_ms": 0.4802999901585281,
+    "cropping_ms": 35.08410000358708,
+    "recognition_ms": 11088.829399988754,
+    "serialization_ms": 379.6483000041917
+  },
+  "status": "success",
+  "errors": []
+}

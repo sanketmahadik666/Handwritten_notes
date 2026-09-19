@@ -1,0 +1,792 @@
+{
+  "document_id": "a01-053u-4b3ee442d771",
+  "source_image": "a01-053u.png",
+  "source_path": "a01-053u.png",
+  "source_image_sha256": "4b3ee442d7710ac25dfe1fba3f06e4e811d7a3efcf2c822eca32385ac2c58c13",
+  "image_metadata": {
+    "width": 2404,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 10,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          366.0,
+          67.0
+        ],
+        [
+          2220.0,
+          80.0
+        ],
+        [
+          2220.0,
+          176.0
+        ],
+        [
+          365.0,
+          163.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          366.0,
+          67.0
+        ],
+        [
+          2220.0,
+          80.0
+        ],
+        [
+          2220.0,
+          176.0
+        ],
+        [
+          365.0,
+          163.0
+        ]
+      ],
+      "detector_score": 0.853959282908249,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a01-053u-4b3ee442d771",
+        "detector_index": 10,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "He said these concesned Mr. Weaver's",
+      "recognition_score": 0.9065802693367004,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 9,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          355.0,
+          258.0
+        ],
+        [
+          2357.0,
+          264.0
+        ],
+        [
+          2357.0,
+          349.0
+        ],
+        [
+          355.0,
+          344.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          355.0,
+          258.0
+        ],
+        [
+          2357.0,
+          264.0
+        ],
+        [
+          2357.0,
+          349.0
+        ],
+        [
+          355.0,
+          344.0
+        ]
+      ],
+      "detector_score": 0.8984059887168077,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a01-053u-4b3ee442d771",
+        "detector_index": 9,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "alleged association witle organisatians Blach-",
+      "recognition_score": 0.9058701992034912,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 8,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          340.0,
+          434.0
+        ],
+        [
+          2288.0,
+          444.0
+        ],
+        [
+          2287.0,
+          532.0
+        ],
+        [
+          339.0,
+          522.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          340.0,
+          434.0
+        ],
+        [
+          2288.0,
+          444.0
+        ],
+        [
+          2287.0,
+          532.0
+        ],
+        [
+          339.0,
+          522.0
+        ]
+      ],
+      "detector_score": 0.845586291550712,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a01-053u-4b3ee442d771",
+        "detector_index": 8,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "lioled by the Govenment. lnmediatly tr.",
+      "recognition_score": 0.9218217134475708,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 7,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          332.0,
+          617.0
+        ],
+        [
+          2376.0,
+          617.0
+        ],
+        [
+          2376.0,
+          705.0
+        ],
+        [
+          332.0,
+          705.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          332.0,
+          617.0
+        ],
+        [
+          2376.0,
+          617.0
+        ],
+        [
+          2376.0,
+          705.0
+        ],
+        [
+          332.0,
+          705.0
+        ]
+      ],
+      "detector_score": 0.860151640868653,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a01-053u-4b3ee442d771",
+        "detector_index": 7,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Kemmedy rushed a lette to Senalar Rabotion",
+      "recognition_score": 0.956047534942627,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 6,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          313.0,
+          796.0
+        ],
+        [
+          2396.0,
+          785.0
+        ],
+        [
+          2396.0,
+          881.0
+        ],
+        [
+          314.0,
+          891.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          313.0,
+          796.0
+        ],
+        [
+          2396.0,
+          785.0
+        ],
+        [
+          2396.0,
+          881.0
+        ],
+        [
+          314.0,
+          891.0
+        ]
+      ],
+      "detector_score": 0.8468837611106087,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a01-053u-4b3ee442d771",
+        "detector_index": 6,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Daying the tedeal Birean of luveotigation had",
+      "recognition_score": 0.9127119183540344,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 5,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          324.0,
+          977.0
+        ],
+        [
+          2147.0,
+          971.0
+        ],
+        [
+          2148.0,
+          1059.0
+        ],
+        [
+          324.0,
+          1064.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          324.0,
+          977.0
+        ],
+        [
+          2147.0,
+          971.0
+        ],
+        [
+          2148.0,
+          1059.0
+        ],
+        [
+          324.0,
+          1064.0
+        ]
+      ],
+      "detector_score": 0.8504327956052645,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a01-053u-4b3ee442d771",
+        "detector_index": 5,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "neparted on Mr. weaves. Lhe believed",
+      "recognition_score": 0.9469568729400635,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 4,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          321.0,
+          1152.0
+        ],
+        [
+          2253.0,
+          1144.0
+        ],
+        [
+          2254.0,
+          1240.0
+        ],
+        [
+          321.0,
+          1248.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          321.0,
+          1152.0
+        ],
+        [
+          2253.0,
+          1144.0
+        ],
+        [
+          2254.0,
+          1240.0
+        ],
+        [
+          321.0,
+          1248.0
+        ]
+      ],
+      "detector_score": 0.8504594179700449,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a01-053u-4b3ee442d771",
+        "detector_index": 4,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "he would pefcrm a autstanding sevice\"",
+      "recognition_score": 0.8915439248085022,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 3,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          311.0,
+          1328.0
+        ],
+        [
+          2191.0,
+          1323.0
+        ],
+        [
+          2192.0,
+          1418.0
+        ],
+        [
+          311.0,
+          1423.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          311.0,
+          1328.0
+        ],
+        [
+          2191.0,
+          1323.0
+        ],
+        [
+          2192.0,
+          1418.0
+        ],
+        [
+          311.0,
+          1423.0
+        ]
+      ],
+      "detector_score": 0.8410868051516759,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a01-053u-4b3ee442d771",
+        "detector_index": 3,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "in his post. Senater Robetson's caumnithee",
+      "recognition_score": 0.8714343309402466,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 2,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          303.0,
+          1514.0
+        ],
+        [
+          2277.0,
+          1509.0
+        ],
+        [
+          2277.0,
+          1596.0
+        ],
+        [
+          303.0,
+          1602.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          303.0,
+          1514.0
+        ],
+        [
+          2277.0,
+          1509.0
+        ],
+        [
+          2277.0,
+          1596.0
+        ],
+        [
+          303.0,
+          1602.0
+        ]
+      ],
+      "detector_score": 0.847642864147939,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a01-053u-4b3ee442d771",
+        "detector_index": 2,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "has to paos Mr. weaveis namination befone it",
+      "recognition_score": 0.9492530226707458,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 1,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          316.0,
+          1690.0
+        ],
+        [
+          2191.0,
+          1684.0
+        ],
+        [
+          2192.0,
+          1780.0
+        ],
+        [
+          316.0,
+          1785.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          316.0,
+          1690.0
+        ],
+        [
+          2191.0,
+          1684.0
+        ],
+        [
+          2192.0,
+          1780.0
+        ],
+        [
+          316.0,
+          1785.0
+        ]
+      ],
+      "detector_score": 0.8162369144865854,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a01-053u-4b3ee442d771",
+        "detector_index": 1,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "can be cansideed by the tull Senate.",
+      "recognition_score": 0.9572327136993408,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 0,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          368.0,
+          2082.0
+        ],
+        [
+          526.0,
+          2082.0
+        ],
+        [
+          526.0,
+          2147.0
+        ],
+        [
+          368.0,
+          2147.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          368.0,
+          2082.0
+        ],
+        [
+          526.0,
+          2082.0
+        ],
+        [
+          526.0,
+          2147.0
+        ],
+        [
+          368.0,
+          2147.0
+        ]
+      ],
+      "detector_score": 0.8942826356085586,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a01-053u-4b3ee442d771",
+        "detector_index": 0,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.999902069568634,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "He said these concesned Mr. Weaver's\nalleged association witle organisatians Blach-\nlioled by the Govenment. lnmediatly tr.\nKemmedy rushed a lette to Senalar Rabotion\nDaying the tedeal Birean of luveotigation had\nneparted on Mr. weaves. Lhe believed\nhe would pefcrm a autstanding sevice\"\nin his post. Senater Robetson's caumnithee\nhas to paos Mr. weaveis namination befone it\ncan be cansideed by the tull Senate.\nName:",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 117.50570000731386,
+    "detection_ms": 9180.257800006075,
+    "sorting_ms": 0.539399974513799,
+    "cropping_ms": 33.96400000201538,
+    "recognition_ms": 12396.60360000562,
+    "serialization_ms": 365.67790000117384
+  },
+  "status": "success",
+  "errors": []
+}

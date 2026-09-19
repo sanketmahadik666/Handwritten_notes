@@ -1,0 +1,792 @@
+{
+  "document_id": "a01-068u-3626cdf1f13e",
+  "source_image": "a01-068u.png",
+  "source_path": "a01-068u.png",
+  "source_image_sha256": "3626cdf1f13e705e4bb7edce9d0f40b994740c603ec4a226c49a6d4e780489a9",
+  "image_metadata": {
+    "width": 2369,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 10,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          362.0,
+          44.0
+        ],
+        [
+          2290.0,
+          33.0
+        ],
+        [
+          2290.0,
+          129.0
+        ],
+        [
+          363.0,
+          140.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          362.0,
+          44.0
+        ],
+        [
+          2290.0,
+          33.0
+        ],
+        [
+          2290.0,
+          129.0
+        ],
+        [
+          363.0,
+          140.0
+        ]
+      ],
+      "detector_score": 0.8494237775302244,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a01-068u-3626cdf1f13e",
+        "detector_index": 10,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "And they ae wim pwessed by the Gemas' clain",
+      "recognition_score": 0.933860719203949,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 9,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          357.0,
+          228.0
+        ],
+        [
+          2195.0,
+          209.0
+        ],
+        [
+          2196.0,
+          305.0
+        ],
+        [
+          358.0,
+          323.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          357.0,
+          228.0
+        ],
+        [
+          2195.0,
+          209.0
+        ],
+        [
+          2196.0,
+          305.0
+        ],
+        [
+          358.0,
+          323.0
+        ]
+      ],
+      "detector_score": 0.8586652133051943,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a01-068u-3626cdf1f13e",
+        "detector_index": 9,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "that they cannat pay moxe than 357 mihicn",
+      "recognition_score": 0.9279497861862183,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 8,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          349.0,
+          403.0
+        ],
+        [
+          2200.0,
+          387.0
+        ],
+        [
+          2201.0,
+          486.0
+        ],
+        [
+          350.0,
+          501.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          349.0,
+          403.0
+        ],
+        [
+          2200.0,
+          387.0
+        ],
+        [
+          2201.0,
+          486.0
+        ],
+        [
+          350.0,
+          501.0
+        ]
+      ],
+      "detector_score": 0.8338887908438017,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a01-068u-3626cdf1f13e",
+        "detector_index": 8,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "without upselting their own econony. The",
+      "recognition_score": 0.9698057174682617,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 7,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          347.0,
+          579.0
+        ],
+        [
+          2231.0,
+          571.0
+        ],
+        [
+          2231.0,
+          666.0
+        ],
+        [
+          347.0,
+          674.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          347.0,
+          579.0
+        ],
+        [
+          2231.0,
+          571.0
+        ],
+        [
+          2231.0,
+          666.0
+        ],
+        [
+          347.0,
+          674.0
+        ]
+      ],
+      "detector_score": 0.8640681184087401,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a01-068u-3626cdf1f13e",
+        "detector_index": 7,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Americans say Germany is having it too",
+      "recognition_score": 0.9576274752616882,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 6,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          355.0,
+          765.0
+        ],
+        [
+          2154.0,
+          759.0
+        ],
+        [
+          2155.0,
+          858.0
+        ],
+        [
+          355.0,
+          863.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          355.0,
+          765.0
+        ],
+        [
+          2154.0,
+          759.0
+        ],
+        [
+          2155.0,
+          858.0
+        ],
+        [
+          355.0,
+          863.0
+        ]
+      ],
+      "detector_score": 0.8332932577788514,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a01-068u-3626cdf1f13e",
+        "detector_index": 6,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "good nd is not pouying for the poot",
+      "recognition_score": 0.9282355308532715,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 5,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          350.0,
+          940.0
+        ],
+        [
+          2354.0,
+          940.0
+        ],
+        [
+          2354.0,
+          1028.0
+        ],
+        [
+          350.0,
+          1028.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          350.0,
+          940.0
+        ],
+        [
+          2354.0,
+          940.0
+        ],
+        [
+          2354.0,
+          1028.0
+        ],
+        [
+          350.0,
+          1028.0
+        ]
+      ],
+      "detector_score": 0.819255602489328,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a01-068u-3626cdf1f13e",
+        "detector_index": 5,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "or for the present. The sdenaner Govesnment",
+      "recognition_score": 0.9323714375495911,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 4,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          334.0,
+          1119.0
+        ],
+        [
+          2348.0,
+          1116.0
+        ],
+        [
+          2349.0,
+          1214.0
+        ],
+        [
+          334.0,
+          1217.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          334.0,
+          1119.0
+        ],
+        [
+          2348.0,
+          1116.0
+        ],
+        [
+          2349.0,
+          1214.0
+        ],
+        [
+          334.0,
+          1217.0
+        ]
+      ],
+      "detector_score": 0.8124351574777894,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a01-068u-3626cdf1f13e",
+        "detector_index": 4,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "flathy mejected atlem pts by the Eizenhowe",
+      "recognition_score": 0.946103572845459,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 3,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          350.0,
+          1305.0
+        ],
+        [
+          2269.0,
+          1305.0
+        ],
+        [
+          2269.0,
+          1392.0
+        ],
+        [
+          350.0,
+          1392.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          350.0,
+          1305.0
+        ],
+        [
+          2269.0,
+          1305.0
+        ],
+        [
+          2269.0,
+          1392.0
+        ],
+        [
+          350.0,
+          1392.0
+        ]
+      ],
+      "detector_score": 0.8490023011397172,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a01-068u-3626cdf1f13e",
+        "detector_index": 3,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Governmend to get them to pay a megular",
+      "recognition_score": 0.9570539593696594,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 2,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          345.0,
+          1480.0
+        ],
+        [
+          2323.0,
+          1480.0
+        ],
+        [
+          2323.0,
+          1576.0
+        ],
+        [
+          345.0,
+          1576.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          345.0,
+          1480.0
+        ],
+        [
+          2323.0,
+          1480.0
+        ],
+        [
+          2323.0,
+          1576.0
+        ],
+        [
+          345.0,
+          1576.0
+        ]
+      ],
+      "detector_score": 0.8365006012633159,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a01-068u-3626cdf1f13e",
+        "detector_index": 2,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "oun dowards the cost of heeping tmesican",
+      "recognition_score": 0.9463119506835938,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 1,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          329.0,
+          1656.0
+        ],
+        [
+          1327.0,
+          1656.0
+        ],
+        [
+          1327.0,
+          1757.0
+        ],
+        [
+          329.0,
+          1757.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          329.0,
+          1656.0
+        ],
+        [
+          1327.0,
+          1656.0
+        ],
+        [
+          1327.0,
+          1757.0
+        ],
+        [
+          329.0,
+          1757.0
+        ]
+      ],
+      "detector_score": 0.8121762615045443,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a01-068u-3626cdf1f13e",
+        "detector_index": 1,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "troops in Germany.",
+      "recognition_score": 0.9461534023284912,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 0,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          365.0,
+          2082.0
+        ],
+        [
+          521.0,
+          2082.0
+        ],
+        [
+          521.0,
+          2147.0
+        ],
+        [
+          365.0,
+          2147.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          365.0,
+          2082.0
+        ],
+        [
+          521.0,
+          2082.0
+        ],
+        [
+          521.0,
+          2147.0
+        ],
+        [
+          365.0,
+          2147.0
+        ]
+      ],
+      "detector_score": 0.9145183756449518,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a01-068u-3626cdf1f13e",
+        "detector_index": 0,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999470710754395,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "And they ae wim pwessed by the Gemas' clain\nthat they cannat pay moxe than 357 mihicn\nwithout upselting their own econony. The\nAmericans say Germany is having it too\ngood nd is not pouying for the poot\nor for the present. The sdenaner Govesnment\nflathy mejected atlem pts by the Eizenhowe\nGovernmend to get them to pay a megular\noun dowards the cost of heeping tmesican\ntroops in Germany.\nName:",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 177.7375999954529,
+    "detection_ms": 10057.727400009753,
+    "sorting_ms": 0.534099992364645,
+    "cropping_ms": 32.78039998258464,
+    "recognition_ms": 14275.305799994385,
+    "serialization_ms": 347.61100000469014
+  },
+  "status": "success",
+  "errors": []
+}

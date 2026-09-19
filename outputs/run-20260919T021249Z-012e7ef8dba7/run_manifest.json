@@ -1,0 +1,764 @@
+{
+  "run_id": "run-20260919T021249Z-012e7ef8dba7",
+  "created_at_utc": "2026-09-19T02:12:49.949874Z",
+  "project_version": "0.1.0",
+  "config_sha256": "012e7ef8dba75492fac618782bbddc6fdcceaf507960bc57d69f473e83bbb107",
+  "requested_configuration": {
+    "runtime": {
+      "paddleocr_version": "3.7.0",
+      "paddlex_version": "3.7.2",
+      "paddlepaddle_version": "3.3.1",
+      "requested_engine": null,
+      "device": null,
+      "enable_mkldnn": false,
+      "enable_cinn": false,
+      "cpu_threads": 10
+    },
+    "pipeline": {
+      "lang": "en",
+      "ocr_version": null,
+      "use_doc_orientation_classify": false,
+      "use_doc_unwarping": false,
+      "use_textline_orientation": false,
+      "text_rec_score_thresh": 0.0
+    },
+    "detector": {
+      "model_name": "PP-OCRv6_medium_det",
+      "model_dir": null,
+      "limit_side_len": 960,
+      "limit_type": "max",
+      "max_side_limit": 4000,
+      "thresh": 0.3,
+      "box_thresh": 0.6,
+      "unclip_ratio": 1.5
+    },
+    "recognizer": {
+      "model_name": "PP-OCRv6_medium_rec",
+      "model_dir": null
+    },
+    "document_preprocessing": {
+      "orientation_classification": false,
+      "unwarping": false,
+      "textline_orientation": false
+    },
+    "model_preprocessing": {
+      "detector": "PaddleX-managed",
+      "recognizer": "PaddleX-managed"
+    },
+    "preprocessing": {
+      "mode": "original",
+      "operations": []
+    },
+    "evaluation": {
+      "unicode_normalization": "NFC",
+      "case_sensitive": true,
+      "whitespace": "collapse_runs",
+      "punctuation": "preserve"
+    },
+    "correction_status": "skipped"
+  },
+  "runtime": {
+    "versions": {
+      "python": "3.12.10",
+      "python_executable": "C:\\Users\\Mahadik\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "paddleocr": "3.7.0",
+      "paddlex": "3.7.2",
+      "paddlepaddle": "3.3.1",
+      "numpy": "2.3.5",
+      "opencv": "4.10.0",
+      "omp_num_threads": "1"
+    },
+    "requested_engine": null,
+    "pipeline_engine": null,
+    "generated_engine_config": {
+      "paddle_static": {
+        "run_mode": "paddle",
+        "cpu_threads": 10,
+        "enable_cinn": false
+      }
+    },
+    "resolved_detector_engine": null,
+    "resolved_recognizer_engine": null,
+    "detector_predictor_class": "TextDetRunnerPredictor",
+    "recognizer_predictor_class": "TextRecRunnerPredictor",
+    "detector": {
+      "model_name": "PP-OCRv6_medium_det",
+      "predictor_class": "TextDetRunnerPredictor",
+      "predictor_module": "paddlex.inference.models.text_detection.predictor",
+      "runner_class": "PaddleStaticRunner",
+      "runner_module": "paddlex.inference.models.runners.paddle_static.runner",
+      "device": "cpu",
+      "resolved_engine": null,
+      "generated_engine_config": {
+        "run_mode": "paddle",
+        "device_type": "cpu",
+        "cpu_threads": 10,
+        "enable_cinn": false
+      },
+      "model_directory": {
+        "directory_name": "PP-OCRv6_medium_det",
+        "exists": true,
+        "artifacts": [
+          "inference.pdiparams"
+        ]
+      }
+    },
+    "recognizer": {
+      "model_name": "PP-OCRv6_medium_rec",
+      "predictor_class": "TextRecRunnerPredictor",
+      "predictor_module": "paddlex.inference.models.text_recognition.predictor",
+      "runner_class": "PaddleStaticRunner",
+      "runner_module": "paddlex.inference.models.runners.paddle_static.runner",
+      "device": "cpu",
+      "resolved_engine": null,
+      "generated_engine_config": {
+        "run_mode": "paddle",
+        "device_type": "cpu",
+        "cpu_threads": 10,
+        "enable_cinn": false
+      },
+      "model_directory": {
+        "directory_name": "PP-OCRv6_medium_rec",
+        "exists": true,
+        "artifacts": [
+          "inference.pdiparams"
+        ]
+      }
+    },
+    "private_contract": {
+      "pipeline_class": "_OCRPipeline",
+      "uses_sort_boxes": true,
+      "uses_crop_by_polys": true,
+      "recognition_batch_identity": "crop_index_after_PaddleX_aspect_ratio_sort"
+    },
+    "requested_text_det_params": {
+      "limit_side_len": 960,
+      "limit_type": "max",
+      "max_side_limit": 4000,
+      "thresh": 0.3,
+      "box_thresh": 0.6,
+      "unclip_ratio": 1.5
+    },
+    "observed_text_det_params": {
+      "limit_side_len": 960,
+      "limit_type": "max",
+      "thresh": 0.3,
+      "max_side_limit": 4000,
+      "box_thresh": 0.6,
+      "unclip_ratio": 1.5
+    }
+  },
+  "documents": [
+    {
+      "document_id": "a01-000u-f1764d425a84",
+      "source_image": "a01-000u.png",
+      "source_image_sha256": "f1764d425a84328dad41c190cdd89b7a72b0ed55b3ca47b2482ba17390ed4895",
+      "document_path": "documents/a01-000u-f1764d425a84",
+      "status": "success",
+      "region_count": 8,
+      "evaluation_status": "evaluated",
+      "errors": []
+    },
+    {
+      "document_id": "a01-003u-26039fabfa22",
+      "source_image": "a01-003u.png",
+      "source_image_sha256": "26039fabfa2214b7f18e15b955fc6783ef6d57d8e9f0933831be1ebf3cd24c1a",
+      "document_path": "documents/a01-003u-26039fabfa22",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-007u-29080b0b21ed",
+      "source_image": "a01-007u.png",
+      "source_image_sha256": "29080b0b21ed7f0a49029d0df2444f35a9ee79e1fc27cb56829d8f5325494bd4",
+      "document_path": "documents/a01-007u-29080b0b21ed",
+      "status": "success",
+      "region_count": 11,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-011u-9a51f16d9c34",
+      "source_image": "a01-011u.png",
+      "source_image_sha256": "9a51f16d9c345fb42cf4f5d6a3c5fa7aed89fdb9c765a2ce47333c13e2aa61cc",
+      "document_path": "documents/a01-011u-9a51f16d9c34",
+      "status": "success",
+      "region_count": 11,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-014u-e6e878a2ba1d",
+      "source_image": "a01-014u.png",
+      "source_image_sha256": "e6e878a2ba1d40e95786327f47bab5d1f83873b71c1ddb71dac726d9e798df61",
+      "document_path": "documents/a01-014u-e6e878a2ba1d",
+      "status": "success",
+      "region_count": 10,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-020u-a7d5a9112ed3",
+      "source_image": "a01-020u.png",
+      "source_image_sha256": "a7d5a9112ed3db31bea3d7c31771ff3aa62483e69cd78d02b5a93fff4f303fe2",
+      "document_path": "documents/a01-020u-a7d5a9112ed3",
+      "status": "success",
+      "region_count": 11,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-026u-a6c1232c27b0",
+      "source_image": "a01-026u.png",
+      "source_image_sha256": "a6c1232c27b0d4d80a4f08bfcc73ef34cf0e4d39450408bab5cf71b0eb43d7da",
+      "document_path": "documents/a01-026u-a6c1232c27b0",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-030u-f0a7d5f3d47a",
+      "source_image": "a01-030u.png",
+      "source_image_sha256": "f0a7d5f3d47aecc2e73d7dad377ef4033f20b8dfeb27de1f631072a5a8885a58",
+      "document_path": "documents/a01-030u-f0a7d5f3d47a",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-043u-fa0cc6d03eec",
+      "source_image": "a01-043u.png",
+      "source_image_sha256": "fa0cc6d03eecbd40767d747c23df0e41898c8b0390843830104852ded8c2d187",
+      "document_path": "documents/a01-043u-fa0cc6d03eec",
+      "status": "success",
+      "region_count": 11,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-049u-2c428055be0d",
+      "source_image": "a01-049u.png",
+      "source_image_sha256": "2c428055be0dc4a76558a00377b61cc7bf7e93aa11418a85b7c9f4183f6ae2f4",
+      "document_path": "documents/a01-049u-2c428055be0d",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-049x-4fac07dec6d3",
+      "source_image": "a01-049x.png",
+      "source_image_sha256": "4fac07dec6d3e60e835a668a156c6030ea74a3cbe66677f8357bf7b03470bbbb",
+      "document_path": "documents/a01-049x-4fac07dec6d3",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-053u-4b3ee442d771",
+      "source_image": "a01-053u.png",
+      "source_image_sha256": "4b3ee442d7710ac25dfe1fba3f06e4e811d7a3efcf2c822eca32385ac2c58c13",
+      "document_path": "documents/a01-053u-4b3ee442d771",
+      "status": "success",
+      "region_count": 11,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-058u-8f6274866b3c",
+      "source_image": "a01-058u.png",
+      "source_image_sha256": "8f6274866b3caf620cb132e05bee804ae042751bf06f0b07b2757b2a2e08c17f",
+      "document_path": "documents/a01-058u-8f6274866b3c",
+      "status": "success",
+      "region_count": 10,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-063u-fbae891ff95c",
+      "source_image": "a01-063u.png",
+      "source_image_sha256": "fbae891ff95ce3130b8e95af00a647eba0bc39a387bd5d0b070f76267ca20c7c",
+      "document_path": "documents/a01-063u-fbae891ff95c",
+      "status": "success",
+      "region_count": 11,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-068u-3626cdf1f13e",
+      "source_image": "a01-068u.png",
+      "source_image_sha256": "3626cdf1f13e705e4bb7edce9d0f40b994740c603ec4a226c49a6d4e780489a9",
+      "document_path": "documents/a01-068u-3626cdf1f13e",
+      "status": "success",
+      "region_count": 11,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-072u-837e54d36637",
+      "source_image": "a01-072u.png",
+      "source_image_sha256": "837e54d36637e80989dacae1064bad53d5dcd59113d84c202da5679db845f4b0",
+      "document_path": "documents/a01-072u-837e54d36637",
+      "status": "success",
+      "region_count": 10,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-077u-1e7667c7f2d8",
+      "source_image": "a01-077u.png",
+      "source_image_sha256": "1e7667c7f2d81af9486f980512e1f09e22dfa7c3a0fa9b89770c1f7885bd6197",
+      "document_path": "documents/a01-077u-1e7667c7f2d8",
+      "status": "success",
+      "region_count": 10,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-082u-16c5617b3844",
+      "source_image": "a01-082u.png",
+      "source_image_sha256": "16c5617b3844ec766bf28cef7effe8ec5318923ff56028066de9b155f7961e1e",
+      "document_path": "documents/a01-082u-16c5617b3844",
+      "status": "success",
+      "region_count": 11,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-087u-f8eb7015acdc",
+      "source_image": "a01-087u.png",
+      "source_image_sha256": "f8eb7015acdc0a4958dce2f5b7baa2e4b23d27b1feac95bbcf840f9acc5ff1ca",
+      "document_path": "documents/a01-087u-f8eb7015acdc",
+      "status": "success",
+      "region_count": 10,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-091u-701e3fdcf34c",
+      "source_image": "a01-091u.png",
+      "source_image_sha256": "701e3fdcf34cd77b7f8a21e1c99f0bc6d794026a2a116f4b273cfc4afcea93eb",
+      "document_path": "documents/a01-091u-701e3fdcf34c",
+      "status": "success",
+      "region_count": 11,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-096u-e83a8f6ca80c",
+      "source_image": "a01-096u.png",
+      "source_image_sha256": "e83a8f6ca80c3cb672c0423e498dc4dcb8be0cd1636d5d032b9dc6b43dcc6e9d",
+      "document_path": "documents/a01-096u-e83a8f6ca80c",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-102u-b1b2022fef75",
+      "source_image": "a01-102u.png",
+      "source_image_sha256": "b1b2022fef7571470fe8ed79d649620622f976807b449b9b5230e91d3dd0cf3c",
+      "document_path": "documents/a01-102u-b1b2022fef75",
+      "status": "success",
+      "region_count": 10,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-107u-e76f475e04da",
+      "source_image": "a01-107u.png",
+      "source_image_sha256": "e76f475e04dafae9d71b4dedf95937fdba0d1a346469b79bf2cb8072baea19e4",
+      "document_path": "documents/a01-107u-e76f475e04da",
+      "status": "success",
+      "region_count": 9,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-113u-e68f7604fc27",
+      "source_image": "a01-113u.png",
+      "source_image_sha256": "e68f7604fc27ede11908e8a027cf7651405c3a285d8de0640b5ae4176a26ccfc",
+      "document_path": "documents/a01-113u-e68f7604fc27",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-117u-74c7d29e1fdc",
+      "source_image": "a01-117u.png",
+      "source_image_sha256": "74c7d29e1fdc3677aab798b42ffc286b88fff5dfbf67f1b5d4978288babc0c0e",
+      "document_path": "documents/a01-117u-74c7d29e1fdc",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-122u-367fb373fd34",
+      "source_image": "a01-122u.png",
+      "source_image_sha256": "367fb373fd3435f11eb75bfc7cf2a92e58c5bbf433c191dfec985803e3daa5a5",
+      "document_path": "documents/a01-122u-367fb373fd34",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-128u-46af86534cc8",
+      "source_image": "a01-128u.png",
+      "source_image_sha256": "46af86534cc8f612b6f5a53f223a22232816a63fc74f5e1b4366f55e2d34b7b0",
+      "document_path": "documents/a01-128u-46af86534cc8",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-132u-85f1ff15e419",
+      "source_image": "a01-132u.png",
+      "source_image_sha256": "85f1ff15e4195397e74f1b6e04fc202cf35063470e476c0b354cb788765b1fe6",
+      "document_path": "documents/a01-132u-85f1ff15e419",
+      "status": "success",
+      "region_count": 11,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a01-132x-8cd00347724f",
+      "source_image": "a01-132x.png",
+      "source_image_sha256": "8cd00347724f254fe6719cf04b9feffd54d1433e3eb6bdabeeb7ca2e83790fd7",
+      "document_path": "documents/a01-132x-8cd00347724f",
+      "status": "success",
+      "region_count": 10,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a03-050-80e22f10d0c5",
+      "source_image": "a03-050.png",
+      "source_image_sha256": "80e22f10d0c5cff9247c01d5d9dc05b1f82c74458fe80f6916a07af2fcb85358",
+      "document_path": "documents/a03-050-80e22f10d0c5",
+      "status": "success",
+      "region_count": 11,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a03-071-a2d847f0e71a",
+      "source_image": "a03-071.png",
+      "source_image_sha256": "a2d847f0e71ad09601b8e1f3430d8ed625d1d94a62e9c399853d84c832e2e72e",
+      "document_path": "documents/a03-071-a2d847f0e71a",
+      "status": "success",
+      "region_count": 11,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a03-073-bad1092eed78",
+      "source_image": "a03-073.png",
+      "source_image_sha256": "bad1092eed782e65f281748d36c183942e421c60f12beb1939a27e7b4aa25b33",
+      "document_path": "documents/a03-073-bad1092eed78",
+      "status": "success",
+      "region_count": 14,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a03-080-3e330fd816d2",
+      "source_image": "a03-080.png",
+      "source_image_sha256": "3e330fd816d2b494064be41d3a793f5bbe0c970c41cdb07dc5d9594e1f4be968",
+      "document_path": "documents/a03-080-3e330fd816d2",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a03-089-4a9f924046a9",
+      "source_image": "a03-089.png",
+      "source_image_sha256": "4a9f924046a91d9e5b4ae80b8c76e7318772d23fe842cbb6a9a773071f0285f3",
+      "document_path": "documents/a03-089-4a9f924046a9",
+      "status": "success",
+      "region_count": 5,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-000-2f4aca7449d7",
+      "source_image": "a05-000.png",
+      "source_image_sha256": "2f4aca7449d71ce3b1f65100ee2a1d184f5f2f1d4e2c557c39487dd1574f4d01",
+      "document_path": "documents/a05-000-2f4aca7449d7",
+      "status": "success",
+      "region_count": 10,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-013-5aa2adf3d2b7",
+      "source_image": "a05-013.png",
+      "source_image_sha256": "5aa2adf3d2b7be476a15189955188b55767ab301f04d9989a138f235b1e87ddc",
+      "document_path": "documents/a05-013-5aa2adf3d2b7",
+      "status": "success",
+      "region_count": 11,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-017-807f5ace57c9",
+      "source_image": "a05-017.png",
+      "source_image_sha256": "807f5ace57c979432193180b944e9311766f6cf5317841dd324a52eb4d0ff202",
+      "document_path": "documents/a05-017-807f5ace57c9",
+      "status": "success",
+      "region_count": 13,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-022-d8018ebf11cb",
+      "source_image": "a05-022.png",
+      "source_image_sha256": "d8018ebf11cb3f7f5754893a9ef0c2129e7c6c97d72b29edc2de324b682eff5e",
+      "document_path": "documents/a05-022-d8018ebf11cb",
+      "status": "success",
+      "region_count": 11,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-025-734febcc9e95",
+      "source_image": "a05-025.png",
+      "source_image_sha256": "734febcc9e95ca9c237a86936cfd6e19f2ea959ce8fff0037b34173fe64d1e2b",
+      "document_path": "documents/a05-025-734febcc9e95",
+      "status": "success",
+      "region_count": 13,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-029-bdbef7446fe5",
+      "source_image": "a05-029.png",
+      "source_image_sha256": "bdbef7446fe53afb508178314e9ed347032720011e1d68e5ce3e9c0925622b78",
+      "document_path": "documents/a05-029-bdbef7446fe5",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-039-045c932149e5",
+      "source_image": "a05-039.png",
+      "source_image_sha256": "045c932149e57b40011bbfe11541ab7e3c60ebd06c8135f69b45034aefb5865d",
+      "document_path": "documents/a05-039-045c932149e5",
+      "status": "success",
+      "region_count": 13,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-044-5696db5c7309",
+      "source_image": "a05-044.png",
+      "source_image_sha256": "5696db5c7309b2e2ae6232cdb465b1e76c7e8326d9378adb271d59152f76b401",
+      "document_path": "documents/a05-044-5696db5c7309",
+      "status": "success",
+      "region_count": 13,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-048-cddb593e3610",
+      "source_image": "a05-048.png",
+      "source_image_sha256": "cddb593e36103cf668b3bd7b623bd78fb20c6f552a97c8565f20fa43e9625d09",
+      "document_path": "documents/a05-048-cddb593e3610",
+      "status": "success",
+      "region_count": 13,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-053-a421e4522d9c",
+      "source_image": "a05-053.png",
+      "source_image_sha256": "a421e4522d9c712a4fd6cc6bce2e0b88651002cb22bc839f378178edd162b5d0",
+      "document_path": "documents/a05-053-a421e4522d9c",
+      "status": "success",
+      "region_count": 13,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-058-60afec0182ee",
+      "source_image": "a05-058.png",
+      "source_image_sha256": "60afec0182ee41d2459bbea3046b4a698edaa3dc2cbee734d169a537ca17e71d",
+      "document_path": "documents/a05-058-60afec0182ee",
+      "status": "success",
+      "region_count": 11,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-062-298777c70e02",
+      "source_image": "a05-062.png",
+      "source_image_sha256": "298777c70e021a5120676b96246d703c14b47340233b5f5c6b0d6a5848e351ca",
+      "document_path": "documents/a05-062-298777c70e02",
+      "status": "success",
+      "region_count": 11,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-069-16c521746465",
+      "source_image": "a05-069.png",
+      "source_image_sha256": "16c52174646567ea1d7181244e4974dacbde12fe64a7cb2db74321466fcbe812",
+      "document_path": "documents/a05-069-16c521746465",
+      "status": "success",
+      "region_count": 13,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-073-b76e9ff851a1",
+      "source_image": "a05-073.png",
+      "source_image_sha256": "b76e9ff851a10291acaaec20d93ad86216394343fd35749686cc18505776d8d3",
+      "document_path": "documents/a05-073-b76e9ff851a1",
+      "status": "success",
+      "region_count": 13,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-080-0914dcf0ec2a",
+      "source_image": "a05-080.png",
+      "source_image_sha256": "0914dcf0ec2a152270d9e8617f8d5f584792829d60497de7ac40b4d5440ce19e",
+      "document_path": "documents/a05-080-0914dcf0ec2a",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-084-503665f86160",
+      "source_image": "a05-084.png",
+      "source_image_sha256": "503665f8616080feb188c91c90988ea92faaaa242f79cc005309388caadf9bb8",
+      "document_path": "documents/a05-084-503665f86160",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-089-6755b5fb6c3a",
+      "source_image": "a05-089.png",
+      "source_image_sha256": "6755b5fb6c3a543f5e050a4b3d6be738b07bbff4038f51b94fa3918a6917b8c6",
+      "document_path": "documents/a05-089-6755b5fb6c3a",
+      "status": "success",
+      "region_count": 13,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-094-c29b0b875621",
+      "source_image": "a05-094.png",
+      "source_image_sha256": "c29b0b875621aacca76e67a5419e2613fb41969db1064b5ea85d1bfe006b70af",
+      "document_path": "documents/a05-094-c29b0b875621",
+      "status": "success",
+      "region_count": 13,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-099-e4b697208545",
+      "source_image": "a05-099.png",
+      "source_image_sha256": "e4b697208545a23b014393b140d9217cc2dd1183a6da34d764a7dd3e44535f53",
+      "document_path": "documents/a05-099-e4b697208545",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-104-c21f662d37aa",
+      "source_image": "a05-104.png",
+      "source_image_sha256": "c21f662d37aa835aff8bbeb3946737f0014c8bcc31ab45cfb9c486ab01ef78ae",
+      "document_path": "documents/a05-104-c21f662d37aa",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-108-8a95669a29f4",
+      "source_image": "a05-108.png",
+      "source_image_sha256": "8a95669a29f453991f2864f838e420fc2138a800caba435dbc02c820f3bff799",
+      "document_path": "documents/a05-108-8a95669a29f4",
+      "status": "success",
+      "region_count": 10,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-113-d1808a83321b",
+      "source_image": "a05-113.png",
+      "source_image_sha256": "d1808a83321be882375fbac6b36d0015673e84957955357044c13f7e5907d2d9",
+      "document_path": "documents/a05-113-d1808a83321b",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-116-352eeaa96d76",
+      "source_image": "a05-116.png",
+      "source_image_sha256": "352eeaa96d76242bd8ebc51463a1f8c453b4c151d3e9fe52d173fb8c7fd16eee",
+      "document_path": "documents/a05-116-352eeaa96d76",
+      "status": "success",
+      "region_count": 12,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-121-4b5575af9193",
+      "source_image": "a05-121.png",
+      "source_image_sha256": "4b5575af919354f594f23ec16f01a41124d8d5aff689d2862e80c8d77d5e798e",
+      "document_path": "documents/a05-121-4b5575af9193",
+      "status": "success",
+      "region_count": 11,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    },
+    {
+      "document_id": "a05-125-7d85f87e36d4",
+      "source_image": "a05-125.png",
+      "source_image_sha256": "7d85f87e36d4c4c1d29a5505e2e5a84944e19752bcc3f21c7a46d774b3ac6e2c",
+      "document_path": "documents/a05-125-7d85f87e36d4",
+      "status": "success",
+      "region_count": 9,
+      "evaluation_status": "ground_truth_unavailable",
+      "errors": []
+    }
+  ],
+  "aggregate_evaluation": {
+    "character": {
+      "substitutions": 15,
+      "insertions": 2,
+      "deletions": 1,
+      "total_edits": 18,
+      "reference_length": 254,
+      "rate": 0.07086614173228346,
+      "aggregation": "micro_total_edits_over_total_reference_length"
+    },
+    "word": {
+      "substitutions": 12,
+      "insertions": 0,
+      "deletions": 0,
+      "total_edits": 12,
+      "reference_length": 49,
+      "rate": 0.24489795918367346,
+      "aggregation": "micro_total_edits_over_total_reference_length"
+    }
+  },
+  "integration_status": "runtime_pipeline_executed"
+}

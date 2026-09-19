@@ -1,0 +1,725 @@
+{
+  "document_id": "a01-077u-1e7667c7f2d8",
+  "source_image": "a01-077u.png",
+  "source_path": "a01-077u.png",
+  "source_image_sha256": "1e7667c7f2d81af9486f980512e1f09e22dfa7c3a0fa9b89770c1f7885bd6197",
+  "image_metadata": {
+    "width": 2479,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 9,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          374.0,
+          39.0
+        ],
+        [
+          2259.0,
+          31.0
+        ],
+        [
+          2260.0,
+          126.0
+        ],
+        [
+          375.0,
+          134.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          374.0,
+          39.0
+        ],
+        [
+          2259.0,
+          31.0
+        ],
+        [
+          2260.0,
+          126.0
+        ],
+        [
+          375.0,
+          134.0
+        ]
+      ],
+      "detector_score": 0.8386984072280861,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a01-077u-1e7667c7f2d8",
+        "detector_index": 9,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "And, since bnis is election year in west",
+      "recognition_score": 0.920235276222229,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 8,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          380.0,
+          220.0
+        ],
+        [
+          2288.0,
+          220.0
+        ],
+        [
+          2288.0,
+          307.0
+        ],
+        [
+          380.0,
+          307.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          380.0,
+          220.0
+        ],
+        [
+          2288.0,
+          220.0
+        ],
+        [
+          2288.0,
+          307.0
+        ],
+        [
+          380.0,
+          307.0
+        ]
+      ],
+      "detector_score": 0.8702712264357789,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a01-077u-1e7667c7f2d8",
+        "detector_index": 8,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Germany, Dr. Adenanes is in a tangh spot.",
+      "recognition_score": 0.954763650894165,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 7,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          359.0,
+          401.0
+        ],
+        [
+          2298.0,
+          385.0
+        ],
+        [
+          2299.0,
+          491.0
+        ],
+        [
+          360.0,
+          507.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          359.0,
+          401.0
+        ],
+        [
+          2298.0,
+          385.0
+        ],
+        [
+          2299.0,
+          491.0
+        ],
+        [
+          360.0,
+          507.0
+        ]
+      ],
+      "detector_score": 0.7622586788174709,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a01-077u-1e7667c7f2d8",
+        "detector_index": 7,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Joyce Eggimban cables: President Kenmedy",
+      "recognition_score": 0.8808934092521667,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 6,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          354.0,
+          579.0
+        ],
+        [
+          2252.0,
+          573.0
+        ],
+        [
+          2252.0,
+          661.0
+        ],
+        [
+          354.0,
+          667.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          354.0,
+          579.0
+        ],
+        [
+          2252.0,
+          573.0
+        ],
+        [
+          2252.0,
+          661.0
+        ],
+        [
+          354.0,
+          667.0
+        ]
+      ],
+      "detector_score": 0.8725214483733562,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a01-077u-1e7667c7f2d8",
+        "detector_index": 6,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "at his Wasshingtan Press canfosence adnilled",
+      "recognition_score": 0.8975939154624939,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 5,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          367.0,
+          757.0
+        ],
+        [
+          2161.0,
+          752.0
+        ],
+        [
+          2161.0,
+          840.0
+        ],
+        [
+          367.0,
+          845.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          367.0,
+          757.0
+        ],
+        [
+          2161.0,
+          752.0
+        ],
+        [
+          2161.0,
+          840.0
+        ],
+        [
+          367.0,
+          845.0
+        ]
+      ],
+      "detector_score": 0.8388945745458083,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a01-077u-1e7667c7f2d8",
+        "detector_index": 5,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "he did not knaw whethes America was",
+      "recognition_score": 0.919312059879303,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 4,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          356.0,
+          943.0
+        ],
+        [
+          2213.0,
+          938.0
+        ],
+        [
+          2213.0,
+          1026.0
+        ],
+        [
+          357.0,
+          1031.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          356.0,
+          943.0
+        ],
+        [
+          2213.0,
+          938.0
+        ],
+        [
+          2213.0,
+          1026.0
+        ],
+        [
+          357.0,
+          1031.0
+        ]
+      ],
+      "detector_score": 0.840302572276837,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a01-077u-1e7667c7f2d8",
+        "detector_index": 4,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "lagging behind Russia in nissile pawer.",
+      "recognition_score": 0.9673287868499756,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 3,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          364.0,
+          1116.0
+        ],
+        [
+          2210.0,
+          1116.0
+        ],
+        [
+          2210.0,
+          1201.0
+        ],
+        [
+          364.0,
+          1201.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          364.0,
+          1116.0
+        ],
+        [
+          2210.0,
+          1116.0
+        ],
+        [
+          2210.0,
+          1201.0
+        ],
+        [
+          364.0,
+          1201.0
+        ]
+      ],
+      "detector_score": 0.9030982536369474,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a01-077u-1e7667c7f2d8",
+        "detector_index": 3,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "He said he was waiting for hio senior",
+      "recognition_score": 0.9478921890258789,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 2,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          354.0,
+          1294.0
+        ],
+        [
+          2229.0,
+          1294.0
+        ],
+        [
+          2229.0,
+          1382.0
+        ],
+        [
+          354.0,
+          1382.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          354.0,
+          1294.0
+        ],
+        [
+          2229.0,
+          1294.0
+        ],
+        [
+          2229.0,
+          1382.0
+        ],
+        [
+          354.0,
+          1382.0
+        ]
+      ],
+      "detector_score": 0.8864562645200632,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a01-077u-1e7667c7f2d8",
+        "detector_index": 2,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "militory aides to came up with the answes",
+      "recognition_score": 0.9600045084953308,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 1,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          372.0,
+          1472.0
+        ],
+        [
+          1139.0,
+          1472.0
+        ],
+        [
+          1139.0,
+          1560.0
+        ],
+        [
+          372.0,
+          1560.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          372.0,
+          1472.0
+        ],
+        [
+          1139.0,
+          1472.0
+        ],
+        [
+          1139.0,
+          1560.0
+        ],
+        [
+          372.0,
+          1560.0
+        ]
+      ],
+      "detector_score": 0.9307790354577651,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a01-077u-1e7667c7f2d8",
+        "detector_index": 1,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "on Tebruary 20.",
+      "recognition_score": 0.9296587109565735,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 0,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          372.0,
+          2082.0
+        ],
+        [
+          529.0,
+          2082.0
+        ],
+        [
+          529.0,
+          2147.0
+        ],
+        [
+          372.0,
+          2147.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          372.0,
+          2082.0
+        ],
+        [
+          529.0,
+          2082.0
+        ],
+        [
+          529.0,
+          2147.0
+        ],
+        [
+          372.0,
+          2147.0
+        ]
+      ],
+      "detector_score": 0.9044760477231142,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a01-077u-1e7667c7f2d8",
+        "detector_index": 0,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999217987060547,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "And, since bnis is election year in west\nGermany, Dr. Adenanes is in a tangh spot.\nJoyce Eggimban cables: President Kenmedy\nat his Wasshingtan Press canfosence adnilled\nhe did not knaw whethes America was\nlagging behind Russia in nissile pawer.\nHe said he was waiting for hio senior\nmilitory aides to came up with the answes\non Tebruary 20.\nName:",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 135.23470002110116,
+    "detection_ms": 9566.045599989593,
+    "sorting_ms": 0.4670000053010881,
+    "cropping_ms": 29.521999997086823,
+    "recognition_ms": 10399.005699990084,
+    "serialization_ms": 320.82500000251457
+  },
+  "status": "success",
+  "errors": []
+}

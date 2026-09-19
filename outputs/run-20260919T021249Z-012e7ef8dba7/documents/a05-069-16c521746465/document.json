@@ -1,0 +1,926 @@
+{
+  "document_id": "a05-069-16c521746465",
+  "source_image": "a05-069.png",
+  "source_path": "a05-069.png",
+  "source_image_sha256": "16c52174646567ea1d7181244e4974dacbde12fe64a7cb2db74321466fcbe812",
+  "image_metadata": {
+    "width": 2479,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 12,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          372.0,
+          33.0
+        ],
+        [
+          2004.0,
+          41.0
+        ],
+        [
+          2004.0,
+          127.0
+        ],
+        [
+          372.0,
+          119.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          372.0,
+          33.0
+        ],
+        [
+          2004.0,
+          41.0
+        ],
+        [
+          2004.0,
+          127.0
+        ],
+        [
+          372.0,
+          119.0
+        ]
+      ],
+      "detector_score": 0.853842246877386,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a05-069-16c521746465",
+        "detector_index": 12,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "It was the end of the rather cuias",
+      "recognition_score": 0.9107421636581421,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 11,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          351.0,
+          222.0
+        ],
+        [
+          2154.0,
+          227.0
+        ],
+        [
+          2153.0,
+          307.0
+        ],
+        [
+          351.0,
+          302.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          351.0,
+          222.0
+        ],
+        [
+          2154.0,
+          227.0
+        ],
+        [
+          2153.0,
+          307.0
+        ],
+        [
+          351.0,
+          302.0
+        ]
+      ],
+      "detector_score": 0.8707926971518665,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a05-069-16c521746465",
+        "detector_index": 11,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "speech in which w. Macnillen wauid up",
+      "recognition_score": 0.866407573223114,
+      "recognition_order": 12,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 10,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          336.0,
+          400.0
+        ],
+        [
+          2097.0,
+          403.0
+        ],
+        [
+          2097.0,
+          483.0
+        ],
+        [
+          336.0,
+          480.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          336.0,
+          400.0
+        ],
+        [
+          2097.0,
+          403.0
+        ],
+        [
+          2097.0,
+          483.0
+        ],
+        [
+          336.0,
+          480.0
+        ]
+      ],
+      "detector_score": 0.8827926465382349,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a05-069-16c521746465",
+        "detector_index": 10,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "the two- aay delale on faveigu aftairs.",
+      "recognition_score": 0.9423234462738037,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 9,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          346.0,
+          579.0
+        ],
+        [
+          2208.0,
+          581.0
+        ],
+        [
+          2208.0,
+          669.0
+        ],
+        [
+          346.0,
+          666.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          346.0,
+          579.0
+        ],
+        [
+          2208.0,
+          581.0
+        ],
+        [
+          2208.0,
+          669.0
+        ],
+        [
+          346.0,
+          666.0
+        ]
+      ],
+      "detector_score": 0.8363442863316625,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a05-069-16c521746465",
+        "detector_index": 9,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Le began in a low, almost dhahty momo-",
+      "recognition_score": 0.8681133389472961,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 8,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          346.0,
+          754.0
+        ],
+        [
+          2051.0,
+          765.0
+        ],
+        [
+          2050.0,
+          853.0
+        ],
+        [
+          346.0,
+          842.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          346.0,
+          754.0
+        ],
+        [
+          2051.0,
+          765.0
+        ],
+        [
+          2050.0,
+          853.0
+        ],
+        [
+          346.0,
+          842.0
+        ]
+      ],
+      "detector_score": 0.8490817039589637,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a05-069-16c521746465",
+        "detector_index": 8,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "lane, and his voice wever vose to anny",
+      "recognition_score": 0.9218471646308899,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 7,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          352.0,
+          932.0
+        ],
+        [
+          2167.0,
+          943.0
+        ],
+        [
+          2166.0,
+          1028.0
+        ],
+        [
+          351.0,
+          1018.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          352.0,
+          932.0
+        ],
+        [
+          2167.0,
+          943.0
+        ],
+        [
+          2166.0,
+          1028.0
+        ],
+        [
+          351.0,
+          1018.0
+        ]
+      ],
+      "detector_score": 0.8646698904623588,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a05-069-16c521746465",
+        "detector_index": 7,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "accent of urgencs. 4e parsed in vapioh",
+      "recognition_score": 0.9202021360397339,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 6,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          349.0,
+          1105.0
+        ],
+        [
+          2056.0,
+          1119.0
+        ],
+        [
+          2055.0,
+          1207.0
+        ],
+        [
+          348.0,
+          1193.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          349.0,
+          1105.0
+        ],
+        [
+          2056.0,
+          1119.0
+        ],
+        [
+          2055.0,
+          1207.0
+        ],
+        [
+          348.0,
+          1193.0
+        ]
+      ],
+      "detector_score": 0.8246618679146211,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a05-069-16c521746465",
+        "detector_index": 6,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "weoiew mme United Nalins Secrebariat;",
+      "recognition_score": 0.8276214599609375,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 5,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          356.0,
+          1292.0
+        ],
+        [
+          2257.0,
+          1292.0
+        ],
+        [
+          2257.0,
+          1377.0
+        ],
+        [
+          356.0,
+          1377.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          356.0,
+          1292.0
+        ],
+        [
+          2257.0,
+          1292.0
+        ],
+        [
+          2257.0,
+          1377.0
+        ],
+        [
+          356.0,
+          1377.0
+        ]
+      ],
+      "detector_score": 0.8638237813356552,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a05-069-16c521746465",
+        "detector_index": 5,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "mnclecr beots; hue canara abont Brition",
+      "recognition_score": 0.8565493822097778,
+      "recognition_order": 11,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 4,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          352.0,
+          1459.0
+        ],
+        [
+          2125.0,
+          1470.0
+        ],
+        [
+          2125.0,
+          1566.0
+        ],
+        [
+          351.0,
+          1555.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          352.0,
+          1459.0
+        ],
+        [
+          2125.0,
+          1470.0
+        ],
+        [
+          2125.0,
+          1566.0
+        ],
+        [
+          351.0,
+          1555.0
+        ]
+      ],
+      "detector_score": 0.8147649393031735,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a05-069-16c521746465",
+        "detector_index": 4,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "interfeence wihn the lniked Nalious",
+      "recognition_score": 0.8729780316352844,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 3,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          359.0,
+          1640.0
+        ],
+        [
+          2309.0,
+          1646.0
+        ],
+        [
+          2308.0,
+          1744.0
+        ],
+        [
+          359.0,
+          1739.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          359.0,
+          1640.0
+        ],
+        [
+          2309.0,
+          1646.0
+        ],
+        [
+          2308.0,
+          1744.0
+        ],
+        [
+          359.0,
+          1739.0
+        ]
+      ],
+      "detector_score": 0.7516017081371624,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a05-069-16c521746465",
+        "detector_index": 3,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "in lhe Cango; Kunoait; and Soutu-fad",
+      "recognition_score": 0.892967939376831,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 2,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          364.0,
+          1829.0
+        ],
+        [
+          573.0,
+          1829.0
+        ],
+        [
+          573.0,
+          1922.0
+        ],
+        [
+          364.0,
+          1922.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          364.0,
+          1829.0
+        ],
+        [
+          573.0,
+          1829.0
+        ],
+        [
+          573.0,
+          1922.0
+        ],
+        [
+          364.0,
+          1922.0
+        ]
+      ],
+      "detector_score": 0.9001556333212758,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a05-069-16c521746465",
+        "detector_index": 2,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Asia.",
+      "recognition_score": 0.7865808606147766,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0011",
+      "detector_index": 1,
+      "sorted_index": 11,
+      "raw_polygon": [
+        [
+          333.0,
+          2092.0
+        ],
+        [
+          493.0,
+          2092.0
+        ],
+        [
+          493.0,
+          2160.0
+        ],
+        [
+          333.0,
+          2160.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          333.0,
+          2092.0
+        ],
+        [
+          493.0,
+          2092.0
+        ],
+        [
+          493.0,
+          2160.0
+        ],
+        [
+          333.0,
+          2160.0
+        ]
+      ],
+      "detector_score": 0.9203162950374408,
+      "crop_path": "crops/line-0011.png",
+      "crop_provenance": {
+        "source_document": "a05-069-16c521746465",
+        "detector_index": 1,
+        "sorted_index": 11,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9998922348022461,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0012",
+      "detector_index": 0,
+      "sorted_index": 12,
+      "raw_polygon": [
+        [
+          896.0,
+          2180.0
+        ],
+        [
+          1265.0,
+          2180.0
+        ],
+        [
+          1265.0,
+          2263.0
+        ],
+        [
+          896.0,
+          2263.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          896.0,
+          2180.0
+        ],
+        [
+          1265.0,
+          2180.0
+        ],
+        [
+          1265.0,
+          2263.0
+        ],
+        [
+          896.0,
+          2263.0
+        ]
+      ],
+      "detector_score": 0.9377269147921147,
+      "crop_path": "crops/line-0012.png",
+      "crop_provenance": {
+        "source_document": "a05-069-16c521746465",
+        "detector_index": 0,
+        "sorted_index": 12,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "U.Mculi",
+      "recognition_score": 0.9382597804069519,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "It was the end of the rather cuias\nspeech in which w. Macnillen wauid up\nthe two- aay delale on faveigu aftairs.\nLe began in a low, almost dhahty momo-\nlane, and his voice wever vose to anny\naccent of urgencs. 4e parsed in vapioh\nweoiew mme United Nalins Secrebariat;\nmnclecr beots; hue canara abont Brition\ninterfeence wihn the lniked Nalious\nin lhe Cango; Kunoait; and Soutu-fad\nAsia.\nName:\nU.Mculi",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 155.13020000071265,
+    "detection_ms": 9603.72409998672,
+    "sorting_ms": 0.8462999830953777,
+    "cropping_ms": 39.53700000420213,
+    "recognition_ms": 13170.595300005516,
+    "serialization_ms": 409.72659998806193
+  },
+  "status": "success",
+  "errors": []
+}

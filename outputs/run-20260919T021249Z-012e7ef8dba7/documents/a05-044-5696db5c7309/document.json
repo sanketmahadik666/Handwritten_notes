@@ -1,0 +1,926 @@
+{
+  "document_id": "a05-044-5696db5c7309",
+  "source_image": "a05-044.png",
+  "source_path": "a05-044.png",
+  "source_image_sha256": "5696db5c7309b2e2ae6232cdb465b1e76c7e8326d9378adb271d59152f76b401",
+  "image_metadata": {
+    "width": 2479,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 12,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          377.0,
+          26.0
+        ],
+        [
+          1872.0,
+          36.0
+        ],
+        [
+          1872.0,
+          122.0
+        ],
+        [
+          377.0,
+          111.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          377.0,
+          26.0
+        ],
+        [
+          1872.0,
+          36.0
+        ],
+        [
+          1872.0,
+          122.0
+        ],
+        [
+          377.0,
+          111.0
+        ]
+      ],
+      "detector_score": 0.863378755473633,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a05-044-5696db5c7309",
+        "detector_index": 12,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "The are feat of the leacler of whe",
+      "recognition_score": 0.9167578816413879,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 11,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          312.0,
+          204.0
+        ],
+        [
+          2073.0,
+          199.0
+        ],
+        [
+          2074.0,
+          297.0
+        ],
+        [
+          313.0,
+          302.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          312.0,
+          204.0
+        ],
+        [
+          2073.0,
+          199.0
+        ],
+        [
+          2074.0,
+          297.0
+        ],
+        [
+          313.0,
+          302.0
+        ]
+      ],
+      "detector_score": 0.8037605524642847,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a05-044-5696db5c7309",
+        "detector_index": 11,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Pooguernve porhy, Dr. Steytler, in Pat",
+      "recognition_score": 0.9106274843215942,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 10,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          346.0,
+          385.0
+        ],
+        [
+          2110.0,
+          390.0
+        ],
+        [
+          2110.0,
+          478.0
+        ],
+        [
+          346.0,
+          473.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          346.0,
+          385.0
+        ],
+        [
+          2110.0,
+          390.0
+        ],
+        [
+          2110.0,
+          478.0
+        ],
+        [
+          346.0,
+          473.0
+        ]
+      ],
+      "detector_score": 0.8312477037637377,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a05-044-5696db5c7309",
+        "detector_index": 10,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Elisalehh Sonth, annamced in mediately",
+      "recognition_score": 0.8930333852767944,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 9,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          336.0,
+          563.0
+        ],
+        [
+          2143.0,
+          571.0
+        ],
+        [
+          2143.0,
+          661.0
+        ],
+        [
+          336.0,
+          653.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          336.0,
+          563.0
+        ],
+        [
+          2143.0,
+          571.0
+        ],
+        [
+          2143.0,
+          661.0
+        ],
+        [
+          336.0,
+          653.0
+        ]
+      ],
+      "detector_score": 0.8365189387766526,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a05-044-5696db5c7309",
+        "detector_index": 9,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "aftesworas by the hnited parly candiclate,",
+      "recognition_score": 0.8249896168708801,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 8,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          328.0,
+          741.0
+        ],
+        [
+          2236.0,
+          739.0
+        ],
+        [
+          2236.0,
+          834.0
+        ],
+        [
+          328.0,
+          837.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          328.0,
+          741.0
+        ],
+        [
+          2236.0,
+          739.0
+        ],
+        [
+          2236.0,
+          834.0
+        ],
+        [
+          328.0,
+          837.0
+        ]
+      ],
+      "detector_score": 0.8036043959820983,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a05-044-5696db5c7309",
+        "detector_index": 8,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Mr. Plewman, lest the Proguerrives deprived",
+      "recognition_score": 0.9069218039512634,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 7,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          326.0,
+          917.0
+        ],
+        [
+          2303.0,
+          922.0
+        ],
+        [
+          2303.0,
+          1008.0
+        ],
+        [
+          325.0,
+          1002.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          326.0,
+          917.0
+        ],
+        [
+          2303.0,
+          922.0
+        ],
+        [
+          2303.0,
+          1008.0
+        ],
+        [
+          325.0,
+          1002.0
+        ]
+      ],
+      "detector_score": 0.8471235893158333,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a05-044-5696db5c7309",
+        "detector_index": 7,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "of Bahh their chief fisnes. Dr. verwoerd and",
+      "recognition_score": 0.9132229089736938,
+      "recognition_order": 11,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 6,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          331.0,
+          1095.0
+        ],
+        [
+          2092.0,
+          1103.0
+        ],
+        [
+          2091.0,
+          1196.0
+        ],
+        [
+          330.0,
+          1188.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          331.0,
+          1095.0
+        ],
+        [
+          2092.0,
+          1103.0
+        ],
+        [
+          2091.0,
+          1196.0
+        ],
+        [
+          330.0,
+          1188.0
+        ]
+      ],
+      "detector_score": 0.8352239101385754,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a05-044-5696db5c7309",
+        "detector_index": 6,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "the leader of the Opperition, Sir de",
+      "recognition_score": 0.951099157333374,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 5,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          331.0,
+          1279.0
+        ],
+        [
+          2386.0,
+          1281.0
+        ],
+        [
+          2386.0,
+          1369.0
+        ],
+        [
+          330.0,
+          1367.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          331.0,
+          1279.0
+        ],
+        [
+          2386.0,
+          1281.0
+        ],
+        [
+          2386.0,
+          1369.0
+        ],
+        [
+          330.0,
+          1367.0
+        ]
+      ],
+      "detector_score": 0.8409356772853699,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a05-044-5696db5c7309",
+        "detector_index": 5,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Villess Graatt, have been nehncd moppesed.",
+      "recognition_score": 0.9517348408699036,
+      "recognition_order": 12,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 4,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          343.0,
+          1457.0
+        ],
+        [
+          2107.0,
+          1454.0
+        ],
+        [
+          2107.0,
+          1542.0
+        ],
+        [
+          344.0,
+          1545.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          343.0,
+          1457.0
+        ],
+        [
+          2107.0,
+          1454.0
+        ],
+        [
+          2107.0,
+          1542.0
+        ],
+        [
+          344.0,
+          1545.0
+        ]
+      ],
+      "detector_score": 0.8222943281390894,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a05-044-5696db5c7309",
+        "detector_index": 4,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "The canterts weve far 86 sear as 70",
+      "recognition_score": 0.9326521754264832,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 3,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          346.0,
+          1638.0
+        ],
+        [
+          2223.0,
+          1640.0
+        ],
+        [
+          2223.0,
+          1728.0
+        ],
+        [
+          346.0,
+          1726.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          346.0,
+          1638.0
+        ],
+        [
+          2223.0,
+          1640.0
+        ],
+        [
+          2223.0,
+          1728.0
+        ],
+        [
+          346.0,
+          1726.0
+        ]
+      ],
+      "detector_score": 0.8539206247572279,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a05-044-5696db5c7309",
+        "detector_index": 3,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Naticnaliohs and 20 lunited pauty candi-",
+      "recognition_score": 0.8869808912277222,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 2,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          346.0,
+          1819.0
+        ],
+        [
+          1252.0,
+          1819.0
+        ],
+        [
+          1252.0,
+          1899.0
+        ],
+        [
+          346.0,
+          1899.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          346.0,
+          1819.0
+        ],
+        [
+          1252.0,
+          1819.0
+        ],
+        [
+          1252.0,
+          1899.0
+        ],
+        [
+          346.0,
+          1899.0
+        ]
+      ],
+      "detector_score": 0.8867127698765696,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a05-044-5696db5c7309",
+        "detector_index": 2,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "dates are moppcsed.",
+      "recognition_score": 0.9503785967826843,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0011",
+      "detector_index": 1,
+      "sorted_index": 11,
+      "raw_polygon": [
+        [
+          328.0,
+          2092.0
+        ],
+        [
+          491.0,
+          2092.0
+        ],
+        [
+          491.0,
+          2160.0
+        ],
+        [
+          328.0,
+          2160.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          328.0,
+          2092.0
+        ],
+        [
+          491.0,
+          2092.0
+        ],
+        [
+          491.0,
+          2160.0
+        ],
+        [
+          328.0,
+          2160.0
+        ]
+      ],
+      "detector_score": 0.9042114846007182,
+      "crop_path": "crops/line-0011.png",
+      "crop_provenance": {
+        "source_document": "a05-044-5696db5c7309",
+        "detector_index": 1,
+        "sorted_index": 11,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999251365661621,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0012",
+      "detector_index": 0,
+      "sorted_index": 12,
+      "raw_polygon": [
+        [
+          945.0,
+          2198.0
+        ],
+        [
+          1322.0,
+          2198.0
+        ],
+        [
+          1322.0,
+          2299.0
+        ],
+        [
+          945.0,
+          2299.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          945.0,
+          2198.0
+        ],
+        [
+          1322.0,
+          2198.0
+        ],
+        [
+          1322.0,
+          2299.0
+        ],
+        [
+          945.0,
+          2299.0
+        ]
+      ],
+      "detector_score": 0.8933225776157859,
+      "crop_path": "crops/line-0012.png",
+      "crop_provenance": {
+        "source_document": "a05-044-5696db5c7309",
+        "detector_index": 0,
+        "sorted_index": 12,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "u. Mauri",
+      "recognition_score": 0.7734228372573853,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "The are feat of the leacler of whe\nPooguernve porhy, Dr. Steytler, in Pat\nElisalehh Sonth, annamced in mediately\naftesworas by the hnited parly candiclate,\nMr. Plewman, lest the Proguerrives deprived\nof Bahh their chief fisnes. Dr. verwoerd and\nthe leader of the Opperition, Sir de\nVilless Graatt, have been nehncd moppesed.\nThe canterts weve far 86 sear as 70\nNaticnaliohs and 20 lunited pauty candi-\ndates are moppcsed.\nName:\nu. Mauri",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 196.82579999789596,
+    "detection_ms": 9978.271400002996,
+    "sorting_ms": 0.834699982078746,
+    "cropping_ms": 41.235200013034046,
+    "recognition_ms": 13891.1541000125,
+    "serialization_ms": 421.6978000185918
+  },
+  "status": "success",
+  "errors": []
+}

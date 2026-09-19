@@ -1,0 +1,60 @@
+runtime:
+  paddleocr_version: "3.7.0"
+  paddlex_version: "3.7.2"
+  paddlepaddle_version: "3.3.1"
+  requested_engine: null
+  device: null
+  enable_mkldnn: false
+  enable_cinn: false
+  cpu_threads: 10
+
+pipeline:
+  lang: "en"
+  ocr_version: null
+  use_doc_orientation_classify: false
+  use_doc_unwarping: false
+  use_textline_orientation: false
+  text_rec_score_thresh: 0.0
+
+models:
+  detector:
+    model_name: "PP-OCRv6_medium_det"
+    model_dir: null
+    limit_side_len: 960
+    limit_type: max
+    max_side_limit: 4000
+    thresh: 0.3
+    box_thresh: 0.6
+    unclip_ratio: 1.5
+  recognizer:
+    model_name: "PP-OCRv6_medium_rec"
+    model_dir: null
+
+document_preprocessing:
+  orientation_classification: false
+  unwarping: false
+  textline_orientation: false
+
+model_preprocessing:
+  detector: "PaddleX-managed"
+  recognizer: "PaddleX-managed"
+
+preprocessing:
+  mode: "original"
+  operations: []
+
+evaluation:
+  unicode_normalization: "NFC"
+  case_sensitive: true
+  whitespace: "collapse_runs"
+  punctuation: "preserve"
+
+correction:
+  status: "skipped"
+
+app:
+  database_path: ".local/jobs.sqlite3"
+  ocr_worker_concurrency: 1
+  notes_worker_concurrency: 2
+  max_retries: 3
+  queue_poll_interval_seconds: 5

@@ -1,0 +1,859 @@
+{
+  "document_id": "a05-084-503665f86160",
+  "source_image": "a05-084.png",
+  "source_path": "a05-084.png",
+  "source_image_sha256": "503665f8616080feb188c91c90988ea92faaaa242f79cc005309388caadf9bb8",
+  "image_metadata": {
+    "width": 2479,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 11,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          333.0,
+          36.0
+        ],
+        [
+          2252.0,
+          31.0
+        ],
+        [
+          2252.0,
+          127.0
+        ],
+        [
+          333.0,
+          132.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          333.0,
+          36.0
+        ],
+        [
+          2252.0,
+          31.0
+        ],
+        [
+          2252.0,
+          127.0
+        ],
+        [
+          333.0,
+          132.0
+        ]
+      ],
+      "detector_score": 0.8537561297441056,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a05-084-503665f86160",
+        "detector_index": 11,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "The Russians now wealised it sevianonerr. The",
+      "recognition_score": 0.8764482140541077,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 10,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          323.0,
+          222.0
+        ],
+        [
+          2221.0,
+          220.0
+        ],
+        [
+          2221.0,
+          307.0
+        ],
+        [
+          323.0,
+          310.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          323.0,
+          222.0
+        ],
+        [
+          2221.0,
+          220.0
+        ],
+        [
+          2221.0,
+          307.0
+        ],
+        [
+          323.0,
+          310.0
+        ]
+      ],
+      "detector_score": 0.8394464784517964,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a05-084-503665f86160",
+        "detector_index": 10,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "trenan dansts wevre make abant procedve",
+      "recognition_score": 0.8507250547409058,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 9,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          325.0,
+          403.0
+        ],
+        [
+          2254.0,
+          398.0
+        ],
+        [
+          2254.0,
+          486.0
+        ],
+        [
+          326.0,
+          491.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          325.0,
+          403.0
+        ],
+        [
+          2254.0,
+          398.0
+        ],
+        [
+          2254.0,
+          486.0
+        ],
+        [
+          326.0,
+          491.0
+        ]
+      ],
+      "detector_score": 0.8518231847580593,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a05-084-503665f86160",
+        "detector_index": 9,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "tuan abant subolance. The Prine Minioters",
+      "recognition_score": 0.8776951432228088,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 8,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          331.0,
+          584.0
+        ],
+        [
+          2231.0,
+          584.0
+        ],
+        [
+          2231.0,
+          669.0
+        ],
+        [
+          331.0,
+          669.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          331.0,
+          584.0
+        ],
+        [
+          2231.0,
+          584.0
+        ],
+        [
+          2231.0,
+          669.0
+        ],
+        [
+          331.0,
+          669.0
+        ]
+      ],
+      "detector_score": 0.8802885482196098,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a05-084-503665f86160",
+        "detector_index": 8,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "attituale of studied can Buanght down the",
+      "recognition_score": 0.9144978523254395,
+      "recognition_order": 11,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 7,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          333.0,
+          765.0
+        ],
+        [
+          2164.0,
+          765.0
+        ],
+        [
+          2164.0,
+          850.0
+        ],
+        [
+          333.0,
+          850.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          333.0,
+          765.0
+        ],
+        [
+          2164.0,
+          765.0
+        ],
+        [
+          2164.0,
+          850.0
+        ],
+        [
+          333.0,
+          850.0
+        ]
+      ],
+      "detector_score": 0.8906175849389469,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a05-084-503665f86160",
+        "detector_index": 7,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "tempevalwe of the cdhelate, whion never",
+      "recognition_score": 0.902605414390564,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 6,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          341.0,
+          948.0
+        ],
+        [
+          2086.0,
+          948.0
+        ],
+        [
+          2086.0,
+          1033.0
+        ],
+        [
+          341.0,
+          1033.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          341.0,
+          948.0
+        ],
+        [
+          2086.0,
+          948.0
+        ],
+        [
+          2086.0,
+          1033.0
+        ],
+        [
+          341.0,
+          1033.0
+        ]
+      ],
+      "detector_score": 0.8740981223014497,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a05-084-503665f86160",
+        "detector_index": 6,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "at any time vose to fever pitch, to a",
+      "recognition_score": 0.9512699246406555,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 5,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          338.0,
+          1119.0
+        ],
+        [
+          1994.0,
+          1119.0
+        ],
+        [
+          1994.0,
+          1206.0
+        ],
+        [
+          338.0,
+          1206.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          338.0,
+          1119.0
+        ],
+        [
+          1994.0,
+          1119.0
+        ],
+        [
+          1994.0,
+          1206.0
+        ],
+        [
+          338.0,
+          1206.0
+        ]
+      ],
+      "detector_score": 0.8462731488011098,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a05-084-503665f86160",
+        "detector_index": 5,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "nemarhasle aeguee of onb-ucrmalily.",
+      "recognition_score": 0.9127377271652222,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 4,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          294.0,
+          1299.0
+        ],
+        [
+          2215.0,
+          1294.0
+        ],
+        [
+          2216.0,
+          1379.0
+        ],
+        [
+          295.0,
+          1385.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          294.0,
+          1299.0
+        ],
+        [
+          2215.0,
+          1294.0
+        ],
+        [
+          2216.0,
+          1379.0
+        ],
+        [
+          295.0,
+          1385.0
+        ]
+      ],
+      "detector_score": 0.894104855589583,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a05-084-503665f86160",
+        "detector_index": 4,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Thooughout r. Macmillan's speean the Ear",
+      "recognition_score": 0.9134641885757446,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 3,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          320.0,
+          1472.0
+        ],
+        [
+          2200.0,
+          1478.0
+        ],
+        [
+          2200.0,
+          1573.0
+        ],
+        [
+          320.0,
+          1568.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          320.0,
+          1472.0
+        ],
+        [
+          2200.0,
+          1478.0
+        ],
+        [
+          2200.0,
+          1573.0
+        ],
+        [
+          320.0,
+          1568.0
+        ]
+      ],
+      "detector_score": 0.8129175379126925,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a05-084-503665f86160",
+        "detector_index": 3,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "of Mame, Feveiom Secvelory, was liolening",
+      "recognition_score": 0.9135266542434692,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 2,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          336.0,
+          1653.0
+        ],
+        [
+          1451.0,
+          1648.0
+        ],
+        [
+          1451.0,
+          1744.0
+        ],
+        [
+          336.0,
+          1749.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          336.0,
+          1653.0
+        ],
+        [
+          1451.0,
+          1648.0
+        ],
+        [
+          1451.0,
+          1744.0
+        ],
+        [
+          336.0,
+          1749.0
+        ]
+      ],
+      "detector_score": 0.8632318368747363,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a05-084-503665f86160",
+        "detector_index": 2,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "in tme Peers' Galnerg.",
+      "recognition_score": 0.8606811165809631,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 1,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          323.0,
+          2092.0
+        ],
+        [
+          485.0,
+          2092.0
+        ],
+        [
+          485.0,
+          2160.0
+        ],
+        [
+          323.0,
+          2160.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          323.0,
+          2092.0
+        ],
+        [
+          485.0,
+          2092.0
+        ],
+        [
+          485.0,
+          2160.0
+        ],
+        [
+          323.0,
+          2160.0
+        ]
+      ],
+      "detector_score": 0.9082538552130931,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a05-084-503665f86160",
+        "detector_index": 1,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9998836517333984,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0011",
+      "detector_index": 0,
+      "sorted_index": 11,
+      "raw_polygon": [
+        [
+          798.0,
+          2175.0
+        ],
+        [
+          1123.0,
+          2175.0
+        ],
+        [
+          1123.0,
+          2258.0
+        ],
+        [
+          798.0,
+          2258.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          798.0,
+          2175.0
+        ],
+        [
+          1123.0,
+          2175.0
+        ],
+        [
+          1123.0,
+          2258.0
+        ],
+        [
+          798.0,
+          2258.0
+        ]
+      ],
+      "detector_score": 0.9149901549534057,
+      "crop_path": "crops/line-0011.png",
+      "crop_provenance": {
+        "source_document": "a05-084-503665f86160",
+        "detector_index": 0,
+        "sorted_index": 11,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "u. Mami",
+      "recognition_score": 0.9060997366905212,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "The Russians now wealised it sevianonerr. The\ntrenan dansts wevre make abant procedve\ntuan abant subolance. The Prine Minioters\nattituale of studied can Buanght down the\ntempevalwe of the cdhelate, whion never\nat any time vose to fever pitch, to a\nnemarhasle aeguee of onb-ucrmalily.\nThooughout r. Macmillan's speean the Ear\nof Mame, Feveiom Secvelory, was liolening\nin tme Peers' Galnerg.\nName:\nu. Mami",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 158.77790001104586,
+    "detection_ms": 9647.49049997772,
+    "sorting_ms": 0.6604999944102019,
+    "cropping_ms": 31.21169999940321,
+    "recognition_ms": 12569.847300008405,
+    "serialization_ms": 418.8733999908436
+  },
+  "status": "success",
+  "errors": []
+}

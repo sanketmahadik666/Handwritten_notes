@@ -1,0 +1,792 @@
+{
+  "document_id": "a05-058-60afec0182ee",
+  "source_image": "a05-058.png",
+  "source_path": "a05-058.png",
+  "source_image_sha256": "60afec0182ee41d2459bbea3046b4a698edaa3dc2cbee734d169a537ca17e71d",
+  "image_metadata": {
+    "width": 2372,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 10,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          355.0,
+          21.0
+        ],
+        [
+          2027.0,
+          21.0
+        ],
+        [
+          2027.0,
+          124.0
+        ],
+        [
+          355.0,
+          124.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          355.0,
+          21.0
+        ],
+        [
+          2027.0,
+          21.0
+        ],
+        [
+          2027.0,
+          124.0
+        ],
+        [
+          355.0,
+          124.0
+        ]
+      ],
+      "detector_score": 0.7647653685498231,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a05-058-60afec0182ee",
+        "detector_index": 10,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "\"we unst nat oe rallled into ournender,",
+      "recognition_score": 0.8791823983192444,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 9,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          391.0,
+          220.0
+        ],
+        [
+          2152.0,
+          206.0
+        ],
+        [
+          2152.0,
+          292.0
+        ],
+        [
+          391.0,
+          305.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          391.0,
+          220.0
+        ],
+        [
+          2152.0,
+          206.0
+        ],
+        [
+          2152.0,
+          292.0
+        ],
+        [
+          391.0,
+          305.0
+        ]
+      ],
+      "detector_score": 0.8350865100216616,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a05-058-60afec0182ee",
+        "detector_index": 9,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Out we mnst not - and I an nat - be",
+      "recognition_score": 0.9224013090133667,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 8,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          393.0,
+          395.0
+        ],
+        [
+          2057.0,
+          385.0
+        ],
+        [
+          2058.0,
+          473.0
+        ],
+        [
+          394.0,
+          483.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          393.0,
+          395.0
+        ],
+        [
+          2057.0,
+          385.0
+        ],
+        [
+          2058.0,
+          473.0
+        ],
+        [
+          394.0,
+          483.0
+        ]
+      ],
+      "detector_score": 0.8427179703007965,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a05-058-60afec0182ee",
+        "detector_index": 8,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "aftraia of wegotiation.\" Mr. Godeer,",
+      "recognition_score": 0.8814499974250793,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 7,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          376.0,
+          574.0
+        ],
+        [
+          2170.0,
+          563.0
+        ],
+        [
+          2170.0,
+          651.0
+        ],
+        [
+          376.0,
+          661.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          376.0,
+          574.0
+        ],
+        [
+          2170.0,
+          563.0
+        ],
+        [
+          2170.0,
+          651.0
+        ],
+        [
+          376.0,
+          661.0
+        ]
+      ],
+      "detector_score": 0.8649346982991855,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a05-058-60afec0182ee",
+        "detector_index": 7,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Minires of shate, Fareish Oftice, ocical",
+      "recognition_score": 0.8590065240859985,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 6,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          381.0,
+          752.0
+        ],
+        [
+          2231.0,
+          744.0
+        ],
+        [
+          2232.0,
+          829.0
+        ],
+        [
+          381.0,
+          837.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          381.0,
+          752.0
+        ],
+        [
+          2231.0,
+          744.0
+        ],
+        [
+          2232.0,
+          829.0
+        ],
+        [
+          381.0,
+          837.0
+        ]
+      ],
+      "detector_score": 0.861517221194457,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a05-058-60afec0182ee",
+        "detector_index": 6,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "earhir that the Gooenment hadh aohed",
+      "recognition_score": 0.9417171478271484,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 5,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          368.0,
+          927.0
+        ],
+        [
+          2229.0,
+          922.0
+        ],
+        [
+          2229.0,
+          1007.0
+        ],
+        [
+          368.0,
+          1013.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          368.0,
+          927.0
+        ],
+        [
+          2229.0,
+          922.0
+        ],
+        [
+          2229.0,
+          1007.0
+        ],
+        [
+          368.0,
+          1013.0
+        ]
+      ],
+      "detector_score": 0.8523100337248406,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a05-058-60afec0182ee",
+        "detector_index": 5,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "the helical desearan Council to reasnes",
+      "recognition_score": 0.858658492565155,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 4,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          365.0,
+          1111.0
+        ],
+        [
+          2239.0,
+          1098.0
+        ],
+        [
+          2239.0,
+          1186.0
+        ],
+        [
+          366.0,
+          1199.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          365.0,
+          1111.0
+        ],
+        [
+          2239.0,
+          1098.0
+        ],
+        [
+          2239.0,
+          1186.0
+        ],
+        [
+          366.0,
+          1199.0
+        ]
+      ],
+      "detector_score": 0.8546903328102671,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a05-058-60afec0182ee",
+        "detector_index": 4,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "the fan-ant pcrition in view of the Ruorian",
+      "recognition_score": 0.9447160959243774,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 3,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          358.0,
+          1284.0
+        ],
+        [
+          2198.0,
+          1276.0
+        ],
+        [
+          2198.0,
+          1364.0
+        ],
+        [
+          358.0,
+          1372.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          358.0,
+          1284.0
+        ],
+        [
+          2198.0,
+          1276.0
+        ],
+        [
+          2198.0,
+          1364.0
+        ],
+        [
+          358.0,
+          1372.0
+        ]
+      ],
+      "detector_score": 0.8466551826040994,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a05-058-60afec0182ee",
+        "detector_index": 3,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "tests. The Cancil's finaings wamled be",
+      "recognition_score": 0.8385164141654968,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 2,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          375.0,
+          1468.0
+        ],
+        [
+          971.0,
+          1462.0
+        ],
+        [
+          972.0,
+          1552.0
+        ],
+        [
+          376.0,
+          1558.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          375.0,
+          1468.0
+        ],
+        [
+          971.0,
+          1462.0
+        ],
+        [
+          972.0,
+          1552.0
+        ],
+        [
+          376.0,
+          1558.0
+        ]
+      ],
+      "detector_score": 0.8496803392334904,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a05-058-60afec0182ee",
+        "detector_index": 2,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "maae rublic.",
+      "recognition_score": 0.9235748648643494,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 1,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          340.0,
+          2092.0
+        ],
+        [
+          501.0,
+          2092.0
+        ],
+        [
+          501.0,
+          2160.0
+        ],
+        [
+          340.0,
+          2160.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          340.0,
+          2092.0
+        ],
+        [
+          501.0,
+          2092.0
+        ],
+        [
+          501.0,
+          2160.0
+        ],
+        [
+          340.0,
+          2160.0
+        ]
+      ],
+      "detector_score": 0.898469257404168,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a05-058-60afec0182ee",
+        "detector_index": 1,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999018907546997,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 0,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          764.0,
+          2162.0
+        ],
+        [
+          1114.0,
+          2162.0
+        ],
+        [
+          1114.0,
+          2253.0
+        ],
+        [
+          764.0,
+          2253.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          764.0,
+          2162.0
+        ],
+        [
+          1114.0,
+          2162.0
+        ],
+        [
+          1114.0,
+          2253.0
+        ],
+        [
+          764.0,
+          2253.0
+        ]
+      ],
+      "detector_score": 0.9039948633329359,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a05-058-60afec0182ee",
+        "detector_index": 0,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "u. Manti",
+      "recognition_score": 0.7378473281860352,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "\"we unst nat oe rallled into ournender,\nOut we mnst not - and I an nat - be\naftraia of wegotiation.\" Mr. Godeer,\nMinires of shate, Fareish Oftice, ocical\nearhir that the Gooenment hadh aohed\nthe helical desearan Council to reasnes\nthe fan-ant pcrition in view of the Ruorian\ntests. The Cancil's finaings wamled be\nmaae rublic.\nName:\nu. Manti",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 142.80970001709647,
+    "detection_ms": 9288.853100006236,
+    "sorting_ms": 0.596500001847744,
+    "cropping_ms": 32.8668000001926,
+    "recognition_ms": 11629.862600006163,
+    "serialization_ms": 387.9381000006106
+  },
+  "status": "success",
+  "errors": []
+}

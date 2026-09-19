@@ -1,0 +1,792 @@
+{
+  "document_id": "a05-062-298777c70e02",
+  "source_image": "a05-062.png",
+  "source_path": "a05-062.png",
+  "source_image_sha256": "298777c70e021a5120676b96246d703c14b47340233b5f5c6b0d6a5848e351ca",
+  "image_metadata": {
+    "width": 2479,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 10,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          364.0,
+          16.0
+        ],
+        [
+          2321.0,
+          10.0
+        ],
+        [
+          2322.0,
+          98.0
+        ],
+        [
+          364.0,
+          103.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          364.0,
+          16.0
+        ],
+        [
+          2321.0,
+          10.0
+        ],
+        [
+          2322.0,
+          98.0
+        ],
+        [
+          364.0,
+          103.0
+        ]
+      ],
+      "detector_score": 0.8674725194742924,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a05-062-298777c70e02",
+        "detector_index": 10,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "With a vigaw and antharihy whian aelighled",
+      "recognition_score": 0.894668459892273,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 9,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          364.0,
+          196.0
+        ],
+        [
+          2200.0,
+          183.0
+        ],
+        [
+          2200.0,
+          271.0
+        ],
+        [
+          365.0,
+          284.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          364.0,
+          196.0
+        ],
+        [
+          2200.0,
+          183.0
+        ],
+        [
+          2200.0,
+          271.0
+        ],
+        [
+          365.0,
+          284.0
+        ]
+      ],
+      "detector_score": 0.8458645679114909,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a05-062-298777c70e02",
+        "detector_index": 9,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "old Rarliamenrarg friends and foes aline,",
+      "recognition_score": 0.9022886753082275,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 8,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          367.0,
+          375.0
+        ],
+        [
+          2241.0,
+          367.0
+        ],
+        [
+          2242.0,
+          455.0
+        ],
+        [
+          367.0,
+          463.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          367.0,
+          375.0
+        ],
+        [
+          2241.0,
+          367.0
+        ],
+        [
+          2242.0,
+          455.0
+        ],
+        [
+          367.0,
+          463.0
+        ]
+      ],
+      "detector_score": 0.8555032720279913,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a05-062-298777c70e02",
+        "detector_index": 8,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "the Earl of Aoon, tue farmer Sir Anthany",
+      "recognition_score": 0.9013668298721313,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 7,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          385.0,
+          558.0
+        ],
+        [
+          2244.0,
+          542.0
+        ],
+        [
+          2244.0,
+          630.0
+        ],
+        [
+          385.0,
+          646.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          385.0,
+          558.0
+        ],
+        [
+          2244.0,
+          542.0
+        ],
+        [
+          2244.0,
+          630.0
+        ],
+        [
+          385.0,
+          646.0
+        ]
+      ],
+      "detector_score": 0.844917268740035,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a05-062-298777c70e02",
+        "detector_index": 7,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Eden, in his maiaen speeen in the Hanse",
+      "recognition_score": 0.9180740118026733,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 6,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          382.0,
+          723.0
+        ],
+        [
+          2148.0,
+          721.0
+        ],
+        [
+          2149.0,
+          824.0
+        ],
+        [
+          382.0,
+          827.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          382.0,
+          723.0
+        ],
+        [
+          2148.0,
+          721.0
+        ],
+        [
+          2149.0,
+          824.0
+        ],
+        [
+          382.0,
+          827.0
+        ]
+      ],
+      "detector_score": 0.7712772016452328,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a05-062-298777c70e02",
+        "detector_index": 6,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "of Loras lash wishs, gave a warning",
+      "recognition_score": 0.9572983980178833,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 5,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          390.0,
+          912.0
+        ],
+        [
+          2182.0,
+          901.0
+        ],
+        [
+          2182.0,
+          989.0
+        ],
+        [
+          390.0,
+          1000.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          390.0,
+          912.0
+        ],
+        [
+          2182.0,
+          901.0
+        ],
+        [
+          2182.0,
+          989.0
+        ],
+        [
+          390.0,
+          1000.0
+        ]
+      ],
+      "detector_score": 0.8434754482684821,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a05-062-298777c70e02",
+        "detector_index": 5,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "mat pertra appeasement oves Berlin cauld",
+      "recognition_score": 0.8959875106811523,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 4,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          387.0,
+          1085.0
+        ],
+        [
+          2210.0,
+          1074.0
+        ],
+        [
+          2211.0,
+          1173.0
+        ],
+        [
+          388.0,
+          1183.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          387.0,
+          1085.0
+        ],
+        [
+          2210.0,
+          1074.0
+        ],
+        [
+          2211.0,
+          1173.0
+        ],
+        [
+          388.0,
+          1183.0
+        ]
+      ],
+      "detector_score": 0.7642316880346621,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a05-062-298777c70e02",
+        "detector_index": 4,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "only lead to war. To ohand firm, he",
+      "recognition_score": 0.913388729095459,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 3,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          395.0,
+          1266.0
+        ],
+        [
+          2164.0,
+          1261.0
+        ],
+        [
+          2164.0,
+          1348.0
+        ],
+        [
+          395.0,
+          1354.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          395.0,
+          1266.0
+        ],
+        [
+          2164.0,
+          1261.0
+        ],
+        [
+          2164.0,
+          1348.0
+        ],
+        [
+          395.0,
+          1354.0
+        ]
+      ],
+      "detector_score": 0.8458246664141201,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a05-062-298777c70e02",
+        "detector_index": 3,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "declened, was nat to in vite war, but",
+      "recognition_score": 0.9305830001831055,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 2,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          392.0,
+          1449.0
+        ],
+        [
+          1619.0,
+          1441.0
+        ],
+        [
+          1619.0,
+          1529.0
+        ],
+        [
+          393.0,
+          1537.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          392.0,
+          1449.0
+        ],
+        [
+          1619.0,
+          1441.0
+        ],
+        [
+          1619.0,
+          1529.0
+        ],
+        [
+          393.0,
+          1537.0
+        ]
+      ],
+      "detector_score": 0.8668710698663569,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a05-062-298777c70e02",
+        "detector_index": 2,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "the avest way to avert it.",
+      "recognition_score": 0.9447391033172607,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 1,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          325.0,
+          2095.0
+        ],
+        [
+          488.0,
+          2095.0
+        ],
+        [
+          488.0,
+          2162.0
+        ],
+        [
+          325.0,
+          2162.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          325.0,
+          2095.0
+        ],
+        [
+          488.0,
+          2095.0
+        ],
+        [
+          488.0,
+          2162.0
+        ],
+        [
+          325.0,
+          2162.0
+        ]
+      ],
+      "detector_score": 0.9012931564822793,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a05-062-298777c70e02",
+        "detector_index": 1,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999373555183411,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 0,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          893.0,
+          2167.0
+        ],
+        [
+          1258.0,
+          2167.0
+        ],
+        [
+          1258.0,
+          2266.0
+        ],
+        [
+          893.0,
+          2266.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          893.0,
+          2167.0
+        ],
+        [
+          1258.0,
+          2167.0
+        ],
+        [
+          1258.0,
+          2266.0
+        ],
+        [
+          893.0,
+          2266.0
+        ]
+      ],
+      "detector_score": 0.9260634375485025,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a05-062-298777c70e02",
+        "detector_index": 0,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "u. Mali",
+      "recognition_score": 0.8696264028549194,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "With a vigaw and antharihy whian aelighled\nold Rarliamenrarg friends and foes aline,\nthe Earl of Aoon, tue farmer Sir Anthany\nEden, in his maiaen speeen in the Hanse\nof Loras lash wishs, gave a warning\nmat pertra appeasement oves Berlin cauld\nonly lead to war. To ohand firm, he\ndeclened, was nat to in vite war, but\nthe avest way to avert it.\nName:\nu. Mali",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 175.49310001777485,
+    "detection_ms": 9582.105899986345,
+    "sorting_ms": 0.42830000165849924,
+    "cropping_ms": 30.346899991855025,
+    "recognition_ms": 11292.979099991499,
+    "serialization_ms": 390.70589997572824
+  },
+  "status": "success",
+  "errors": []
+}

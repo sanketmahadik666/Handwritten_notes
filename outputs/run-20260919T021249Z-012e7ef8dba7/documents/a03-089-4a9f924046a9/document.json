@@ -1,0 +1,390 @@
+{
+  "document_id": "a03-089-4a9f924046a9",
+  "source_image": "a03-089.png",
+  "source_path": "a03-089.png",
+  "source_image_sha256": "4a9f924046a91d9e5b4ae80b8c76e7318772d23fe842cbb6a9a773071f0285f3",
+  "image_metadata": {
+    "width": 2479,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 4,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          341.0,
+          13.0
+        ],
+        [
+          2221.0,
+          13.0
+        ],
+        [
+          2221.0,
+          116.0
+        ],
+        [
+          341.0,
+          116.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          341.0,
+          13.0
+        ],
+        [
+          2221.0,
+          13.0
+        ],
+        [
+          2221.0,
+          116.0
+        ],
+        [
+          341.0,
+          116.0
+        ]
+      ],
+      "detector_score": 0.8389668744328421,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a03-089-4a9f924046a9",
+        "detector_index": 4,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Fiat G-ss, and the Flo4 Slarfigwer",
+      "recognition_score": 0.9176800847053528,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 3,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          362.0,
+          196.0
+        ],
+        [
+          2012.0,
+          196.0
+        ],
+        [
+          2012.0,
+          292.0
+        ],
+        [
+          362.0,
+          292.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          362.0,
+          196.0
+        ],
+        [
+          2012.0,
+          196.0
+        ],
+        [
+          2012.0,
+          292.0
+        ],
+        [
+          362.0,
+          292.0
+        ]
+      ],
+      "detector_score": 0.8332809917458287,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a03-089-4a9f924046a9",
+        "detector_index": 3,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "the Bacnbane of hhe German Mir",
+      "recognition_score": 0.8060581684112549,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 2,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          323.0,
+          375.0
+        ],
+        [
+          656.0,
+          375.0
+        ],
+        [
+          656.0,
+          475.0
+        ],
+        [
+          323.0,
+          475.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          323.0,
+          375.0
+        ],
+        [
+          656.0,
+          375.0
+        ],
+        [
+          656.0,
+          475.0
+        ],
+        [
+          323.0,
+          475.0
+        ]
+      ],
+      "detector_score": 0.9182312155665577,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a03-089-4a9f924046a9",
+        "detector_index": 2,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Faree.",
+      "recognition_score": 0.8140391707420349,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 1,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          331.0,
+          2095.0
+        ],
+        [
+          491.0,
+          2095.0
+        ],
+        [
+          491.0,
+          2160.0
+        ],
+        [
+          331.0,
+          2160.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          331.0,
+          2095.0
+        ],
+        [
+          491.0,
+          2095.0
+        ],
+        [
+          491.0,
+          2160.0
+        ],
+        [
+          331.0,
+          2160.0
+        ]
+      ],
+      "detector_score": 0.8734163117997322,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a03-089-4a9f924046a9",
+        "detector_index": 1,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999765157699585,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 0,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          609.0,
+          2170.0
+        ],
+        [
+          958.0,
+          2170.0
+        ],
+        [
+          958.0,
+          2268.0
+        ],
+        [
+          609.0,
+          2268.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          609.0,
+          2170.0
+        ],
+        [
+          958.0,
+          2170.0
+        ],
+        [
+          958.0,
+          2268.0
+        ],
+        [
+          609.0,
+          2268.0
+        ]
+      ],
+      "detector_score": 0.8679748590419528,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a03-089-4a9f924046a9",
+        "detector_index": 0,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "U.Manh",
+      "recognition_score": 0.8611896634101868,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "Fiat G-ss, and the Flo4 Slarfigwer\nthe Bacnbane of hhe German Mir\nFaree.\nName:\nU.Manh",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 142.471300001489,
+    "detection_ms": 9388.187500007916,
+    "sorting_ms": 0.20009998115710914,
+    "cropping_ms": 10.30600001104176,
+    "recognition_ms": 4483.941899990896,
+    "serialization_ms": 376.928300014697
+  },
+  "status": "success",
+  "errors": []
+}

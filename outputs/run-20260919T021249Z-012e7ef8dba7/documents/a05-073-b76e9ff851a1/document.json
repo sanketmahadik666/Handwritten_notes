@@ -1,0 +1,926 @@
+{
+  "document_id": "a05-073-b76e9ff851a1",
+  "source_image": "a05-073.png",
+  "source_path": "a05-073.png",
+  "source_image_sha256": "b76e9ff851a10291acaaec20d93ad86216394343fd35749686cc18505776d8d3",
+  "image_metadata": {
+    "width": 2479,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 12,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          349.0,
+          26.0
+        ],
+        [
+          2107.0,
+          42.0
+        ],
+        [
+          2107.0,
+          127.0
+        ],
+        [
+          348.0,
+          111.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          349.0,
+          26.0
+        ],
+        [
+          2107.0,
+          42.0
+        ],
+        [
+          2107.0,
+          127.0
+        ],
+        [
+          348.0,
+          111.0
+        ]
+      ],
+      "detector_score": 0.8555787748572181,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a05-073-b76e9ff851a1",
+        "detector_index": 12,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "He spent most of his short half-howr on",
+      "recognition_score": 0.9194486737251282,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 11,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          326.0,
+          206.0
+        ],
+        [
+          2133.0,
+          228.0
+        ],
+        [
+          2132.0,
+          315.0
+        ],
+        [
+          325.0,
+          294.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          326.0,
+          206.0
+        ],
+        [
+          2133.0,
+          228.0
+        ],
+        [
+          2132.0,
+          315.0
+        ],
+        [
+          325.0,
+          294.0
+        ]
+      ],
+      "detector_score": 0.8439538180843374,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a05-073-b76e9ff851a1",
+        "detector_index": 11,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Bertin. He deploved hhe poooibiliny ad",
+      "recognition_score": 0.8926070332527161,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 10,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          321.0,
+          387.0
+        ],
+        [
+          2234.0,
+          403.0
+        ],
+        [
+          2233.0,
+          491.0
+        ],
+        [
+          320.0,
+          475.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          321.0,
+          387.0
+        ],
+        [
+          2234.0,
+          403.0
+        ],
+        [
+          2233.0,
+          491.0
+        ],
+        [
+          320.0,
+          475.0
+        ]
+      ],
+      "detector_score": 0.8370145872655629,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a05-073-b76e9ff851a1",
+        "detector_index": 10,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "some a new myth\" abont betrayal at Germany",
+      "recognition_score": 0.8614516258239746,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 9,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          334.0,
+          566.0
+        ],
+        [
+          2260.0,
+          581.0
+        ],
+        [
+          2259.0,
+          669.0
+        ],
+        [
+          333.0,
+          653.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          334.0,
+          566.0
+        ],
+        [
+          2260.0,
+          581.0
+        ],
+        [
+          2259.0,
+          669.0
+        ],
+        [
+          333.0,
+          653.0
+        ]
+      ],
+      "detector_score": 0.8194070778624976,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a05-073-b76e9ff851a1",
+        "detector_index": 9,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "by the Allies. u we do mat, \" he said n mealy",
+      "recognition_score": 0.8592350482940674,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 8,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          329.0,
+          741.0
+        ],
+        [
+          2200.0,
+          760.0
+        ],
+        [
+          2200.0,
+          845.0
+        ],
+        [
+          328.0,
+          826.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          329.0,
+          741.0
+        ],
+        [
+          2200.0,
+          760.0
+        ],
+        [
+          2200.0,
+          845.0
+        ],
+        [
+          328.0,
+          826.0
+        ]
+      ],
+      "detector_score": 0.8744863462912192,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a05-073-b76e9ff851a1",
+        "detector_index": 8,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "hnow what lhe Russians wont.\" But he was",
+      "recognition_score": 0.9328449964523315,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 7,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          331.0,
+          925.0
+        ],
+        [
+          2118.0,
+          941.0
+        ],
+        [
+          2117.0,
+          1021.0
+        ],
+        [
+          330.0,
+          1005.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          331.0,
+          925.0
+        ],
+        [
+          2118.0,
+          941.0
+        ],
+        [
+          2117.0,
+          1021.0
+        ],
+        [
+          330.0,
+          1005.0
+        ]
+      ],
+      "detector_score": 0.8832027668338646,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a05-073-b76e9ff851a1",
+        "detector_index": 7,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "costain that they wanled to ot ablish a",
+      "recognition_score": 0.9097781777381897,
+      "recognition_order": 11,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 6,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          331.0,
+          1100.0
+        ],
+        [
+          2159.0,
+          1111.0
+        ],
+        [
+          2158.0,
+          1207.0
+        ],
+        [
+          330.0,
+          1196.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          331.0,
+          1100.0
+        ],
+        [
+          2159.0,
+          1111.0
+        ],
+        [
+          2158.0,
+          1207.0
+        ],
+        [
+          330.0,
+          1196.0
+        ]
+      ],
+      "detector_score": 0.7857140229967192,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a05-073-b76e9ff851a1",
+        "detector_index": 6,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "fimal and inrevocable divizien of Germay.",
+      "recognition_score": 0.9151512980461121,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 5,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          323.0,
+          1278.0
+        ],
+        [
+          2249.0,
+          1300.0
+        ],
+        [
+          2249.0,
+          1385.0
+        ],
+        [
+          322.0,
+          1364.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          323.0,
+          1278.0
+        ],
+        [
+          2249.0,
+          1300.0
+        ],
+        [
+          2249.0,
+          1385.0
+        ],
+        [
+          322.0,
+          1364.0
+        ]
+      ],
+      "detector_score": 0.8716565344508768,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a05-073-b76e9ff851a1",
+        "detector_index": 5,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Brilain could mat be a pouky to an in pcaed",
+      "recognition_score": 0.9130541086196899,
+      "recognition_order": 12,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 4,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          334.0,
+          1454.0
+        ],
+        [
+          2239.0,
+          1481.0
+        ],
+        [
+          2238.0,
+          1568.0
+        ],
+        [
+          333.0,
+          1542.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          334.0,
+          1454.0
+        ],
+        [
+          2239.0,
+          1481.0
+        ],
+        [
+          2238.0,
+          1568.0
+        ],
+        [
+          333.0,
+          1542.0
+        ]
+      ],
+      "detector_score": 0.8225894916404667,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a05-073-b76e9ff851a1",
+        "detector_index": 4,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "divinion. Bul wegotiahan, as the debate hacd",
+      "recognition_score": 0.9324938058853149,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 3,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          331.0,
+          1640.0
+        ],
+        [
+          2128.0,
+          1661.0
+        ],
+        [
+          2127.0,
+          1747.0
+        ],
+        [
+          330.0,
+          1725.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          331.0,
+          1640.0
+        ],
+        [
+          2128.0,
+          1661.0
+        ],
+        [
+          2127.0,
+          1747.0
+        ],
+        [
+          330.0,
+          1725.0
+        ]
+      ],
+      "detector_score": 0.88759026928489,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a05-073-b76e9ff851a1",
+        "detector_index": 3,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "shown, could be mawrtanen on a vaviehy",
+      "recognition_score": 0.8997347950935364,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 2,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          339.0,
+          1813.0
+        ],
+        [
+          801.0,
+          1822.0
+        ],
+        [
+          799.0,
+          1910.0
+        ],
+        [
+          338.0,
+          1901.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          339.0,
+          1813.0
+        ],
+        [
+          801.0,
+          1822.0
+        ],
+        [
+          799.0,
+          1910.0
+        ],
+        [
+          338.0,
+          1901.0
+        ]
+      ],
+      "detector_score": 0.9211966904338688,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a05-073-b76e9ff851a1",
+        "detector_index": 2,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "of bases.",
+      "recognition_score": 0.8668268918991089,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0011",
+      "detector_index": 1,
+      "sorted_index": 11,
+      "raw_polygon": [
+        [
+          333.0,
+          2095.0
+        ],
+        [
+          496.0,
+          2095.0
+        ],
+        [
+          496.0,
+          2162.0
+        ],
+        [
+          333.0,
+          2162.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          333.0,
+          2095.0
+        ],
+        [
+          496.0,
+          2095.0
+        ],
+        [
+          496.0,
+          2162.0
+        ],
+        [
+          333.0,
+          2162.0
+        ]
+      ],
+      "detector_score": 0.8957355521060526,
+      "crop_path": "crops/line-0011.png",
+      "crop_provenance": {
+        "source_document": "a05-073-b76e9ff851a1",
+        "detector_index": 1,
+        "sorted_index": 11,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999077916145325,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0012",
+      "detector_index": 0,
+      "sorted_index": 12,
+      "raw_polygon": [
+        [
+          850.0,
+          2211.0
+        ],
+        [
+          1268.0,
+          2211.0
+        ],
+        [
+          1268.0,
+          2310.0
+        ],
+        [
+          850.0,
+          2310.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          850.0,
+          2211.0
+        ],
+        [
+          1268.0,
+          2211.0
+        ],
+        [
+          1268.0,
+          2310.0
+        ],
+        [
+          850.0,
+          2310.0
+        ]
+      ],
+      "detector_score": 0.933012871778056,
+      "crop_path": "crops/line-0012.png",
+      "crop_provenance": {
+        "source_document": "a05-073-b76e9ff851a1",
+        "detector_index": 0,
+        "sorted_index": 12,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "U. Mauri",
+      "recognition_score": 0.843158483505249,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "He spent most of his short half-howr on\nBertin. He deploved hhe poooibiliny ad\nsome a new myth\" abont betrayal at Germany\nby the Allies. u we do mat, \" he said n mealy\nhnow what lhe Russians wont.\" But he was\ncostain that they wanled to ot ablish a\nfimal and inrevocable divizien of Germay.\nBrilain could mat be a pouky to an in pcaed\ndivinion. Bul wegotiahan, as the debate hacd\nshown, could be mawrtanen on a vaviehy\nof bases.\nName:\nU. Mauri",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 153.97319998010062,
+    "detection_ms": 9572.799199988367,
+    "sorting_ms": 0.8548999903723598,
+    "cropping_ms": 38.58669998589903,
+    "recognition_ms": 13445.381800003815,
+    "serialization_ms": 412.65879999264143
+  },
+  "status": "success",
+  "errors": []
+}

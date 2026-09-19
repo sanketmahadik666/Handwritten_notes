@@ -1,0 +1,926 @@
+{
+  "document_id": "a05-025-734febcc9e95",
+  "source_image": "a05-025.png",
+  "source_path": "a05-025.png",
+  "source_image_sha256": "734febcc9e95ca9c237a86936cfd6e19f2ea959ce8fff0037b34173fe64d1e2b",
+  "image_metadata": {
+    "width": 2372,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 12,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          365.0,
+          60.0
+        ],
+        [
+          2108.0,
+          52.0
+        ],
+        [
+          2109.0,
+          139.0
+        ],
+        [
+          366.0,
+          147.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          365.0,
+          60.0
+        ],
+        [
+          2108.0,
+          52.0
+        ],
+        [
+          2109.0,
+          139.0
+        ],
+        [
+          366.0,
+          147.0
+        ]
+      ],
+      "detector_score": 0.850845314248631,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a05-025-734febcc9e95",
+        "detector_index": 12,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Criticisnns abant truy mampenoer aprear",
+      "recognition_score": 0.870785653591156,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 11,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          373.0,
+          246.0
+        ],
+        [
+          2261.0,
+          224.0
+        ],
+        [
+          2262.0,
+          312.0
+        ],
+        [
+          374.0,
+          334.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          373.0,
+          246.0
+        ],
+        [
+          2261.0,
+          224.0
+        ],
+        [
+          2262.0,
+          312.0
+        ],
+        [
+          374.0,
+          334.0
+        ]
+      ],
+      "detector_score": 0.8315937198281376,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a05-025-734febcc9e95",
+        "detector_index": 11,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "to nave came mainly fram wetied oftices",
+      "recognition_score": 0.9452230930328369,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 10,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          368.0,
+          419.0
+        ],
+        [
+          2213.0,
+          405.0
+        ],
+        [
+          2214.0,
+          496.0
+        ],
+        [
+          369.0,
+          509.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          368.0,
+          419.0
+        ],
+        [
+          2213.0,
+          405.0
+        ],
+        [
+          2214.0,
+          496.0
+        ],
+        [
+          369.0,
+          509.0
+        ]
+      ],
+      "detector_score": 0.7859626639016288,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a05-025-734febcc9e95",
+        "detector_index": 10,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "who have helal hish possion position out",
+      "recognition_score": 0.8775550127029419,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 9,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          376.0,
+          605.0
+        ],
+        [
+          2285.0,
+          589.0
+        ],
+        [
+          2285.0,
+          669.0
+        ],
+        [
+          376.0,
+          685.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          376.0,
+          605.0
+        ],
+        [
+          2285.0,
+          589.0
+        ],
+        [
+          2285.0,
+          669.0
+        ],
+        [
+          376.0,
+          685.0
+        ]
+      ],
+      "detector_score": 0.8314642098856687,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a05-025-734febcc9e95",
+        "detector_index": 9,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "are ant of tanch with the etisting sihuation.",
+      "recognition_score": 0.9360389709472656,
+      "recognition_order": 11,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 8,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          360.0,
+          783.0
+        ],
+        [
+          2257.0,
+          767.0
+        ],
+        [
+          2257.0,
+          845.0
+        ],
+        [
+          361.0,
+          860.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          360.0,
+          783.0
+        ],
+        [
+          2257.0,
+          767.0
+        ],
+        [
+          2257.0,
+          845.0
+        ],
+        [
+          361.0,
+          860.0
+        ]
+      ],
+      "detector_score": 0.8730242075470135,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a05-025-734febcc9e95",
+        "detector_index": 8,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Mr. Wathinocn has had the utmost ouprant",
+      "recognition_score": 0.9548625946044922,
+      "recognition_order": 12,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 7,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          365.0,
+          959.0
+        ],
+        [
+          2251.0,
+          937.0
+        ],
+        [
+          2252.0,
+          1028.0
+        ],
+        [
+          366.0,
+          1049.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          365.0,
+          959.0
+        ],
+        [
+          2251.0,
+          937.0
+        ],
+        [
+          2252.0,
+          1028.0
+        ],
+        [
+          366.0,
+          1049.0
+        ]
+      ],
+      "detector_score": 0.7916950506655923,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a05-025-734febcc9e95",
+        "detector_index": 7,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "fram the C. 1. G. s., Field - Movohal Sin",
+      "recognition_score": 0.8846327662467957,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 6,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          337.0,
+          1134.0
+        ],
+        [
+          2198.0,
+          1124.0
+        ],
+        [
+          2198.0,
+          1211.0
+        ],
+        [
+          338.0,
+          1222.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          337.0,
+          1134.0
+        ],
+        [
+          2198.0,
+          1124.0
+        ],
+        [
+          2198.0,
+          1211.0
+        ],
+        [
+          338.0,
+          1222.0
+        ]
+      ],
+      "detector_score": 0.8382001416961288,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a05-025-734febcc9e95",
+        "detector_index": 6,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Francis Festing, who belisve camplutely",
+      "recognition_score": 0.8879620432853699,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 5,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          353.0,
+          1310.0
+        ],
+        [
+          2303.0,
+          1297.0
+        ],
+        [
+          2303.0,
+          1392.0
+        ],
+        [
+          353.0,
+          1406.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          353.0,
+          1310.0
+        ],
+        [
+          2303.0,
+          1297.0
+        ],
+        [
+          2303.0,
+          1392.0
+        ],
+        [
+          353.0,
+          1406.0
+        ]
+      ],
+      "detector_score": 0.7943480957532333,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a05-025-734febcc9e95",
+        "detector_index": 5,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "in me princirle of an all-Regular army.",
+      "recognition_score": 0.9287571310997009,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 4,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          355.0,
+          1493.0
+        ],
+        [
+          2287.0,
+          1475.0
+        ],
+        [
+          2288.0,
+          1570.0
+        ],
+        [
+          356.0,
+          1589.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          355.0,
+          1493.0
+        ],
+        [
+          2287.0,
+          1475.0
+        ],
+        [
+          2288.0,
+          1570.0
+        ],
+        [
+          356.0,
+          1589.0
+        ]
+      ],
+      "detector_score": 0.771602681513242,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a05-025-734febcc9e95",
+        "detector_index": 4,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Ge-, Sir Ricnovd hhull, who in to suceeed",
+      "recognition_score": 0.9380347728729248,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 3,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          365.0,
+          1669.0
+        ],
+        [
+          2116.0,
+          1664.0
+        ],
+        [
+          2116.0,
+          1751.0
+        ],
+        [
+          366.0,
+          1757.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          365.0,
+          1669.0
+        ],
+        [
+          2116.0,
+          1664.0
+        ],
+        [
+          2116.0,
+          1751.0
+        ],
+        [
+          366.0,
+          1757.0
+        ]
+      ],
+      "detector_score": 0.8490531811181179,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a05-025-734febcc9e95",
+        "detector_index": 3,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "ser Francin, is equaly canvincedl Mr.",
+      "recognition_score": 0.9275136590003967,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 2,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          373.0,
+          1855.0
+        ],
+        [
+          1183.0,
+          1855.0
+        ],
+        [
+          1183.0,
+          1932.0
+        ],
+        [
+          373.0,
+          1932.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          373.0,
+          1855.0
+        ],
+        [
+          1183.0,
+          1855.0
+        ],
+        [
+          1183.0,
+          1932.0
+        ],
+        [
+          373.0,
+          1932.0
+        ]
+      ],
+      "detector_score": 0.9215477201366463,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a05-025-734febcc9e95",
+        "detector_index": 2,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Wathnsen in rishs.",
+      "recognition_score": 0.7891507148742676,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0011",
+      "detector_index": 1,
+      "sorted_index": 11,
+      "raw_polygon": [
+        [
+          340.0,
+          2087.0
+        ],
+        [
+          506.0,
+          2087.0
+        ],
+        [
+          506.0,
+          2165.0
+        ],
+        [
+          340.0,
+          2165.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          340.0,
+          2087.0
+        ],
+        [
+          506.0,
+          2087.0
+        ],
+        [
+          506.0,
+          2165.0
+        ],
+        [
+          340.0,
+          2165.0
+        ]
+      ],
+      "detector_score": 0.8365571702743569,
+      "crop_path": "crops/line-0011.png",
+      "crop_provenance": {
+        "source_document": "a05-025-734febcc9e95",
+        "detector_index": 1,
+        "sorted_index": 11,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999272227287292,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0012",
+      "detector_index": 0,
+      "sorted_index": 12,
+      "raw_polygon": [
+        [
+          803.0,
+          2170.0
+        ],
+        [
+          1148.0,
+          2170.0
+        ],
+        [
+          1148.0,
+          2260.0
+        ],
+        [
+          803.0,
+          2260.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          803.0,
+          2170.0
+        ],
+        [
+          1148.0,
+          2170.0
+        ],
+        [
+          1148.0,
+          2260.0
+        ],
+        [
+          803.0,
+          2260.0
+        ]
+      ],
+      "detector_score": 0.9153312455043839,
+      "crop_path": "crops/line-0012.png",
+      "crop_provenance": {
+        "source_document": "a05-025-734febcc9e95",
+        "detector_index": 0,
+        "sorted_index": 12,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "U. Mali",
+      "recognition_score": 0.8054871559143066,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "Criticisnns abant truy mampenoer aprear\nto nave came mainly fram wetied oftices\nwho have helal hish possion position out\nare ant of tanch with the etisting sihuation.\nMr. Wathinocn has had the utmost ouprant\nfram the C. 1. G. s., Field - Movohal Sin\nFrancis Festing, who belisve camplutely\nin me princirle of an all-Regular army.\nGe-, Sir Ricnovd hhull, who in to suceeed\nser Francin, is equaly canvincedl Mr.\nWathnsen in rishs.\nName:\nU. Mali",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 167.60429998976178,
+    "detection_ms": 9865.413400024408,
+    "sorting_ms": 0.5615999980363995,
+    "cropping_ms": 40.53060000296682,
+    "recognition_ms": 14353.118700004416,
+    "serialization_ms": 421.3976999744773
+  },
+  "status": "success",
+  "errors": []
+}

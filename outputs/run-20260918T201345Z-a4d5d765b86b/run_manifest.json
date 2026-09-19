@@ -1,0 +1,160 @@
+{
+  "run_id": "run-20260918T201345Z-a4d5d765b86b",
+  "created_at_utc": "2026-09-18T20:13:45.295965Z",
+  "project_version": "0.1.0",
+  "config_sha256": "a4d5d765b86b929a9bb43c8725241372d566eacbf8526d1618a9a93cd8b35e84",
+  "requested_configuration": {
+    "runtime": {
+      "paddleocr_version": "3.7.0",
+      "paddlex_version": "3.7.2",
+      "paddlepaddle_version": "3.3.1",
+      "requested_engine": null,
+      "device": null,
+      "enable_mkldnn": false,
+      "enable_cinn": false,
+      "cpu_threads": 10
+    },
+    "pipeline": {
+      "lang": "en",
+      "ocr_version": null,
+      "use_doc_orientation_classify": false,
+      "use_doc_unwarping": false,
+      "use_textline_orientation": false,
+      "text_rec_score_thresh": 0.0
+    },
+    "detector": {
+      "model_name": "PP-OCRv6_medium_det",
+      "model_dir": null
+    },
+    "recognizer": {
+      "model_name": "PP-OCRv6_medium_rec",
+      "model_dir": null
+    },
+    "document_preprocessing": {
+      "orientation_classification": false,
+      "unwarping": false,
+      "textline_orientation": false
+    },
+    "model_preprocessing": {
+      "detector": "PaddleX-managed",
+      "recognizer": "PaddleX-managed"
+    },
+    "preprocessing": {
+      "mode": "original",
+      "operations": []
+    },
+    "evaluation": {
+      "unicode_normalization": "NFC",
+      "case_sensitive": true,
+      "whitespace": "collapse_runs",
+      "punctuation": "preserve"
+    },
+    "correction_status": "skipped"
+  },
+  "runtime": {
+    "versions": {
+      "python": "3.12.10",
+      "python_executable": "C:\\Users\\Mahadik\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "paddleocr": "3.7.0",
+      "paddlex": "3.7.2",
+      "paddlepaddle": "3.3.1",
+      "numpy": "2.3.5",
+      "opencv": "4.10.0",
+      "omp_num_threads": "1"
+    },
+    "requested_engine": null,
+    "pipeline_engine": null,
+    "generated_engine_config": {
+      "paddle_static": {
+        "run_mode": "paddle",
+        "cpu_threads": 10,
+        "enable_cinn": false
+      }
+    },
+    "resolved_detector_engine": null,
+    "resolved_recognizer_engine": null,
+    "detector_predictor_class": "TextDetRunnerPredictor",
+    "recognizer_predictor_class": "TextRecRunnerPredictor",
+    "detector": {
+      "model_name": "PP-OCRv6_medium_det",
+      "predictor_class": "TextDetRunnerPredictor",
+      "predictor_module": "paddlex.inference.models.text_detection.predictor",
+      "runner_class": "PaddleStaticRunner",
+      "runner_module": "paddlex.inference.models.runners.paddle_static.runner",
+      "device": "cpu",
+      "resolved_engine": null,
+      "generated_engine_config": {
+        "run_mode": "paddle",
+        "device_type": "cpu",
+        "cpu_threads": 10,
+        "enable_cinn": false
+      },
+      "model_directory": {
+        "directory_name": "PP-OCRv6_medium_det",
+        "exists": true,
+        "artifacts": [
+          "inference.pdiparams"
+        ]
+      }
+    },
+    "recognizer": {
+      "model_name": "PP-OCRv6_medium_rec",
+      "predictor_class": "TextRecRunnerPredictor",
+      "predictor_module": "paddlex.inference.models.text_recognition.predictor",
+      "runner_class": "PaddleStaticRunner",
+      "runner_module": "paddlex.inference.models.runners.paddle_static.runner",
+      "device": "cpu",
+      "resolved_engine": null,
+      "generated_engine_config": {
+        "run_mode": "paddle",
+        "device_type": "cpu",
+        "cpu_threads": 10,
+        "enable_cinn": false
+      },
+      "model_directory": {
+        "directory_name": "PP-OCRv6_medium_rec",
+        "exists": true,
+        "artifacts": [
+          "inference.pdiparams"
+        ]
+      }
+    },
+    "private_contract": {
+      "pipeline_class": "_OCRPipeline",
+      "uses_sort_boxes": true,
+      "uses_crop_by_polys": true
+    }
+  },
+  "documents": [
+    {
+      "document_id": "a01-000u-f1764d425a84",
+      "source_image": "a01-000u.png",
+      "source_image_sha256": "f1764d425a84328dad41c190cdd89b7a72b0ed55b3ca47b2482ba17390ed4895",
+      "document_path": "documents/a01-000u-f1764d425a84",
+      "status": "success",
+      "region_count": 8,
+      "evaluation_status": "evaluated"
+    }
+  ],
+  "aggregate_evaluation": {
+    "character": {
+      "substitutions": 13,
+      "insertions": 1,
+      "deletions": 1,
+      "total_edits": 15,
+      "reference_length": 254,
+      "rate": 0.05905511811023622,
+      "aggregation": "micro_total_edits_over_total_reference_length"
+    },
+    "word": {
+      "substitutions": 12,
+      "insertions": 0,
+      "deletions": 0,
+      "total_edits": 12,
+      "reference_length": 49,
+      "rate": 0.24489795918367346,
+      "aggregation": "micro_total_edits_over_total_reference_length"
+    }
+  },
+  "integration_status": "runtime_pipeline_executed"
+}

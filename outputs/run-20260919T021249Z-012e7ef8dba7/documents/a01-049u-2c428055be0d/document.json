@@ -1,0 +1,859 @@
+{
+  "document_id": "a01-049u-2c428055be0d",
+  "source_image": "a01-049u.png",
+  "source_path": "a01-049u.png",
+  "source_image_sha256": "2c428055be0dc4a76558a00377b61cc7bf7e93aa11418a85b7c9f4183f6ae2f4",
+  "image_metadata": {
+    "width": 2479,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 11,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          379.0,
+          80.0
+        ],
+        [
+          2184.0,
+          75.0
+        ],
+        [
+          2185.0,
+          170.0
+        ],
+        [
+          380.0,
+          176.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          379.0,
+          80.0
+        ],
+        [
+          2184.0,
+          75.0
+        ],
+        [
+          2185.0,
+          170.0
+        ],
+        [
+          380.0,
+          176.0
+        ]
+      ],
+      "detector_score": 0.8825046036140389,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a01-049u-2c428055be0d",
+        "detector_index": 11,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Senator Aluen Ehende, of louisiana,",
+      "recognition_score": 0.8995652794837952,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 10,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          369.0,
+          266.0
+        ],
+        [
+          2155.0,
+          245.0
+        ],
+        [
+          2157.0,
+          341.0
+        ],
+        [
+          370.0,
+          362.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          369.0,
+          266.0
+        ],
+        [
+          2155.0,
+          245.0
+        ],
+        [
+          2157.0,
+          341.0
+        ],
+        [
+          370.0,
+          362.0
+        ]
+      ],
+      "detector_score": 0.8457711869470733,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a01-049u-2c428055be0d",
+        "detector_index": 10,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "oparhed oft the opposition by telhing a",
+      "recognition_score": 0.943121075630188,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 9,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          361.0,
+          448.0
+        ],
+        [
+          2002.0,
+          413.0
+        ],
+        [
+          2005.0,
+          508.0
+        ],
+        [
+          363.0,
+          543.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          361.0,
+          448.0
+        ],
+        [
+          2002.0,
+          413.0
+        ],
+        [
+          2005.0,
+          508.0
+        ],
+        [
+          363.0,
+          543.0
+        ]
+      ],
+      "detector_score": 0.7967994325521336,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a01-049u-2c428055be0d",
+        "detector_index": 9,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "televisian audience it was n curvent",
+      "recognition_score": 0.9448657631874084,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 8,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          356.0,
+          620.0
+        ],
+        [
+          2186.0,
+          583.0
+        ],
+        [
+          2188.0,
+          682.0
+        ],
+        [
+          358.0,
+          719.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          356.0,
+          620.0
+        ],
+        [
+          2186.0,
+          583.0
+        ],
+        [
+          2188.0,
+          682.0
+        ],
+        [
+          358.0,
+          719.0
+        ]
+      ],
+      "detector_score": 0.7906741371954625,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a01-049u-2c428055be0d",
+        "detector_index": 8,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Whachington gossip\" that Weave ance had",
+      "recognition_score": 0.9439072012901306,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 7,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          353.0,
+          796.0
+        ],
+        [
+          2305.0,
+          762.0
+        ],
+        [
+          2307.0,
+          857.0
+        ],
+        [
+          355.0,
+          892.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          353.0,
+          796.0
+        ],
+        [
+          2305.0,
+          762.0
+        ],
+        [
+          2307.0,
+          857.0
+        ],
+        [
+          355.0,
+          892.0
+        ]
+      ],
+      "detector_score": 0.8247501875852821,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a01-049u-2c428055be0d",
+        "detector_index": 7,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Comummnist affiliatians. The Senate Bauhing",
+      "recognition_score": 0.8759590983390808,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 6,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          356.0,
+          980.0
+        ],
+        [
+          2191.0,
+          942.0
+        ],
+        [
+          2193.0,
+          1038.0
+        ],
+        [
+          358.0,
+          1075.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          356.0,
+          980.0
+        ],
+        [
+          2191.0,
+          942.0
+        ],
+        [
+          2193.0,
+          1038.0
+        ],
+        [
+          358.0,
+          1075.0
+        ]
+      ],
+      "detector_score": 0.8265064960051645,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a01-049u-2c428055be0d",
+        "detector_index": 6,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Camimitke, which is headed by andthe",
+      "recognition_score": 0.9149430394172668,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 5,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          356.0,
+          1158.0
+        ],
+        [
+          2152.0,
+          1115.0
+        ],
+        [
+          2154.0,
+          1211.0
+        ],
+        [
+          358.0,
+          1254.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          356.0,
+          1158.0
+        ],
+        [
+          2152.0,
+          1115.0
+        ],
+        [
+          2154.0,
+          1211.0
+        ],
+        [
+          358.0,
+          1254.0
+        ]
+      ],
+      "detector_score": 0.8063681179093933,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a01-049u-2c428055be0d",
+        "detector_index": 5,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Southen Sendter - Wilhioun Robetson, of",
+      "recognition_score": 0.8844591975212097,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 4,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          363.0,
+          1339.0
+        ],
+        [
+          2196.0,
+          1296.0
+        ],
+        [
+          2198.0,
+          1392.0
+        ],
+        [
+          366.0,
+          1434.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          363.0,
+          1339.0
+        ],
+        [
+          2196.0,
+          1296.0
+        ],
+        [
+          2198.0,
+          1392.0
+        ],
+        [
+          366.0,
+          1434.0
+        ]
+      ],
+      "detector_score": 0.811995044283303,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a01-049u-2c428055be0d",
+        "detector_index": 4,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Virginia - met today in closed seosian to",
+      "recognition_score": 0.9465638995170593,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 3,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          363.0,
+          1522.0
+        ],
+        [
+          2214.0,
+          1480.0
+        ],
+        [
+          2216.0,
+          1568.0
+        ],
+        [
+          365.0,
+          1610.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          363.0,
+          1522.0
+        ],
+        [
+          2214.0,
+          1480.0
+        ],
+        [
+          2216.0,
+          1568.0
+        ],
+        [
+          365.0,
+          1610.0
+        ]
+      ],
+      "detector_score": 0.8455099314713044,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a01-049u-2c428055be0d",
+        "detector_index": 3,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "discues Weaves's appointment. Senater",
+      "recognition_score": 0.9067109823226929,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 2,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          338.0,
+          1695.0
+        ],
+        [
+          2354.0,
+          1661.0
+        ],
+        [
+          2356.0,
+          1749.0
+        ],
+        [
+          339.0,
+          1783.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          338.0,
+          1695.0
+        ],
+        [
+          2354.0,
+          1661.0
+        ],
+        [
+          2356.0,
+          1749.0
+        ],
+        [
+          339.0,
+          1783.0
+        ]
+      ],
+      "detector_score": 0.8342082688721754,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a01-049u-2c428055be0d",
+        "detector_index": 2,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Rabetion lates disclosed he had sent a lelle",
+      "recognition_score": 0.9341312050819397,
+      "recognition_order": 11,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 1,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          330.0,
+          1876.0
+        ],
+        [
+          2136.0,
+          1833.0
+        ],
+        [
+          2139.0,
+          1937.0
+        ],
+        [
+          332.0,
+          1980.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          330.0,
+          1876.0
+        ],
+        [
+          2136.0,
+          1833.0
+        ],
+        [
+          2139.0,
+          1937.0
+        ],
+        [
+          332.0,
+          1980.0
+        ]
+      ],
+      "detector_score": 0.7928485544216506,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a01-049u-2c428055be0d",
+        "detector_index": 1,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "to Mr. Kennedy saying he had neceived",
+      "recognition_score": 0.9464552402496338,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0011",
+      "detector_index": 0,
+      "sorted_index": 11,
+      "raw_polygon": [
+        [
+          367.0,
+          2082.0
+        ],
+        [
+          527.0,
+          2082.0
+        ],
+        [
+          527.0,
+          2147.0
+        ],
+        [
+          367.0,
+          2147.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          367.0,
+          2082.0
+        ],
+        [
+          527.0,
+          2082.0
+        ],
+        [
+          527.0,
+          2147.0
+        ],
+        [
+          367.0,
+          2147.0
+        ]
+      ],
+      "detector_score": 0.9111494293102209,
+      "crop_path": "crops/line-0011.png",
+      "crop_provenance": {
+        "source_document": "a01-049u-2c428055be0d",
+        "detector_index": 0,
+        "sorted_index": 11,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999547004699707,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "Senator Aluen Ehende, of louisiana,\noparhed oft the opposition by telhing a\ntelevisian audience it was n curvent\nWhachington gossip\" that Weave ance had\nComummnist affiliatians. The Senate Bauhing\nCamimitke, which is headed by andthe\nSouthen Sendter - Wilhioun Robetson, of\nVirginia - met today in closed seosian to\ndiscues Weaves's appointment. Senater\nRabetion lates disclosed he had sent a lelle\nto Mr. Kennedy saying he had neceived\nName:",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 133.1396000168752,
+    "detection_ms": 11125.2639000013,
+    "sorting_ms": 0.6587000098079443,
+    "cropping_ms": 38.59539999393746,
+    "recognition_ms": 13157.976199989207,
+    "serialization_ms": 404.52229999937117
+  },
+  "status": "success",
+  "errors": []
+}

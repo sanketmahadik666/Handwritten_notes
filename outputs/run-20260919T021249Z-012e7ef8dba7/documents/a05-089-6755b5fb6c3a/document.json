@@ -1,0 +1,926 @@
+{
+  "document_id": "a05-089-6755b5fb6c3a",
+  "source_image": "a05-089.png",
+  "source_path": "a05-089.png",
+  "source_image_sha256": "6755b5fb6c3a543f5e050a4b3d6be738b07bbff4038f51b94fa3918a6917b8c6",
+  "image_metadata": {
+    "width": 2479,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 12,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          364.0,
+          36.0
+        ],
+        [
+          2048.0,
+          36.0
+        ],
+        [
+          2048.0,
+          124.0
+        ],
+        [
+          364.0,
+          124.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          364.0,
+          36.0
+        ],
+        [
+          2048.0,
+          36.0
+        ],
+        [
+          2048.0,
+          124.0
+        ],
+        [
+          364.0,
+          124.0
+        ]
+      ],
+      "detector_score": 0.8516115226311802,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a05-089-6755b5fb6c3a",
+        "detector_index": 12,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "The early speales in the debale each",
+      "recognition_score": 0.9561277031898499,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 11,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          374.0,
+          220.0
+        ],
+        [
+          2234.0,
+          220.0
+        ],
+        [
+          2234.0,
+          305.0
+        ],
+        [
+          374.0,
+          305.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          374.0,
+          220.0
+        ],
+        [
+          2234.0,
+          220.0
+        ],
+        [
+          2234.0,
+          305.0
+        ],
+        [
+          374.0,
+          305.0
+        ]
+      ],
+      "detector_score": 0.8793006560195632,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a05-089-6755b5fb6c3a",
+        "detector_index": 11,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "severlhs vakd the speean of his puedecerar.",
+      "recognition_score": 0.9049587845802307,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 10,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          346.0,
+          395.0
+        ],
+        [
+          2200.0,
+          400.0
+        ],
+        [
+          2200.0,
+          488.0
+        ],
+        [
+          346.0,
+          483.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          346.0,
+          395.0
+        ],
+        [
+          2200.0,
+          400.0
+        ],
+        [
+          2200.0,
+          488.0
+        ],
+        [
+          346.0,
+          483.0
+        ]
+      ],
+      "detector_score": 0.8428083504256015,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a05-089-6755b5fb6c3a",
+        "detector_index": 10,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "These strictues were ay too well justified.",
+      "recognition_score": 0.9539351463317871,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 9,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          357.0,
+          573.0
+        ],
+        [
+          2161.0,
+          579.0
+        ],
+        [
+          2161.0,
+          667.0
+        ],
+        [
+          356.0,
+          661.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          357.0,
+          573.0
+        ],
+        [
+          2161.0,
+          579.0
+        ],
+        [
+          2161.0,
+          667.0
+        ],
+        [
+          356.0,
+          661.0
+        ]
+      ],
+      "detector_score": 0.8316131103413621,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a05-089-6755b5fb6c3a",
+        "detector_index": 9,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "we shorted with the plainlive waitngs",
+      "recognition_score": 0.9318723082542419,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 8,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          347.0,
+          741.0
+        ],
+        [
+          2268.0,
+          757.0
+        ],
+        [
+          2267.0,
+          863.0
+        ],
+        [
+          346.0,
+          847.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          347.0,
+          741.0
+        ],
+        [
+          2268.0,
+          757.0
+        ],
+        [
+          2267.0,
+          863.0
+        ],
+        [
+          346.0,
+          847.0
+        ]
+      ],
+      "detector_score": 0.7903745343970995,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a05-089-6755b5fb6c3a",
+        "detector_index": 8,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "of Mr. Healey, a Shadow\" tereisu Secuelany,",
+      "recognition_score": 0.9152751564979553,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 7,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          346.0,
+          935.0
+        ],
+        [
+          2061.0,
+          935.0
+        ],
+        [
+          2061.0,
+          1020.0
+        ],
+        [
+          346.0,
+          1020.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          346.0,
+          935.0
+        ],
+        [
+          2061.0,
+          935.0
+        ],
+        [
+          2061.0,
+          1020.0
+        ],
+        [
+          346.0,
+          1020.0
+        ]
+      ],
+      "detector_score": 0.8760112029270312,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a05-089-6755b5fb6c3a",
+        "detector_index": 7,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "described by Mr. Godber, Minioler of",
+      "recognition_score": 0.956328809261322,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 6,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          351.0,
+          1108.0
+        ],
+        [
+          2182.0,
+          1111.0
+        ],
+        [
+          2182.0,
+          1206.0
+        ],
+        [
+          351.0,
+          1204.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          351.0,
+          1108.0
+        ],
+        [
+          2182.0,
+          1111.0
+        ],
+        [
+          2182.0,
+          1206.0
+        ],
+        [
+          351.0,
+          1204.0
+        ]
+      ],
+      "detector_score": 0.838262309383824,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a05-089-6755b5fb6c3a",
+        "detector_index": 6,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Stale, Fovsitu Office, as a pedantic and",
+      "recognition_score": 0.8898021578788757,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 5,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          354.0,
+          1281.0
+        ],
+        [
+          2195.0,
+          1292.0
+        ],
+        [
+          2195.0,
+          1387.0
+        ],
+        [
+          354.0,
+          1377.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          354.0,
+          1281.0
+        ],
+        [
+          2195.0,
+          1292.0
+        ],
+        [
+          2195.0,
+          1387.0
+        ],
+        [
+          354.0,
+          1377.0
+        ]
+      ],
+      "detector_score": 0.8017632648441961,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a05-089-6755b5fb6c3a",
+        "detector_index": 5,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "abscume an Beslin, damasing and oboxme",
+      "recognition_score": 0.8747401833534241,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 4,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          359.0,
+          1462.0
+        ],
+        [
+          2267.0,
+          1470.0
+        ],
+        [
+          2267.0,
+          1558.0
+        ],
+        [
+          359.0,
+          1550.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          359.0,
+          1462.0
+        ],
+        [
+          2267.0,
+          1470.0
+        ],
+        [
+          2267.0,
+          1558.0
+        ],
+        [
+          359.0,
+          1550.0
+        ]
+      ],
+      "detector_score": 0.836795903139649,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a05-089-6755b5fb6c3a",
+        "detector_index": 4,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "on the Caugo.\" hn tvn Mr. Goaber war",
+      "recognition_score": 0.8714048862457275,
+      "recognition_order": 12,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 3,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          370.0,
+          1645.0
+        ],
+        [
+          2255.0,
+          1656.0
+        ],
+        [
+          2254.0,
+          1741.0
+        ],
+        [
+          369.0,
+          1731.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          370.0,
+          1645.0
+        ],
+        [
+          2255.0,
+          1656.0
+        ],
+        [
+          2254.0,
+          1741.0
+        ],
+        [
+          369.0,
+          1731.0
+        ]
+      ],
+      "detector_score": 0.8728166270718912,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a05-089-6755b5fb6c3a",
+        "detector_index": 3,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "cenowed by Mr. Shimwell, farmes Labor",
+      "recognition_score": 0.9138274192810059,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 2,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          362.0,
+          1821.0
+        ],
+        [
+          2291.0,
+          1832.0
+        ],
+        [
+          2290.0,
+          1920.0
+        ],
+        [
+          361.0,
+          1909.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          362.0,
+          1821.0
+        ],
+        [
+          2291.0,
+          1832.0
+        ],
+        [
+          2290.0,
+          1920.0
+        ],
+        [
+          361.0,
+          1909.0
+        ]
+      ],
+      "detector_score": 0.8841987326166814,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a05-089-6755b5fb6c3a",
+        "detector_index": 2,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Defenca minioler, for hawing mead the",
+      "recognition_score": 0.8906480669975281,
+      "recognition_order": 11,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0011",
+      "detector_index": 1,
+      "sorted_index": 11,
+      "raw_polygon": [
+        [
+          325.0,
+          2095.0
+        ],
+        [
+          488.0,
+          2095.0
+        ],
+        [
+          488.0,
+          2162.0
+        ],
+        [
+          325.0,
+          2162.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          325.0,
+          2095.0
+        ],
+        [
+          488.0,
+          2095.0
+        ],
+        [
+          488.0,
+          2162.0
+        ],
+        [
+          325.0,
+          2162.0
+        ]
+      ],
+      "detector_score": 0.884307466954566,
+      "crop_path": "crops/line-0011.png",
+      "crop_provenance": {
+        "source_document": "a05-089-6755b5fb6c3a",
+        "detector_index": 1,
+        "sorted_index": 11,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.999891459941864,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0012",
+      "detector_index": 0,
+      "sorted_index": 12,
+      "raw_polygon": [
+        [
+          942.0,
+          2150.0
+        ],
+        [
+          1349.0,
+          2141.0
+        ],
+        [
+          1351.0,
+          2239.0
+        ],
+        [
+          944.0,
+          2248.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          942.0,
+          2150.0
+        ],
+        [
+          1349.0,
+          2141.0
+        ],
+        [
+          1351.0,
+          2239.0
+        ],
+        [
+          944.0,
+          2248.0
+        ]
+      ],
+      "detector_score": 0.8804594010874888,
+      "crop_path": "crops/line-0012.png",
+      "crop_provenance": {
+        "source_document": "a05-089-6755b5fb6c3a",
+        "detector_index": 0,
+        "sorted_index": 12,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "u.Mauli",
+      "recognition_score": 0.9160175323486328,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "The early speales in the debale each\nseverlhs vakd the speean of his puedecerar.\nThese strictues were ay too well justified.\nwe shorted with the plainlive waitngs\nof Mr. Healey, a Shadow\" tereisu Secuelany,\ndescribed by Mr. Godber, Minioler of\nStale, Fovsitu Office, as a pedantic and\nabscume an Beslin, damasing and oboxme\non the Caugo.\" hn tvn Mr. Goaber war\ncenowed by Mr. Shimwell, farmes Labor\nDefenca minioler, for hawing mead the\nName:\nu.Mauli",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 150.1431000069715,
+    "detection_ms": 9602.650899993023,
+    "sorting_ms": 0.7198999810498208,
+    "cropping_ms": 35.25070002069697,
+    "recognition_ms": 12865.281500009587,
+    "serialization_ms": 411.2538999761455
+  },
+  "status": "success",
+  "errors": []
+}

@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/handwritten-ocr/run-result.schema.json",
+  "oneOf": [
+    {"$ref": "#/$defs/document_result"},
+    {"$ref": "#/$defs/run_manifest"}
+  ],
+  "$defs": {
+    "region": {
+      "type": "object",
+      "required": [
+        "region_id",
+        "detector_index",
+        "sorted_index",
+        "raw_polygon",
+        "sorted_polygon",
+        "detector_score",
+        "crop_path",
+        "raw_text",
+        "recognition_score",
+        "correction"
+      ],
+      "properties": {
+        "region_id": {"type": "string"},
+        "detector_index": {"type": "integer"},
+        "sorted_index": {"type": ["integer", "null"]},
+        "raw_polygon": {"type": "array"},
+        "sorted_polygon": {"type": ["array", "null"]},
+        "detector_score": {"type": ["number", "null"]},
+        "crop_path": {"type": ["string", "null"]},
+        "raw_text": {"type": ["string", "null"]},
+        "recognition_score": {"type": ["number", "null"]},
+        "correction": {"type": "object"}
+      }
+    },
+    "document_result": {
+      "type": "object",
+      "required": [
+        "document_id",
+        "source_image",
+        "source_path",
+        "image_metadata",
+        "pipeline_metadata",
+        "regions",
+        "document_text_raw",
+        "document_text_corrected",
+        "evaluation",
+        "timing",
+        "status"
+      ],
+      "properties": {
+        "document_id": {"type": "string"},
+        "source_image": {"type": "string"},
+        "source_path": {"type": "string"},
+        "image_metadata": {"type": "object"},
+        "pipeline_metadata": {"type": "object"},
+        "regions": {"type": "array", "items": {"$ref": "#/$defs/region"}},
+        "document_text_raw": {"type": "string"},
+        "document_text_corrected": {"type": ["string", "null"]},
+        "evaluation": {"type": "object"},
+        "timing": {"type": "object"},
+        "status": {"type": "string"}
+      }
+    },
+    "run_manifest": {
+      "type": "object",
+      "required": [
+        "run_id",
+        "created_at_utc",
+        "config_sha256",
+        "runtime",
+        "documents",
+        "integration_status"
+      ],
+      "properties": {
+        "run_id": {"type": "string"},
+        "created_at_utc": {"type": "string"},
+        "config_sha256": {"type": "string"},
+        "runtime": {"type": "object"},
+        "documents": {"type": "array"},
+        "integration_status": {"type": "string"}
+      }
+    }
+  }
+}

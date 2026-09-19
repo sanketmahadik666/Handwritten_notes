@@ -1,0 +1,859 @@
+{
+  "document_id": "a01-003u-26039fabfa22",
+  "source_image": "a01-003u.png",
+  "source_path": "a01-003u.png",
+  "source_image_sha256": "26039fabfa2214b7f18e15b955fc6783ef6d57d8e9f0933831be1ebf3cd24c1a",
+  "image_metadata": {
+    "width": 2448,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 11,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          339.0,
+          78.0
+        ],
+        [
+          2309.0,
+          74.0
+        ],
+        [
+          2309.0,
+          200.0
+        ],
+        [
+          339.0,
+          203.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          339.0,
+          78.0
+        ],
+        [
+          2309.0,
+          74.0
+        ],
+        [
+          2309.0,
+          200.0
+        ],
+        [
+          339.0,
+          203.0
+        ]
+      ],
+      "detector_score": 0.7066831829350708,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a01-003u-26039fabfa22",
+        "detector_index": 11,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Though they may gathe same Left - wing",
+      "recognition_score": 0.9547775387763977,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 10,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          352.0,
+          280.0
+        ],
+        [
+          2225.0,
+          257.0
+        ],
+        [
+          2226.0,
+          360.0
+        ],
+        [
+          353.0,
+          383.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          352.0,
+          280.0
+        ],
+        [
+          2225.0,
+          257.0
+        ],
+        [
+          2226.0,
+          360.0
+        ],
+        [
+          353.0,
+          383.0
+        ]
+      ],
+      "detector_score": 0.8299149588900925,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a01-003u-26039fabfa22",
+        "detector_index": 10,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "suppart, a large majority af Labaur",
+      "recognition_score": 0.9513497352600098,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 9,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          335.0,
+          449.0
+        ],
+        [
+          2279.0,
+          429.0
+        ],
+        [
+          2280.0,
+          539.0
+        ],
+        [
+          336.0,
+          560.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          335.0,
+          449.0
+        ],
+        [
+          2279.0,
+          429.0
+        ],
+        [
+          2280.0,
+          539.0
+        ],
+        [
+          336.0,
+          560.0
+        ]
+      ],
+      "detector_score": 0.7534912440647074,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a01-003u-26039fabfa22",
+        "detector_index": 9,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "MP. are linely to turn down the Foot-",
+      "recognition_score": 0.9456924200057983,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 8,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          323.0,
+          617.0
+        ],
+        [
+          2237.0,
+          600.0
+        ],
+        [
+          2238.0,
+          723.0
+        ],
+        [
+          324.0,
+          741.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          323.0,
+          617.0
+        ],
+        [
+          2237.0,
+          600.0
+        ],
+        [
+          2238.0,
+          723.0
+        ],
+        [
+          324.0,
+          741.0
+        ]
+      ],
+      "detector_score": 0.7025860594917939,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a01-003u-26039fabfa22",
+        "detector_index": 8,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Griffitus nesolution. Mr. Fodts hine will",
+      "recognition_score": 0.8834548592567444,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 7,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          326.0,
+          803.0
+        ],
+        [
+          2229.0,
+          781.0
+        ],
+        [
+          2230.0,
+          905.0
+        ],
+        [
+          327.0,
+          927.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          326.0,
+          803.0
+        ],
+        [
+          2229.0,
+          781.0
+        ],
+        [
+          2230.0,
+          905.0
+        ],
+        [
+          327.0,
+          927.0
+        ]
+      ],
+      "detector_score": 0.6675491768483629,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a01-003u-26039fabfa22",
+        "detector_index": 7,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "be that as Labaw MP. opposed the",
+      "recognition_score": 0.9590524435043335,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 6,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          318.0,
+          986.0
+        ],
+        [
+          2369.0,
+          970.0
+        ],
+        [
+          2370.0,
+          1078.0
+        ],
+        [
+          319.0,
+          1093.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          318.0,
+          986.0
+        ],
+        [
+          2369.0,
+          970.0
+        ],
+        [
+          2370.0,
+          1078.0
+        ],
+        [
+          319.0,
+          1093.0
+        ]
+      ],
+      "detector_score": 0.7928233740636842,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a01-003u-26039fabfa22",
+        "detector_index": 6,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Government Bill whian brought life peers",
+      "recognition_score": 0.9455043077468872,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 5,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          306.0,
+          1155.0
+        ],
+        [
+          2356.0,
+          1145.0
+        ],
+        [
+          2357.0,
+          1266.0
+        ],
+        [
+          306.0,
+          1275.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          306.0,
+          1155.0
+        ],
+        [
+          2356.0,
+          1145.0
+        ],
+        [
+          2357.0,
+          1266.0
+        ],
+        [
+          306.0,
+          1275.0
+        ]
+      ],
+      "detector_score": 0.7081157678108656,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a01-003u-26039fabfa22",
+        "detector_index": 5,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "nto etistence, they sdhould not now put",
+      "recognition_score": 0.9330813884735107,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 4,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          345.0,
+          1352.0
+        ],
+        [
+          2326.0,
+          1322.0
+        ],
+        [
+          2328.0,
+          1425.0
+        ],
+        [
+          346.0,
+          1455.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          345.0,
+          1352.0
+        ],
+        [
+          2326.0,
+          1322.0
+        ],
+        [
+          2328.0,
+          1425.0
+        ],
+        [
+          346.0,
+          1455.0
+        ]
+      ],
+      "detector_score": 0.7890402349753154,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a01-003u-26039fabfa22",
+        "detector_index": 4,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "forwoud nominees. He be lieves that the",
+      "recognition_score": 0.9525060653686523,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 3,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          338.0,
+          1526.0
+        ],
+        [
+          2337.0,
+          1512.0
+        ],
+        [
+          2338.0,
+          1612.0
+        ],
+        [
+          339.0,
+          1627.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          338.0,
+          1526.0
+        ],
+        [
+          2337.0,
+          1512.0
+        ],
+        [
+          2338.0,
+          1612.0
+        ],
+        [
+          339.0,
+          1627.0
+        ]
+      ],
+      "detector_score": 0.8060109552556506,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a01-003u-26039fabfa22",
+        "detector_index": 3,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Hause of Loras shouladr be aloliohed and",
+      "recognition_score": 0.9388939142227173,
+      "recognition_order": 11,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 2,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          337.0,
+          1709.0
+        ],
+        [
+          2318.0,
+          1689.0
+        ],
+        [
+          2319.0,
+          1789.0
+        ],
+        [
+          338.0,
+          1810.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          337.0,
+          1709.0
+        ],
+        [
+          2318.0,
+          1689.0
+        ],
+        [
+          2319.0,
+          1789.0
+        ],
+        [
+          338.0,
+          1810.0
+        ]
+      ],
+      "detector_score": 0.7861845788411405,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a01-003u-26039fabfa22",
+        "detector_index": 2,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "that Labaw should nat take any stepo",
+      "recognition_score": 0.9541150331497192,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 1,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          331.0,
+          1874.0
+        ],
+        [
+          2448.0,
+          1853.0
+        ],
+        [
+          2448.0,
+          1974.0
+        ],
+        [
+          332.0,
+          1995.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          331.0,
+          1874.0
+        ],
+        [
+          2448.0,
+          1853.0
+        ],
+        [
+          2448.0,
+          1974.0
+        ],
+        [
+          332.0,
+          1995.0
+        ]
+      ],
+      "detector_score": 0.7179233717166317,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a01-003u-26039fabfa22",
+        "detector_index": 1,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "which wauld appear to u pror up\" an out.",
+      "recognition_score": 0.906581699848175,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0011",
+      "detector_index": 0,
+      "sorted_index": 11,
+      "raw_polygon": [
+        [
+          379.0,
+          2088.0
+        ],
+        [
+          529.0,
+          2088.0
+        ],
+        [
+          529.0,
+          2145.0
+        ],
+        [
+          379.0,
+          2145.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          379.0,
+          2088.0
+        ],
+        [
+          529.0,
+          2088.0
+        ],
+        [
+          529.0,
+          2145.0
+        ],
+        [
+          379.0,
+          2145.0
+        ]
+      ],
+      "detector_score": 0.9036441813003827,
+      "crop_path": "crops/line-0011.png",
+      "crop_provenance": {
+        "source_document": "a01-003u-26039fabfa22",
+        "detector_index": 0,
+        "sorted_index": 11,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999540448188782,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "Though they may gathe same Left - wing\nsuppart, a large majority af Labaur\nMP. are linely to turn down the Foot-\nGriffitus nesolution. Mr. Fodts hine will\nbe that as Labaw MP. opposed the\nGovernment Bill whian brought life peers\nnto etistence, they sdhould not now put\nforwoud nominees. He be lieves that the\nHause of Loras shouladr be aloliohed and\nthat Labaw should nat take any stepo\nwhich wauld appear to u pror up\" an out.\nName:",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 140.09380000061356,
+    "detection_ms": 61795.15890000039,
+    "sorting_ms": 0.7811000104993582,
+    "cropping_ms": 39.3435000005411,
+    "recognition_ms": 11111.108299999614,
+    "serialization_ms": 366.9804999954067
+  },
+  "status": "success",
+  "errors": []
+}

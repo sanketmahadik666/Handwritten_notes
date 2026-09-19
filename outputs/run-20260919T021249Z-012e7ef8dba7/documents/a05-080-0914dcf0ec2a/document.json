@@ -1,0 +1,859 @@
+{
+  "document_id": "a05-080-0914dcf0ec2a",
+  "source_image": "a05-080.png",
+  "source_path": "a05-080.png",
+  "source_image_sha256": "0914dcf0ec2a152270d9e8617f8d5f584792829d60497de7ac40b4d5440ce19e",
+  "image_metadata": {
+    "width": 2479,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 11,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          346.0,
+          36.0
+        ],
+        [
+          2259.0,
+          28.0
+        ],
+        [
+          2260.0,
+          116.0
+        ],
+        [
+          346.0,
+          124.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          346.0,
+          36.0
+        ],
+        [
+          2259.0,
+          28.0
+        ],
+        [
+          2260.0,
+          116.0
+        ],
+        [
+          346.0,
+          124.0
+        ]
+      ],
+      "detector_score": 0.8269064891989965,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a05-080-0914dcf0ec2a",
+        "detector_index": 11,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Mr. Macmillan explained that he had deliber-",
+      "recognition_score": 0.9547795653343201,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 10,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          359.0,
+          220.0
+        ],
+        [
+          2130.0,
+          222.0
+        ],
+        [
+          2130.0,
+          302.0
+        ],
+        [
+          359.0,
+          300.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          359.0,
+          220.0
+        ],
+        [
+          2130.0,
+          222.0
+        ],
+        [
+          2130.0,
+          302.0
+        ],
+        [
+          359.0,
+          300.0
+        ]
+      ],
+      "detector_score": 0.8726650284133318,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a05-080-0914dcf0ec2a",
+        "detector_index": 10,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "ately nedrained dnring the omer from",
+      "recognition_score": 0.8483089208602905,
+      "recognition_order": 11,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 9,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          336.0,
+          400.0
+        ],
+        [
+          2195.0,
+          400.0
+        ],
+        [
+          2195.0,
+          486.0
+        ],
+        [
+          336.0,
+          486.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          336.0,
+          400.0
+        ],
+        [
+          2195.0,
+          400.0
+        ],
+        [
+          2195.0,
+          486.0
+        ],
+        [
+          336.0,
+          486.0
+        ]
+      ],
+      "detector_score": 0.8783783994161278,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a05-080-0914dcf0ec2a",
+        "detector_index": 9,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "we canins Porlicunet or ordeing wobilijation",
+      "recognition_score": 0.9097335338592529,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 8,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          343.0,
+          581.0
+        ],
+        [
+          1929.0,
+          576.0
+        ],
+        [
+          1929.0,
+          664.0
+        ],
+        [
+          344.0,
+          669.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          343.0,
+          581.0
+        ],
+        [
+          1929.0,
+          576.0
+        ],
+        [
+          1929.0,
+          664.0
+        ],
+        [
+          344.0,
+          669.0
+        ]
+      ],
+      "detector_score": 0.85888078644006,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a05-080-0914dcf0ec2a",
+        "detector_index": 8,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "by proclamalicn, such as would be",
+      "recognition_score": 0.9551512598991394,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 7,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          341.0,
+          760.0
+        ],
+        [
+          2176.0,
+          746.0
+        ],
+        [
+          2177.0,
+          834.0
+        ],
+        [
+          341.0,
+          848.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          341.0,
+          760.0
+        ],
+        [
+          2176.0,
+          746.0
+        ],
+        [
+          2177.0,
+          834.0
+        ],
+        [
+          341.0,
+          848.0
+        ]
+      ],
+      "detector_score": 0.8656663897967509,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a05-080-0914dcf0ec2a",
+        "detector_index": 7,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "mecessoury to bing Brition Arnny of the Thine",
+      "recognition_score": 0.897766649723053,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 6,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          346.0,
+          940.0
+        ],
+        [
+          1926.0,
+          935.0
+        ],
+        [
+          1926.0,
+          1015.0
+        ],
+        [
+          346.0,
+          1021.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          346.0,
+          940.0
+        ],
+        [
+          1926.0,
+          935.0
+        ],
+        [
+          1926.0,
+          1015.0
+        ],
+        [
+          346.0,
+          1021.0
+        ]
+      ],
+      "detector_score": 0.895315779558304,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a05-080-0914dcf0ec2a",
+        "detector_index": 6,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "on to a fulys active foolins. That",
+      "recognition_score": 0.9161260724067688,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 5,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          349.0,
+          1113.0
+        ],
+        [
+          2182.0,
+          1113.0
+        ],
+        [
+          2182.0,
+          1199.0
+        ],
+        [
+          349.0,
+          1199.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          349.0,
+          1113.0
+        ],
+        [
+          2182.0,
+          1113.0
+        ],
+        [
+          2182.0,
+          1199.0
+        ],
+        [
+          349.0,
+          1199.0
+        ]
+      ],
+      "detector_score": 0.8596817326317727,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a05-080-0914dcf0ec2a",
+        "detector_index": 5,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "wauld have creaked a thoranghly mdes-",
+      "recognition_score": 0.9219415783882141,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 4,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          346.0,
+          1289.0
+        ],
+        [
+          2249.0,
+          1292.0
+        ],
+        [
+          2249.0,
+          1380.0
+        ],
+        [
+          346.0,
+          1377.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          346.0,
+          1289.0
+        ],
+        [
+          2249.0,
+          1292.0
+        ],
+        [
+          2249.0,
+          1380.0
+        ],
+        [
+          346.0,
+          1377.0
+        ]
+      ],
+      "detector_score": 0.8192411480121462,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a05-080-0914dcf0ec2a",
+        "detector_index": 4,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "simgble atmosphee of rannic. bhe thaught",
+      "recognition_score": 0.8570975065231323,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 3,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          362.0,
+          1472.0
+        ],
+        [
+          2001.0,
+          1472.0
+        ],
+        [
+          2001.0,
+          1558.0
+        ],
+        [
+          362.0,
+          1558.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          362.0,
+          1472.0
+        ],
+        [
+          2001.0,
+          1472.0
+        ],
+        [
+          2001.0,
+          1558.0
+        ],
+        [
+          362.0,
+          1558.0
+        ]
+      ],
+      "detector_score": 0.8588685541484351,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a05-080-0914dcf0ec2a",
+        "detector_index": 3,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "thas the sihuation wces vatnes moue",
+      "recognition_score": 0.9267238974571228,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 2,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          374.0,
+          1651.0
+        ],
+        [
+          708.0,
+          1651.0
+        ],
+        [
+          708.0,
+          1741.0
+        ],
+        [
+          374.0,
+          1741.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          374.0,
+          1651.0
+        ],
+        [
+          708.0,
+          1651.0
+        ],
+        [
+          708.0,
+          1741.0
+        ],
+        [
+          374.0,
+          1741.0
+        ]
+      ],
+      "detector_score": 0.8974543465042105,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a05-080-0914dcf0ec2a",
+        "detector_index": 2,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "nopeful.",
+      "recognition_score": 0.9295035600662231,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 1,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          331.0,
+          2090.0
+        ],
+        [
+          496.0,
+          2090.0
+        ],
+        [
+          496.0,
+          2165.0
+        ],
+        [
+          331.0,
+          2165.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          331.0,
+          2090.0
+        ],
+        [
+          496.0,
+          2090.0
+        ],
+        [
+          496.0,
+          2165.0
+        ],
+        [
+          331.0,
+          2165.0
+        ]
+      ],
+      "detector_score": 0.8635286053468856,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a05-080-0914dcf0ec2a",
+        "detector_index": 1,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.99993497133255,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0011",
+      "detector_index": 0,
+      "sorted_index": 11,
+      "raw_polygon": [
+        [
+          899.0,
+          2173.0
+        ],
+        [
+          1286.0,
+          2173.0
+        ],
+        [
+          1286.0,
+          2271.0
+        ],
+        [
+          899.0,
+          2271.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          899.0,
+          2173.0
+        ],
+        [
+          1286.0,
+          2173.0
+        ],
+        [
+          1286.0,
+          2271.0
+        ],
+        [
+          899.0,
+          2271.0
+        ]
+      ],
+      "detector_score": 0.8907228696117125,
+      "crop_path": "crops/line-0011.png",
+      "crop_provenance": {
+        "source_document": "a05-080-0914dcf0ec2a",
+        "detector_index": 0,
+        "sorted_index": 11,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "u. Mauli",
+      "recognition_score": 0.9018210172653198,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "Mr. Macmillan explained that he had deliber-\nately nedrained dnring the omer from\nwe canins Porlicunet or ordeing wobilijation\nby proclamalicn, such as would be\nmecessoury to bing Brition Arnny of the Thine\non to a fulys active foolins. That\nwauld have creaked a thoranghly mdes-\nsimgble atmosphee of rannic. bhe thaught\nthas the sihuation wces vatnes moue\nnopeful.\nName:\nu. Mauli",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 150.3124000155367,
+    "detection_ms": 9439.28049999522,
+    "sorting_ms": 0.4778000002261251,
+    "cropping_ms": 31.194400013191625,
+    "recognition_ms": 12626.32469998789,
+    "serialization_ms": 408.94069999922067
+  },
+  "status": "success",
+  "errors": []
+}

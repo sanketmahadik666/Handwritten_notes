@@ -1,0 +1,792 @@
+{
+  "document_id": "a01-007u-29080b0b21ed",
+  "source_image": "a01-007u.png",
+  "source_path": "a01-007u.png",
+  "source_image_sha256": "29080b0b21ed7f0a49029d0df2444f35a9ee79e1fc27cb56829d8f5325494bd4",
+  "image_metadata": {
+    "width": 2406,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 10,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          394.0,
+          44.0
+        ],
+        [
+          2279.0,
+          33.0
+        ],
+        [
+          2279.0,
+          126.0
+        ],
+        [
+          394.0,
+          137.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          394.0,
+          44.0
+        ],
+        [
+          2279.0,
+          33.0
+        ],
+        [
+          2279.0,
+          126.0
+        ],
+        [
+          394.0,
+          137.0
+        ]
+      ],
+      "detector_score": 0.897043115121372,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a01-007u-29080b0b21ed",
+        "detector_index": 10,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Since 1g58, 13 Labar life Peeu and",
+      "recognition_score": 0.9416305422782898,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 9,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          347.0,
+          227.0
+        ],
+        [
+          2354.0,
+          225.0
+        ],
+        [
+          2354.0,
+          313.0
+        ],
+        [
+          347.0,
+          315.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          347.0,
+          227.0
+        ],
+        [
+          2354.0,
+          225.0
+        ],
+        [
+          2354.0,
+          313.0
+        ],
+        [
+          347.0,
+          315.0
+        ]
+      ],
+      "detector_score": 0.8875933682861344,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a01-007u-29080b0b21ed",
+        "detector_index": 9,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Peesesses have been cueated. Most Labaur",
+      "recognition_score": 0.9409182667732239,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 8,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          358.0,
+          406.0
+        ],
+        [
+          2302.0,
+          400.0
+        ],
+        [
+          2302.0,
+          488.0
+        ],
+        [
+          358.0,
+          493.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          358.0,
+          406.0
+        ],
+        [
+          2302.0,
+          400.0
+        ],
+        [
+          2302.0,
+          488.0
+        ],
+        [
+          358.0,
+          493.0
+        ]
+      ],
+      "detector_score": 0.8654328300976987,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a01-007u-29080b0b21ed",
+        "detector_index": 8,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "sentiment would still fauour the abolition",
+      "recognition_score": 0.9422425627708435,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 7,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          332.0,
+          576.0
+        ],
+        [
+          2388.0,
+          571.0
+        ],
+        [
+          2388.0,
+          666.0
+        ],
+        [
+          332.0,
+          672.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          332.0,
+          576.0
+        ],
+        [
+          2388.0,
+          571.0
+        ],
+        [
+          2388.0,
+          666.0
+        ],
+        [
+          332.0,
+          672.0
+        ]
+      ],
+      "detector_score": 0.8323698901513734,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a01-007u-29080b0b21ed",
+        "detector_index": 7,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "of the Hause of Lords, But while it wemais",
+      "recognition_score": 0.9472996592521667,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 6,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          329.0,
+          768.0
+        ],
+        [
+          2314.0,
+          738.0
+        ],
+        [
+          2316.0,
+          831.0
+        ],
+        [
+          330.0,
+          861.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          329.0,
+          768.0
+        ],
+        [
+          2314.0,
+          738.0
+        ],
+        [
+          2316.0,
+          831.0
+        ],
+        [
+          330.0,
+          861.0
+        ]
+      ],
+      "detector_score": 0.856565642397259,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a01-007u-29080b0b21ed",
+        "detector_index": 6,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Labawr has do have an adequate number",
+      "recognition_score": 0.9593515396118164,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 5,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          332.0,
+          943.0
+        ],
+        [
+          2055.0,
+          925.0
+        ],
+        [
+          2056.0,
+          1020.0
+        ],
+        [
+          333.0,
+          1039.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          332.0,
+          943.0
+        ],
+        [
+          2055.0,
+          925.0
+        ],
+        [
+          2056.0,
+          1020.0
+        ],
+        [
+          333.0,
+          1039.0
+        ]
+      ],
+      "detector_score": 0.8198155140999062,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a01-007u-29080b0b21ed",
+        "detector_index": 5,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "of membes. THE two rioal African",
+      "recognition_score": 0.9617096185684204,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 4,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          332.0,
+          1124.0
+        ],
+        [
+          2274.0,
+          1119.0
+        ],
+        [
+          2274.0,
+          1206.0
+        ],
+        [
+          332.0,
+          1212.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          332.0,
+          1124.0
+        ],
+        [
+          2274.0,
+          1119.0
+        ],
+        [
+          2274.0,
+          1206.0
+        ],
+        [
+          332.0,
+          1212.0
+        ]
+      ],
+      "detector_score": 0.8738610536839155,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a01-007u-29080b0b21ed",
+        "detector_index": 4,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Nationaliot Pouties of Nortuen Rhodesia",
+      "recognition_score": 0.9455080032348633,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 3,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          332.0,
+          1305.0
+        ],
+        [
+          2253.0,
+          1299.0
+        ],
+        [
+          2253.0,
+          1387.0
+        ],
+        [
+          332.0,
+          1392.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          332.0,
+          1305.0
+        ],
+        [
+          2253.0,
+          1299.0
+        ],
+        [
+          2253.0,
+          1387.0
+        ],
+        [
+          332.0,
+          1392.0
+        ]
+      ],
+      "detector_score": 0.8848951400781649,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a01-007u-29080b0b21ed",
+        "detector_index": 3,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "have agneed to get togetne to face",
+      "recognition_score": 0.9533628821372986,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 2,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          327.0,
+          1467.0
+        ],
+        [
+          2300.0,
+          1478.0
+        ],
+        [
+          2299.0,
+          1592.0
+        ],
+        [
+          326.0,
+          1581.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          327.0,
+          1467.0
+        ],
+        [
+          2300.0,
+          1478.0
+        ],
+        [
+          2299.0,
+          1592.0
+        ],
+        [
+          326.0,
+          1581.0
+        ]
+      ],
+      "detector_score": 0.7931405067337526,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a01-007u-29080b0b21ed",
+        "detector_index": 2,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "the chalnenge fram Sir Roy Welenshy,",
+      "recognition_score": 0.9557157158851624,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 1,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          342.0,
+          1658.0
+        ],
+        [
+          1574.0,
+          1658.0
+        ],
+        [
+          1574.0,
+          1754.0
+        ],
+        [
+          342.0,
+          1754.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          342.0,
+          1658.0
+        ],
+        [
+          1574.0,
+          1658.0
+        ],
+        [
+          1574.0,
+          1754.0
+        ],
+        [
+          342.0,
+          1754.0
+        ]
+      ],
+      "detector_score": 0.8679686491426373,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a01-007u-29080b0b21ed",
+        "detector_index": 1,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "the Tedesal Puemiies.",
+      "recognition_score": 0.8894694447517395,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 0,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          384.0,
+          2082.0
+        ],
+        [
+          539.0,
+          2082.0
+        ],
+        [
+          539.0,
+          2147.0
+        ],
+        [
+          384.0,
+          2147.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          384.0,
+          2082.0
+        ],
+        [
+          539.0,
+          2082.0
+        ],
+        [
+          539.0,
+          2147.0
+        ],
+        [
+          384.0,
+          2147.0
+        ]
+      ],
+      "detector_score": 0.9027817159336298,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a01-007u-29080b0b21ed",
+        "detector_index": 0,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9998106956481934,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "Since 1g58, 13 Labar life Peeu and\nPeesesses have been cueated. Most Labaur\nsentiment would still fauour the abolition\nof the Hause of Lords, But while it wemais\nLabawr has do have an adequate number\nof membes. THE two rioal African\nNationaliot Pouties of Nortuen Rhodesia\nhave agneed to get togetne to face\nthe chalnenge fram Sir Roy Welenshy,\nthe Tedesal Puemiies.\nName:",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 121.59560000873171,
+    "detection_ms": 9271.62360001239,
+    "sorting_ms": 0.5463999987114221,
+    "cropping_ms": 28.43959999154322,
+    "recognition_ms": 11757.732500002021,
+    "serialization_ms": 346.06199999689125
+  },
+  "status": "success",
+  "errors": []
+}

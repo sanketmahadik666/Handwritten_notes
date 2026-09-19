@@ -1,0 +1,617 @@
+{
+  "document_id": "a01-000u-f1764d425a84",
+  "source_image": "a01-000u.png",
+  "source_path": "a01-000u.png",
+  "source_image_sha256": "f1764d425a84328dad41c190cdd89b7a72b0ed55b3ca47b2482ba17390ed4895",
+  "image_metadata": {
+    "width": 2464,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 7,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          400.0,
+          36.0
+        ],
+        [
+          2071.0,
+          36.0
+        ],
+        [
+          2071.0,
+          124.0
+        ],
+        [
+          400.0,
+          124.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          400.0,
+          36.0
+        ],
+        [
+          2071.0,
+          36.0
+        ],
+        [
+          2071.0,
+          124.0
+        ],
+        [
+          400.0,
+          124.0
+        ]
+      ],
+      "detector_score": 0.8866381565650694,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a01-000u-f1764d425a84",
+        "detector_index": 7,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "A MovE to stop Mr. Gaitskell from",
+      "recognition_score": 0.9662445187568665,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 6,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          385.0,
+          212.0
+        ],
+        [
+          2248.0,
+          209.0
+        ],
+        [
+          2248.0,
+          315.0
+        ],
+        [
+          385.0,
+          318.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          385.0,
+          212.0
+        ],
+        [
+          2248.0,
+          209.0
+        ],
+        [
+          2248.0,
+          315.0
+        ],
+        [
+          385.0,
+          318.0
+        ]
+      ],
+      "detector_score": 0.8218813390707378,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a01-000u-f1764d425a84",
+        "detector_index": 6,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "nominating any mone Labour life Peers",
+      "recognition_score": 0.9713245034217834,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 5,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          396.0,
+          387.0
+        ],
+        [
+          2390.0,
+          401.0
+        ],
+        [
+          2389.0,
+          499.0
+        ],
+        [
+          395.0,
+          485.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          396.0,
+          387.0
+        ],
+        [
+          2390.0,
+          401.0
+        ],
+        [
+          2389.0,
+          499.0
+        ],
+        [
+          395.0,
+          485.0
+        ]
+      ],
+      "detector_score": 0.8009625940463106,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a01-000u-f1764d425a84",
+        "detector_index": 5,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "is to be made at a meeting af Labaur",
+      "recognition_score": 0.9466040730476379,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 4,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          416.0,
+          566.0
+        ],
+        [
+          2315.0,
+          579.0
+        ],
+        [
+          2315.0,
+          667.0
+        ],
+        [
+          416.0,
+          653.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          416.0,
+          566.0
+        ],
+        [
+          2315.0,
+          579.0
+        ],
+        [
+          2315.0,
+          667.0
+        ],
+        [
+          416.0,
+          653.0
+        ]
+      ],
+      "detector_score": 0.8476080438697443,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a01-000u-f1764d425a84",
+        "detector_index": 4,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "MPs domorrorw. Mr. Michael Foot has",
+      "recognition_score": 0.9552304744720459,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 3,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          383.0,
+          741.0
+        ],
+        [
+          2228.0,
+          755.0
+        ],
+        [
+          2227.0,
+          858.0
+        ],
+        [
+          382.0,
+          845.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          383.0,
+          741.0
+        ],
+        [
+          2228.0,
+          755.0
+        ],
+        [
+          2227.0,
+          858.0
+        ],
+        [
+          382.0,
+          845.0
+        ]
+      ],
+      "detector_score": 0.8187564055697497,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a01-000u-f1764d425a84",
+        "detector_index": 3,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "put down a vesolution on the oubjeat",
+      "recognition_score": 0.9479051232337952,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 2,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          372.0,
+          933.0
+        ],
+        [
+          2236.0,
+          933.0
+        ],
+        [
+          2236.0,
+          1020.0
+        ],
+        [
+          372.0,
+          1020.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          372.0,
+          933.0
+        ],
+        [
+          2236.0,
+          933.0
+        ],
+        [
+          2236.0,
+          1020.0
+        ],
+        [
+          372.0,
+          1020.0
+        ]
+      ],
+      "detector_score": 0.8653704481539684,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a01-000u-f1764d425a84",
+        "detector_index": 2,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "and he is do be bached by Mr. Will",
+      "recognition_score": 0.9017832279205322,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 1,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          354.0,
+          1106.0
+        ],
+        [
+          2428.0,
+          1111.0
+        ],
+        [
+          2428.0,
+          1206.0
+        ],
+        [
+          354.0,
+          1201.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          354.0,
+          1106.0
+        ],
+        [
+          2428.0,
+          1111.0
+        ],
+        [
+          2428.0,
+          1206.0
+        ],
+        [
+          354.0,
+          1201.0
+        ]
+      ],
+      "detector_score": 0.8358196051759971,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a01-000u-f1764d425a84",
+        "detector_index": 1,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Griffiths, HP for Manchesle Exallange.",
+      "recognition_score": 0.8995086550712585,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 0,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          385.0,
+          2085.0
+        ],
+        [
+          542.0,
+          2085.0
+        ],
+        [
+          542.0,
+          2149.0
+        ],
+        [
+          385.0,
+          2149.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          385.0,
+          2085.0
+        ],
+        [
+          542.0,
+          2085.0
+        ],
+        [
+          542.0,
+          2149.0
+        ],
+        [
+          385.0,
+          2149.0
+        ]
+      ],
+      "detector_score": 0.9090290113235824,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a01-000u-f1764d425a84",
+        "detector_index": 0,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.999943733215332,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "A MovE to stop Mr. Gaitskell from\nnominating any mone Labour life Peers\nis to be made at a meeting af Labaur\nMPs domorrorw. Mr. Michael Foot has\nput down a vesolution on the oubjeat\nand he is do be bached by Mr. Will\nGriffiths, HP for Manchesle Exallange.\nName:",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": true,
+    "status": "evaluated",
+    "reference_text": "A move to stop Mr. Gaitskell from\nnominating any more Labour life Peers\nis to be made at a meeting of Labour\nMPs tomorrow. Mr. Michael Foot has\nput down a resolution on the subject\nand he is to be backed by Mr. Will\nGriffiths, MP for Manchester Exchange.",
+    "evaluation_hypothesis_text": "A MovE to stop Mr. Gaitskell from\nnominating any mone Labour life Peers\nis to be made at a meeting af Labaur\nMPs domorrorw. Mr. Michael Foot has\nput down a vesolution on the oubjeat\nand he is do be bached by Mr. Will\nGriffiths, HP for Manchesle Exallange.",
+    "normalized_reference_text": "A move to stop Mr. Gaitskell from nominating any more Labour life Peers is to be made at a meeting of Labour MPs tomorrow. Mr. Michael Foot has put down a resolution on the subject and he is to be backed by Mr. Will Griffiths, MP for Manchester Exchange.",
+    "normalized_hypothesis_text": "A MovE to stop Mr. Gaitskell from nominating any mone Labour life Peers is to be made at a meeting af Labaur MPs domorrorw. Mr. Michael Foot has put down a vesolution on the oubjeat and he is do be bached by Mr. Will Griffiths, HP for Manchesle Exallange.",
+    "exclusion": {
+      "status": "applied",
+      "reason": "printed trailing Name field excluded",
+      "source": "manual_ground_truth_annotation",
+      "exclude_trailing_raw_lines": [
+        "Name:"
+      ],
+      "excluded_raw_lines": [
+        "Name:"
+      ]
+    },
+    "character": {
+      "substitutions": 15,
+      "insertions": 2,
+      "deletions": 1,
+      "total_edits": 18,
+      "reference_length": 254,
+      "hypothesis_length": 255,
+      "rate": 0.07086614173228346
+    },
+    "word": {
+      "substitutions": 12,
+      "insertions": 0,
+      "deletions": 0,
+      "total_edits": 12,
+      "reference_length": 49,
+      "hypothesis_length": 49,
+      "rate": 0.24489795918367346
+    }
+  },
+  "timing": {
+    "image_load_ms": 114.96470001293346,
+    "detection_ms": 9557.817900000373,
+    "sorting_ms": 19.187400001101196,
+    "cropping_ms": 26.69990001595579,
+    "recognition_ms": 8751.856699993368,
+    "serialization_ms": 272.1062999917194
+  },
+  "status": "success",
+  "errors": []
+}

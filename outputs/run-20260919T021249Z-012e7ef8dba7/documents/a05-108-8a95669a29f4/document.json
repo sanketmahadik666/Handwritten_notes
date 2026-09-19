@@ -1,0 +1,725 @@
+{
+  "document_id": "a05-108-8a95669a29f4",
+  "source_image": "a05-108.png",
+  "source_path": "a05-108.png",
+  "source_image_sha256": "8a95669a29f453991f2864f838e420fc2138a800caba435dbc02c820f3bff799",
+  "image_metadata": {
+    "width": 2479,
+    "height": 2453,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 9,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          343.0,
+          16.0
+        ],
+        [
+          2153.0,
+          2.0
+        ],
+        [
+          2154.0,
+          94.0
+        ],
+        [
+          344.0,
+          108.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          343.0,
+          16.0
+        ],
+        [
+          2153.0,
+          2.0
+        ],
+        [
+          2154.0,
+          94.0
+        ],
+        [
+          344.0,
+          108.0
+        ]
+      ],
+      "detector_score": 0.8367481356536718,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a05-108-8a95669a29f4",
+        "detector_index": 9,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "This pussled such shudects of ccuparative",
+      "recognition_score": 0.8924372792243958,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 8,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          340.0,
+          205.0
+        ],
+        [
+          2160.0,
+          176.0
+        ],
+        [
+          2162.0,
+          263.0
+        ],
+        [
+          342.0,
+          292.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          340.0,
+          205.0
+        ],
+        [
+          2160.0,
+          176.0
+        ],
+        [
+          2162.0,
+          263.0
+        ],
+        [
+          342.0,
+          292.0
+        ]
+      ],
+      "detector_score": 0.8327883690304027,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a05-108-8a95669a29f4",
+        "detector_index": 8,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "meligien aso had failed to dehect thins cull.",
+      "recognition_score": 0.919836699962616,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 7,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          315.0,
+          383.0
+        ],
+        [
+          2001.0,
+          365.0
+        ],
+        [
+          2002.0,
+          452.0
+        ],
+        [
+          316.0,
+          470.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          315.0,
+          383.0
+        ],
+        [
+          2001.0,
+          365.0
+        ],
+        [
+          2002.0,
+          452.0
+        ],
+        [
+          316.0,
+          470.0
+        ]
+      ],
+      "detector_score": 0.8460497609807293,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a05-108-8a95669a29f4",
+        "detector_index": 7,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "But Mr. hheakey had a pan lial and",
+      "recognition_score": 0.9216463565826416,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 6,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          330.0,
+          563.0
+        ],
+        [
+          2091.0,
+          534.0
+        ],
+        [
+          2092.0,
+          618.0
+        ],
+        [
+          331.0,
+          647.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          330.0,
+          563.0
+        ],
+        [
+          2091.0,
+          534.0
+        ],
+        [
+          2092.0,
+          618.0
+        ],
+        [
+          331.0,
+          647.0
+        ]
+      ],
+      "detector_score": 0.8472331540969159,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a05-108-8a95669a29f4",
+        "detector_index": 6,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "hiniled ouccess. bhe vahied behind hin",
+      "recognition_score": 0.8705178499221802,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 5,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          325.0,
+          736.0
+        ],
+        [
+          2248.0,
+          715.0
+        ],
+        [
+          2250.0,
+          810.0
+        ],
+        [
+          326.0,
+          831.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          325.0,
+          736.0
+        ],
+        [
+          2248.0,
+          715.0
+        ],
+        [
+          2250.0,
+          810.0
+        ],
+        [
+          326.0,
+          831.0
+        ]
+      ],
+      "detector_score": 0.8131791911000528,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a05-108-8a95669a29f4",
+        "detector_index": 5,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "the leftwing opinian 20 coolly nubbed last",
+      "recognition_score": 0.9078157544136047,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 4,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          327.0,
+          918.0
+        ],
+        [
+          2194.0,
+          889.0
+        ],
+        [
+          2195.0,
+          983.0
+        ],
+        [
+          329.0,
+          1012.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          327.0,
+          918.0
+        ],
+        [
+          2194.0,
+          889.0
+        ],
+        [
+          2195.0,
+          983.0
+        ],
+        [
+          329.0,
+          1012.0
+        ]
+      ],
+      "detector_score": 0.7901060939459952,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a05-108-8a95669a29f4",
+        "detector_index": 4,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "wisht by his leader, bhr. Gaitshell. Mr.",
+      "recognition_score": 0.9377532005310059,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 3,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          343.0,
+          1096.0
+        ],
+        [
+          2223.0,
+          1073.0
+        ],
+        [
+          2224.0,
+          1160.0
+        ],
+        [
+          344.0,
+          1183.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          343.0,
+          1096.0
+        ],
+        [
+          2223.0,
+          1073.0
+        ],
+        [
+          2224.0,
+          1160.0
+        ],
+        [
+          344.0,
+          1183.0
+        ]
+      ],
+      "detector_score": 0.8249800164702978,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a05-108-8a95669a29f4",
+        "detector_index": 3,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Godlers pesdarnance meriled all the minld",
+      "recognition_score": 0.8254122734069824,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 2,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          356.0,
+          1275.0
+        ],
+        [
+          2132.0,
+          1249.0
+        ],
+        [
+          2133.0,
+          1336.0
+        ],
+        [
+          357.0,
+          1362.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          356.0,
+          1275.0
+        ],
+        [
+          2132.0,
+          1249.0
+        ],
+        [
+          2133.0,
+          1336.0
+        ],
+        [
+          357.0,
+          1362.0
+        ]
+      ],
+      "detector_score": 0.8084666999840968,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a05-108-8a95669a29f4",
+        "detector_index": 2,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "scorn heaped an it by tr. shin well.",
+      "recognition_score": 0.9134698510169983,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 1,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          331.0,
+          2065.0
+        ],
+        [
+          493.0,
+          2065.0
+        ],
+        [
+          493.0,
+          2131.0
+        ],
+        [
+          331.0,
+          2131.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          331.0,
+          2065.0
+        ],
+        [
+          493.0,
+          2065.0
+        ],
+        [
+          493.0,
+          2131.0
+        ],
+        [
+          331.0,
+          2131.0
+        ]
+      ],
+      "detector_score": 0.9006052926096778,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a05-108-8a95669a29f4",
+        "detector_index": 1,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999138116836548,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 0,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          779.0,
+          2154.0
+        ],
+        [
+          1130.0,
+          2148.0
+        ],
+        [
+          1132.0,
+          2238.0
+        ],
+        [
+          781.0,
+          2244.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          779.0,
+          2154.0
+        ],
+        [
+          1130.0,
+          2148.0
+        ],
+        [
+          1132.0,
+          2238.0
+        ],
+        [
+          781.0,
+          2244.0
+        ]
+      ],
+      "detector_score": 0.9090357620456527,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a05-108-8a95669a29f4",
+        "detector_index": 0,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "U.Mali",
+      "recognition_score": 0.9739190936088562,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "This pussled such shudects of ccuparative\nmeligien aso had failed to dehect thins cull.\nBut Mr. hheakey had a pan lial and\nhiniled ouccess. bhe vahied behind hin\nthe leftwing opinian 20 coolly nubbed last\nwisht by his leader, bhr. Gaitshell. Mr.\nGodlers pesdarnance meriled all the minld\nscorn heaped an it by tr. shin well.\nName:\nU.Mali",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 153.1925000017509,
+    "detection_ms": 9433.073699998204,
+    "sorting_ms": 0.36639999598264694,
+    "cropping_ms": 29.0353000164032,
+    "recognition_ms": 10232.052699982887,
+    "serialization_ms": 360.3461000020616
+  },
+  "status": "success",
+  "errors": []
+}

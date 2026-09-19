@@ -1,0 +1,792 @@
+{
+  "document_id": "a01-082u-16c5617b3844",
+  "source_image": "a01-082u.png",
+  "source_path": "a01-082u.png",
+  "source_image_sha256": "16c5617b3844ec766bf28cef7effe8ec5318923ff56028066de9b155f7961e1e",
+  "image_metadata": {
+    "width": 2294,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 10,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          363.0,
+          155.0
+        ],
+        [
+          2278.0,
+          144.0
+        ],
+        [
+          2279.0,
+          240.0
+        ],
+        [
+          364.0,
+          251.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          363.0,
+          155.0
+        ],
+        [
+          2278.0,
+          144.0
+        ],
+        [
+          2279.0,
+          240.0
+        ],
+        [
+          364.0,
+          251.0
+        ]
+      ],
+      "detector_score": 0.8143067233088521,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a01-082u-16c5617b3844",
+        "detector_index": 10,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "This surprice otalement was a sharp abaut-",
+      "recognition_score": 0.9461730718612671,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 9,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          363.0,
+          344.0
+        ],
+        [
+          2007.0,
+          325.0
+        ],
+        [
+          2008.0,
+          421.0
+        ],
+        [
+          364.0,
+          440.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          363.0,
+          344.0
+        ],
+        [
+          2007.0,
+          325.0
+        ],
+        [
+          2008.0,
+          421.0
+        ],
+        [
+          364.0,
+          440.0
+        ]
+      ],
+      "detector_score": 0.8134187227738098,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a01-082u-16c5617b3844",
+        "detector_index": 9,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "face from his wasnings duing the",
+      "recognition_score": 0.9268127083778381,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 8,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          340.0,
+          517.0
+        ],
+        [
+          2188.0,
+          501.0
+        ],
+        [
+          2189.0,
+          597.0
+        ],
+        [
+          341.0,
+          613.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          340.0,
+          517.0
+        ],
+        [
+          2188.0,
+          501.0
+        ],
+        [
+          2189.0,
+          597.0
+        ],
+        [
+          341.0,
+          613.0
+        ]
+      ],
+      "detector_score": 0.7814187170011944,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a01-082u-16c5617b3844",
+        "detector_index": 8,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Presicential clection campaign. he clained",
+      "recognition_score": 0.9194722175598145,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 7,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          327.0,
+          706.0
+        ],
+        [
+          2270.0,
+          684.0
+        ],
+        [
+          2271.0,
+          770.0
+        ],
+        [
+          328.0,
+          791.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          327.0,
+          706.0
+        ],
+        [
+          2270.0,
+          684.0
+        ],
+        [
+          2271.0,
+          770.0
+        ],
+        [
+          328.0,
+          791.0
+        ]
+      ],
+      "detector_score": 0.8369372970583036,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a01-082u-16c5617b3844",
+        "detector_index": 7,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "slachness in the Esen hoeer Aominioation",
+      "recognition_score": 0.8542192578315735,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 6,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          332.0,
+          879.0
+        ],
+        [
+          2280.0,
+          855.0
+        ],
+        [
+          2282.0,
+          950.0
+        ],
+        [
+          334.0,
+          974.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          332.0,
+          879.0
+        ],
+        [
+          2280.0,
+          855.0
+        ],
+        [
+          2282.0,
+          950.0
+        ],
+        [
+          334.0,
+          974.0
+        ]
+      ],
+      "detector_score": 0.80923400694878,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a01-082u-16c5617b3844",
+        "detector_index": 6,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "had cansed America to lag behinal Russia",
+      "recognition_score": 0.9136616587638855,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 5,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          353.0,
+          1065.0
+        ],
+        [
+          2198.0,
+          1038.0
+        ],
+        [
+          2200.0,
+          1123.0
+        ],
+        [
+          354.0,
+          1150.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          353.0,
+          1065.0
+        ],
+        [
+          2198.0,
+          1038.0
+        ],
+        [
+          2200.0,
+          1123.0
+        ],
+        [
+          354.0,
+          1150.0
+        ]
+      ],
+      "detector_score": 0.8655957849551945,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a01-082u-16c5617b3844",
+        "detector_index": 5,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "in nuclear developmend. Puesiment Kemedy",
+      "recognition_score": 0.9484197497367859,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 4,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          361.0,
+          1243.0
+        ],
+        [
+          2160.0,
+          1214.0
+        ],
+        [
+          2161.0,
+          1309.0
+        ],
+        [
+          362.0,
+          1339.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          361.0,
+          1243.0
+        ],
+        [
+          2160.0,
+          1214.0
+        ],
+        [
+          2161.0,
+          1309.0
+        ],
+        [
+          362.0,
+          1339.0
+        ]
+      ],
+      "detector_score": 0.8172085169210125,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a01-082u-16c5617b3844",
+        "detector_index": 4,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "did his lest to aucid giving Puessmen",
+      "recognition_score": 0.9466210603713989,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 3,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          366.0,
+          1418.0
+        ],
+        [
+          1920.0,
+          1405.0
+        ],
+        [
+          1920.0,
+          1493.0
+        ],
+        [
+          367.0,
+          1506.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          366.0,
+          1418.0
+        ],
+        [
+          1920.0,
+          1405.0
+        ],
+        [
+          1920.0,
+          1493.0
+        ],
+        [
+          367.0,
+          1506.0
+        ]
+      ],
+      "detector_score": 0.8451132932364165,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a01-082u-16c5617b3844",
+        "detector_index": 3,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "a dinect answe. George Brown",
+      "recognition_score": 0.9662602543830872,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 2,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          353.0,
+          1597.0
+        ],
+        [
+          2201.0,
+          1578.0
+        ],
+        [
+          2202.0,
+          1666.0
+        ],
+        [
+          354.0,
+          1685.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          353.0,
+          1597.0
+        ],
+        [
+          2201.0,
+          1578.0
+        ],
+        [
+          2202.0,
+          1666.0
+        ],
+        [
+          354.0,
+          1685.0
+        ]
+      ],
+      "detector_score": 0.8522581995815091,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a01-082u-16c5617b3844",
+        "detector_index": 2,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "CHiLDREN TWO men whko are poles apout",
+      "recognition_score": 0.9088418483734131,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 1,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          350.0,
+          1778.0
+        ],
+        [
+          1978.0,
+          1754.0
+        ],
+        [
+          1980.0,
+          1849.0
+        ],
+        [
+          352.0,
+          1873.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          350.0,
+          1778.0
+        ],
+        [
+          1978.0,
+          1754.0
+        ],
+        [
+          1980.0,
+          1849.0
+        ],
+        [
+          352.0,
+          1873.0
+        ]
+      ],
+      "detector_score": 0.8278429870606466,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a01-082u-16c5617b3844",
+        "detector_index": 1,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "in pessonality last night daminaled",
+      "recognition_score": 0.9499572515487671,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 0,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          374.0,
+          2085.0
+        ],
+        [
+          530.0,
+          2085.0
+        ],
+        [
+          530.0,
+          2149.0
+        ],
+        [
+          374.0,
+          2149.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          374.0,
+          2085.0
+        ],
+        [
+          530.0,
+          2085.0
+        ],
+        [
+          530.0,
+          2149.0
+        ],
+        [
+          374.0,
+          2149.0
+        ]
+      ],
+      "detector_score": 0.9047818708543975,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a01-082u-16c5617b3844",
+        "detector_index": 0,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999467730522156,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "This surprice otalement was a sharp abaut-\nface from his wasnings duing the\nPresicential clection campaign. he clained\nslachness in the Esen hoeer Aominioation\nhad cansed America to lag behinal Russia\nin nuclear developmend. Puesiment Kemedy\ndid his lest to aucid giving Puessmen\na dinect answe. George Brown\nCHiLDREN TWO men whko are poles apout\nin pessonality last night daminaled\nName:",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 130.68540001404472,
+    "detection_ms": 8513.221199973486,
+    "sorting_ms": 0.5413999897427857,
+    "cropping_ms": 35.89359999750741,
+    "recognition_ms": 11612.502999982098,
+    "serialization_ms": 398.24419998330995
+  },
+  "status": "success",
+  "errors": []
+}

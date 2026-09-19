@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "handwritten-ocr"
+version = "0.1.0"
+description = "Reproducible, auditable raw handwritten-English OCR baseline"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "PyYAML",
+    "jsonschema",
+]
+
+[tool.setuptools.packages.find]
+include = ["handwritten_ocr*"]

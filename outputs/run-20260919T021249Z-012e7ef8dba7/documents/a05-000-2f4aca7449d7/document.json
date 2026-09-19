@@ -1,0 +1,725 @@
+{
+  "document_id": "a05-000-2f4aca7449d7",
+  "source_image": "a05-000.png",
+  "source_path": "a05-000.png",
+  "source_image_sha256": "2f4aca7449d71ce3b1f65100ee2a1d184f5f2f1d4e2c557c39487dd1574f4d01",
+  "image_metadata": {
+    "width": 2479,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 9,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          359.0,
+          36.0
+        ],
+        [
+          2107.0,
+          36.0
+        ],
+        [
+          2107.0,
+          124.0
+        ],
+        [
+          359.0,
+          124.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          359.0,
+          36.0
+        ],
+        [
+          2107.0,
+          36.0
+        ],
+        [
+          2107.0,
+          124.0
+        ],
+        [
+          359.0,
+          124.0
+        ]
+      ],
+      "detector_score": 0.8782490836592294,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a05-000-2f4aca7449d7",
+        "detector_index": 9,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "THE west White Paper on detence, to",
+      "recognition_score": 0.9630325436592102,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 8,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          367.0,
+          225.0
+        ],
+        [
+          2045.0,
+          214.0
+        ],
+        [
+          2045.0,
+          302.0
+        ],
+        [
+          367.0,
+          313.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          367.0,
+          225.0
+        ],
+        [
+          2045.0,
+          214.0
+        ],
+        [
+          2045.0,
+          302.0
+        ],
+        [
+          367.0,
+          313.0
+        ]
+      ],
+      "detector_score": 0.8462547932897568,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a05-000-2f4aca7449d7",
+        "detector_index": 8,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "be pubished in Maran, is lihely to",
+      "recognition_score": 0.92903071641922,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 7,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          366.0,
+          403.0
+        ],
+        [
+          2254.0,
+          390.0
+        ],
+        [
+          2255.0,
+          478.0
+        ],
+        [
+          367.0,
+          491.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          366.0,
+          403.0
+        ],
+        [
+          2254.0,
+          390.0
+        ],
+        [
+          2255.0,
+          478.0
+        ],
+        [
+          367.0,
+          491.0
+        ]
+      ],
+      "detector_score": 0.8175094569945205,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a05-000-2f4aca7449d7",
+        "detector_index": 7,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "canlcin a tive-year plan far me thee",
+      "recognition_score": 0.9281973242759705,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 6,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          392.0,
+          581.0
+        ],
+        [
+          2308.0,
+          568.0
+        ],
+        [
+          2309.0,
+          656.0
+        ],
+        [
+          393.0,
+          669.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          392.0,
+          581.0
+        ],
+        [
+          2308.0,
+          568.0
+        ],
+        [
+          2309.0,
+          656.0
+        ],
+        [
+          393.0,
+          669.0
+        ]
+      ],
+      "detector_score": 0.8229922170434375,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a05-000-2f4aca7449d7",
+        "detector_index": 6,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Sevvices. ts ain will be to proance supcrbly",
+      "recognition_score": 0.9059015512466431,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 5,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          392.0,
+          755.0
+        ],
+        [
+          2008.0,
+          736.0
+        ],
+        [
+          2009.0,
+          839.0
+        ],
+        [
+          393.0,
+          858.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          392.0,
+          755.0
+        ],
+        [
+          2008.0,
+          736.0
+        ],
+        [
+          2009.0,
+          839.0
+        ],
+        [
+          393.0,
+          858.0
+        ]
+      ],
+      "detector_score": 0.8093076408867683,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a05-000-2f4aca7449d7",
+        "detector_index": 5,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "eanipped, aln- Regular dauces of",
+      "recognition_score": 0.8839412927627563,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 4,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          387.0,
+          938.0
+        ],
+        [
+          2223.0,
+          927.0
+        ],
+        [
+          2224.0,
+          1015.0
+        ],
+        [
+          388.0,
+          1026.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          387.0,
+          938.0
+        ],
+        [
+          2223.0,
+          927.0
+        ],
+        [
+          2224.0,
+          1015.0
+        ],
+        [
+          388.0,
+          1026.0
+        ]
+      ],
+      "detector_score": 0.8525219454686257,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a05-000-2f4aca7449d7",
+        "detector_index": 4,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "alant too'ooo men. The hhnee Sevice.",
+      "recognition_score": 0.888106644153595,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 3,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          387.0,
+          1114.0
+        ],
+        [
+          2060.0,
+          1098.0
+        ],
+        [
+          2061.0,
+          1193.0
+        ],
+        [
+          388.0,
+          1209.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          387.0,
+          1114.0
+        ],
+        [
+          2060.0,
+          1098.0
+        ],
+        [
+          2061.0,
+          1193.0
+        ],
+        [
+          388.0,
+          1209.0
+        ]
+      ],
+      "detector_score": 0.8070806918545577,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a05-000-2f4aca7449d7",
+        "detector_index": 3,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "would be n integrahed\" to a gueater",
+      "recognition_score": 0.9030971527099609,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 2,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          397.0,
+          1294.0
+        ],
+        [
+          1564.0,
+          1284.0
+        ],
+        [
+          1565.0,
+          1372.0
+        ],
+        [
+          398.0,
+          1382.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          397.0,
+          1294.0
+        ],
+        [
+          1564.0,
+          1284.0
+        ],
+        [
+          1565.0,
+          1372.0
+        ],
+        [
+          398.0,
+          1382.0
+        ]
+      ],
+      "detector_score": 0.8886243226691707,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a05-000-2f4aca7449d7",
+        "detector_index": 2,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "whent than ever betare.",
+      "recognition_score": 0.9123138785362244,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 1,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          331.0,
+          2092.0
+        ],
+        [
+          491.0,
+          2092.0
+        ],
+        [
+          491.0,
+          2160.0
+        ],
+        [
+          331.0,
+          2160.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          331.0,
+          2092.0
+        ],
+        [
+          491.0,
+          2092.0
+        ],
+        [
+          491.0,
+          2160.0
+        ],
+        [
+          331.0,
+          2160.0
+        ]
+      ],
+      "detector_score": 0.8777464412692262,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a05-000-2f4aca7449d7",
+        "detector_index": 1,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9998772740364075,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 0,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          661.0,
+          2183.0
+        ],
+        [
+          997.0,
+          2183.0
+        ],
+        [
+          997.0,
+          2273.0
+        ],
+        [
+          661.0,
+          2273.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          661.0,
+          2183.0
+        ],
+        [
+          997.0,
+          2183.0
+        ],
+        [
+          997.0,
+          2273.0
+        ],
+        [
+          661.0,
+          2273.0
+        ]
+      ],
+      "detector_score": 0.897993942371859,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a05-000-2f4aca7449d7",
+        "detector_index": 0,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "U. Mauhi",
+      "recognition_score": 0.8277488946914673,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "THE west White Paper on detence, to\nbe pubished in Maran, is lihely to\ncanlcin a tive-year plan far me thee\nSevvices. ts ain will be to proance supcrbly\neanipped, aln- Regular dauces of\nalant too'ooo men. The hhnee Sevice.\nwould be n integrahed\" to a gueater\nwhent than ever betare.\nName:\nU. Mauhi",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 153.15889997873455,
+    "detection_ms": 9487.637100013671,
+    "sorting_ms": 0.3391999925952405,
+    "cropping_ms": 28.09559999150224,
+    "recognition_ms": 10087.82980000251,
+    "serialization_ms": 450.89709997409955
+  },
+  "status": "success",
+  "errors": []
+}

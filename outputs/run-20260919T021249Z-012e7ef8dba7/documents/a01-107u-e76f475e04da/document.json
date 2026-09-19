@@ -1,0 +1,658 @@
+{
+  "document_id": "a01-107u-e76f475e04da",
+  "source_image": "a01-107u.png",
+  "source_path": "a01-107u.png",
+  "source_image_sha256": "e76f475e04dafae9d71b4dedf95937fdba0d1a346469b79bf2cb8072baea19e4",
+  "image_metadata": {
+    "width": 2395,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 8,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          322.0,
+          11.0
+        ],
+        [
+          2253.0,
+          0.0
+        ],
+        [
+          2253.0,
+          90.0
+        ],
+        [
+          323.0,
+          106.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          322.0,
+          11.0
+        ],
+        [
+          2253.0,
+          0.0
+        ],
+        [
+          2253.0,
+          90.0
+        ],
+        [
+          323.0,
+          106.0
+        ]
+      ],
+      "detector_score": 0.7918964906189899,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a01-107u-e76f475e04da",
+        "detector_index": 8,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "We Beieve that a campuehensive medical",
+      "recognition_score": 0.941312313079834,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 7,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          335.0,
+          192.0
+        ],
+        [
+          2216.0,
+          168.0
+        ],
+        [
+          2217.0,
+          263.0
+        ],
+        [
+          336.0,
+          287.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          335.0,
+          192.0
+        ],
+        [
+          2216.0,
+          168.0
+        ],
+        [
+          2217.0,
+          263.0
+        ],
+        [
+          336.0,
+          287.0
+        ]
+      ],
+      "detector_score": 0.8302235463242119,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a01-107u-e76f475e04da",
+        "detector_index": 7,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "sevvice, fhee to the patient at the point",
+      "recognition_score": 0.9207722544670105,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 6,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          356.0,
+          370.0
+        ],
+        [
+          2180.0,
+          354.0
+        ],
+        [
+          2181.0,
+          442.0
+        ],
+        [
+          357.0,
+          457.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          356.0,
+          370.0
+        ],
+        [
+          2180.0,
+          354.0
+        ],
+        [
+          2181.0,
+          442.0
+        ],
+        [
+          357.0,
+          457.0
+        ]
+      ],
+      "detector_score": 0.8277366373672608,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a01-107u-e76f475e04da",
+        "detector_index": 6,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "of need and with ane shandovd far all",
+      "recognition_score": 0.8996589183807373,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 5,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          345.0,
+          556.0
+        ],
+        [
+          2118.0,
+          534.0
+        ],
+        [
+          2119.0,
+          622.0
+        ],
+        [
+          347.0,
+          644.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          345.0,
+          556.0
+        ],
+        [
+          2118.0,
+          534.0
+        ],
+        [
+          2119.0,
+          622.0
+        ],
+        [
+          347.0,
+          644.0
+        ]
+      ],
+      "detector_score": 0.8407891611777673,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a01-107u-e76f475e04da",
+        "detector_index": 5,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "sich reople, is good and attainable.",
+      "recognition_score": 0.9481261372566223,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 4,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          340.0,
+          734.0
+        ],
+        [
+          2136.0,
+          707.0
+        ],
+        [
+          2137.0,
+          795.0
+        ],
+        [
+          342.0,
+          822.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          340.0,
+          734.0
+        ],
+        [
+          2136.0,
+          707.0
+        ],
+        [
+          2137.0,
+          795.0
+        ],
+        [
+          342.0,
+          822.0
+        ]
+      ],
+      "detector_score": 0.8634268814009288,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a01-107u-e76f475e04da",
+        "detector_index": 4,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": ". we memain far it. Bat the Taries",
+      "recognition_score": 0.92850261926651,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 3,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          333.0,
+          907.0
+        ],
+        [
+          2332.0,
+          886.0
+        ],
+        [
+          2333.0,
+          989.0
+        ],
+        [
+          334.0,
+          1010.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          333.0,
+          907.0
+        ],
+        [
+          2332.0,
+          886.0
+        ],
+        [
+          2333.0,
+          989.0
+        ],
+        [
+          334.0,
+          1010.0
+        ]
+      ],
+      "detector_score": 0.8024935132025889,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a01-107u-e76f475e04da",
+        "detector_index": 3,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "neves were.\" hleurupled bay angry Tories,",
+      "recognition_score": 0.9191238880157471,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 2,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          364.0,
+          1090.0
+        ],
+        [
+          2160.0,
+          1077.0
+        ],
+        [
+          2160.0,
+          1165.0
+        ],
+        [
+          364.0,
+          1178.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          364.0,
+          1090.0
+        ],
+        [
+          2160.0,
+          1077.0
+        ],
+        [
+          2160.0,
+          1165.0
+        ],
+        [
+          364.0,
+          1178.0
+        ]
+      ],
+      "detector_score": 0.8812390169835767,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a01-107u-e76f475e04da",
+        "detector_index": 2,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Mr. Brown metorted: The jachals bay",
+      "recognition_score": 0.9423090219497681,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 1,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          356.0,
+          1271.0
+        ],
+        [
+          2296.0,
+          1240.0
+        ],
+        [
+          2297.0,
+          1338.0
+        ],
+        [
+          357.0,
+          1370.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          356.0,
+          1271.0
+        ],
+        [
+          2296.0,
+          1240.0
+        ],
+        [
+          2297.0,
+          1338.0
+        ],
+        [
+          357.0,
+          1370.0
+        ]
+      ],
+      "detector_score": 0.8099906349268394,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a01-107u-e76f475e04da",
+        "detector_index": 1,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "when there is nohing belle they can do.\"",
+      "recognition_score": 0.934444785118103,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 0,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          372.0,
+          2085.0
+        ],
+        [
+          526.0,
+          2085.0
+        ],
+        [
+          526.0,
+          2149.0
+        ],
+        [
+          372.0,
+          2149.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          372.0,
+          2085.0
+        ],
+        [
+          526.0,
+          2085.0
+        ],
+        [
+          526.0,
+          2149.0
+        ],
+        [
+          372.0,
+          2149.0
+        ]
+      ],
+      "detector_score": 0.9372695067910649,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a01-107u-e76f475e04da",
+        "detector_index": 0,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999246597290039,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "We Beieve that a campuehensive medical\nsevvice, fhee to the patient at the point\nof need and with ane shandovd far all\nsich reople, is good and attainable.\n. we memain far it. Bat the Taries\nneves were.\" hleurupled bay angry Tories,\nMr. Brown metorted: The jachals bay\nwhen there is nohing belle they can do.\"\nName:",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 110.42069998802617,
+    "detection_ms": 9147.742500004824,
+    "sorting_ms": 0.26920001255348325,
+    "cropping_ms": 27.930500014917925,
+    "recognition_ms": 8989.687499997672,
+    "serialization_ms": 288.8725999800954
+  },
+  "status": "success",
+  "errors": []
+}

@@ -1,0 +1,926 @@
+{
+  "document_id": "a05-039-045c932149e5",
+  "source_image": "a05-039.png",
+  "source_path": "a05-039.png",
+  "source_image_sha256": "045c932149e57b40011bbfe11541ab7e3c60ebd06c8135f69b45034aefb5865d",
+  "image_metadata": {
+    "width": 2479,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 12,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          375.0,
+          116.0
+        ],
+        [
+          2169.0,
+          137.0
+        ],
+        [
+          2168.0,
+          233.0
+        ],
+        [
+          374.0,
+          211.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          375.0,
+          116.0
+        ],
+        [
+          2169.0,
+          137.0
+        ],
+        [
+          2168.0,
+          233.0
+        ],
+        [
+          374.0,
+          211.0
+        ]
+      ],
+      "detector_score": 0.8179319226591574,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a05-039-045c932149e5",
+        "detector_index": 12,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "There was a camputed 8.4 pe cent. owins",
+      "recognition_score": 0.9169262647628784,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 11,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          369.0,
+          310.0
+        ],
+        [
+          2301.0,
+          315.0
+        ],
+        [
+          2301.0,
+          400.0
+        ],
+        [
+          369.0,
+          395.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          369.0,
+          310.0
+        ],
+        [
+          2301.0,
+          315.0
+        ],
+        [
+          2301.0,
+          400.0
+        ],
+        [
+          369.0,
+          395.0
+        ]
+      ],
+      "detector_score": 0.8614806572787266,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a05-039-045c932149e5",
+        "detector_index": 11,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "towerds the Nalicnalists porhy of Dr. Veowoerd,",
+      "recognition_score": 0.9270026087760925,
+      "recognition_order": 12,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 10,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          364.0,
+          491.0
+        ],
+        [
+          2148.0,
+          491.0
+        ],
+        [
+          2148.0,
+          576.0
+        ],
+        [
+          364.0,
+          576.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          364.0,
+          491.0
+        ],
+        [
+          2148.0,
+          491.0
+        ],
+        [
+          2148.0,
+          576.0
+        ],
+        [
+          364.0,
+          576.0
+        ]
+      ],
+      "detector_score": 0.8320083862631041,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a05-039-045c932149e5",
+        "detector_index": 10,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "the Prine ttinishes. This imphie. the ais-",
+      "recognition_score": 0.9045233726501465,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 9,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          359.0,
+          664.0
+        ],
+        [
+          2203.0,
+          664.0
+        ],
+        [
+          2203.0,
+          760.0
+        ],
+        [
+          359.0,
+          760.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          359.0,
+          664.0
+        ],
+        [
+          2203.0,
+          664.0
+        ],
+        [
+          2203.0,
+          760.0
+        ],
+        [
+          359.0,
+          760.0
+        ]
+      ],
+      "detector_score": 0.786326513164435,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a05-039-045c932149e5",
+        "detector_index": 9,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "aprearancer of the Proguerrive porhy fram",
+      "recognition_score": 0.8337888717651367,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 8,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          357.0,
+          842.0
+        ],
+        [
+          2208.0,
+          850.0
+        ],
+        [
+          2208.0,
+          938.0
+        ],
+        [
+          356.0,
+          930.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          357.0,
+          842.0
+        ],
+        [
+          2208.0,
+          850.0
+        ],
+        [
+          2208.0,
+          938.0
+        ],
+        [
+          356.0,
+          930.0
+        ]
+      ],
+      "detector_score": 0.8242042851092088,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a05-039-045c932149e5",
+        "detector_index": 8,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "the Hanne. Early reoults in yesleday's",
+      "recognition_score": 0.8955281972885132,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 7,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          349.0,
+          1028.0
+        ],
+        [
+          2185.0,
+          1028.0
+        ],
+        [
+          2185.0,
+          1113.0
+        ],
+        [
+          349.0,
+          1113.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          349.0,
+          1028.0
+        ],
+        [
+          2185.0,
+          1028.0
+        ],
+        [
+          2185.0,
+          1113.0
+        ],
+        [
+          349.0,
+          1113.0
+        ]
+      ],
+      "detector_score": 0.8609805551879465,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a05-039-045c932149e5",
+        "detector_index": 7,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "genesal elechin showed Nalimaliots being",
+      "recognition_score": 0.8904630541801453,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 6,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          336.0,
+          1201.0
+        ],
+        [
+          2226.0,
+          1206.0
+        ],
+        [
+          2226.0,
+          1294.0
+        ],
+        [
+          336.0,
+          1289.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          336.0,
+          1201.0
+        ],
+        [
+          2226.0,
+          1206.0
+        ],
+        [
+          2226.0,
+          1294.0
+        ],
+        [
+          336.0,
+          1289.0
+        ]
+      ],
+      "detector_score": 0.828974503769947,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a05-039-045c932149e5",
+        "detector_index": 6,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "nehved in their swongholds, hine Bloemn.",
+      "recognition_score": 0.8736217617988586,
+      "recognition_order": 11,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 5,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          341.0,
+          1382.0
+        ],
+        [
+          2107.0,
+          1382.0
+        ],
+        [
+          2107.0,
+          1467.0
+        ],
+        [
+          341.0,
+          1467.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          341.0,
+          1382.0
+        ],
+        [
+          2107.0,
+          1382.0
+        ],
+        [
+          2107.0,
+          1467.0
+        ],
+        [
+          341.0,
+          1467.0
+        ]
+      ],
+      "detector_score": 0.8573957581318381,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a05-039-045c932149e5",
+        "detector_index": 5,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "faulkin and the Transoaal, wihn shishtly",
+      "recognition_score": 0.8356130719184875,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 4,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          341.0,
+          1555.0
+        ],
+        [
+          2242.0,
+          1571.0
+        ],
+        [
+          2241.0,
+          1659.0
+        ],
+        [
+          341.0,
+          1643.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          341.0,
+          1555.0
+        ],
+        [
+          2242.0,
+          1571.0
+        ],
+        [
+          2241.0,
+          1659.0
+        ],
+        [
+          341.0,
+          1643.0
+        ]
+      ],
+      "detector_score": 0.8127637460626677,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a05-039-045c932149e5",
+        "detector_index": 4,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "incneaved majoritiess. me the Cape, the",
+      "recognition_score": 0.9040387272834778,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 3,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          354.0,
+          1738.0
+        ],
+        [
+          2218.0,
+          1749.0
+        ],
+        [
+          2218.0,
+          1837.0
+        ],
+        [
+          354.0,
+          1826.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          354.0,
+          1738.0
+        ],
+        [
+          2218.0,
+          1749.0
+        ],
+        [
+          2218.0,
+          1837.0
+        ],
+        [
+          354.0,
+          1826.0
+        ]
+      ],
+      "detector_score": 0.8439529952894131,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a05-039-045c932149e5",
+        "detector_index": 3,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "velesan Lnited Paty politican, Mr. Harry",
+      "recognition_score": 0.951205849647522,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 2,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          362.0,
+          1919.0
+        ],
+        [
+          2192.0,
+          1922.0
+        ],
+        [
+          2192.0,
+          2010.0
+        ],
+        [
+          361.0,
+          2007.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          362.0,
+          1919.0
+        ],
+        [
+          2192.0,
+          1922.0
+        ],
+        [
+          2192.0,
+          2010.0
+        ],
+        [
+          361.0,
+          2007.0
+        ]
+      ],
+      "detector_score": 0.8378572027805443,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a05-039-045c932149e5",
+        "detector_index": 2,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Lanwnena, shanang a a Progneosive, was",
+      "recognition_score": 0.8987792134284973,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0011",
+      "detector_index": 1,
+      "sorted_index": 11,
+      "raw_polygon": [
+        [
+          320.0,
+          2090.0
+        ],
+        [
+          488.0,
+          2090.0
+        ],
+        [
+          488.0,
+          2165.0
+        ],
+        [
+          320.0,
+          2165.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          320.0,
+          2090.0
+        ],
+        [
+          488.0,
+          2090.0
+        ],
+        [
+          488.0,
+          2165.0
+        ],
+        [
+          320.0,
+          2165.0
+        ]
+      ],
+      "detector_score": 0.8567079146845,
+      "crop_path": "crops/line-0011.png",
+      "crop_provenance": {
+        "source_document": "a05-039-045c932149e5",
+        "detector_index": 1,
+        "sorted_index": 11,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9998348951339722,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0012",
+      "detector_index": 0,
+      "sorted_index": 12,
+      "raw_polygon": [
+        [
+          777.0,
+          2219.0
+        ],
+        [
+          1128.0,
+          2219.0
+        ],
+        [
+          1128.0,
+          2310.0
+        ],
+        [
+          777.0,
+          2310.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          777.0,
+          2219.0
+        ],
+        [
+          1128.0,
+          2219.0
+        ],
+        [
+          1128.0,
+          2310.0
+        ],
+        [
+          777.0,
+          2310.0
+        ]
+      ],
+      "detector_score": 0.9424489910100412,
+      "crop_path": "crops/line-0012.png",
+      "crop_provenance": {
+        "source_document": "a05-039-045c932149e5",
+        "detector_index": 0,
+        "sorted_index": 12,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "U. Mani",
+      "recognition_score": 0.8676684498786926,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "There was a camputed 8.4 pe cent. owins\ntowerds the Nalicnalists porhy of Dr. Veowoerd,\nthe Prine ttinishes. This imphie. the ais-\naprearancer of the Proguerrive porhy fram\nthe Hanne. Early reoults in yesleday's\ngenesal elechin showed Nalimaliots being\nnehved in their swongholds, hine Bloemn.\nfaulkin and the Transoaal, wihn shishtly\nincneaved majoritiess. me the Cape, the\nvelesan Lnited Paty politican, Mr. Harry\nLanwnena, shanang a a Progneosive, was\nName:\nU. Mani",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 175.93399999896064,
+    "detection_ms": 9843.689799978165,
+    "sorting_ms": 0.5865999846719205,
+    "cropping_ms": 40.986200008774176,
+    "recognition_ms": 14125.648199988063,
+    "serialization_ms": 527.8118999849539
+  },
+  "status": "success",
+  "errors": []
+}

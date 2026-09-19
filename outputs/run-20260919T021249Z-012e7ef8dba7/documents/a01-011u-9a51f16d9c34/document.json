@@ -1,0 +1,792 @@
+{
+  "document_id": "a01-011u-9a51f16d9c34",
+  "source_image": "a01-011u.png",
+  "source_path": "a01-011u.png",
+  "source_image_sha256": "9a51f16d9c345fb42cf4f5d6a3c5fa7aed89fdb9c765a2ce47333c13e2aa61cc",
+  "image_metadata": {
+    "width": 2444,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 10,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          315.0,
+          39.0
+        ],
+        [
+          2206.0,
+          10.0
+        ],
+        [
+          2208.0,
+          113.0
+        ],
+        [
+          317.0,
+          143.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          315.0,
+          39.0
+        ],
+        [
+          2206.0,
+          10.0
+        ],
+        [
+          2208.0,
+          113.0
+        ],
+        [
+          317.0,
+          143.0
+        ]
+      ],
+      "detector_score": 0.8150064908902126,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a01-011u-9a51f16d9c34",
+        "detector_index": 10,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Delegates fram hr. Kenmeth Kaunda's",
+      "recognition_score": 0.9573577046394348,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 9,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          328.0,
+          225.0
+        ],
+        [
+          2115.0,
+          201.0
+        ],
+        [
+          2116.0,
+          299.0
+        ],
+        [
+          329.0,
+          323.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          328.0,
+          225.0
+        ],
+        [
+          2115.0,
+          201.0
+        ],
+        [
+          2116.0,
+          299.0
+        ],
+        [
+          329.0,
+          323.0
+        ]
+      ],
+      "detector_score": 0.8063406359381585,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a01-011u-9a51f16d9c34",
+        "detector_index": 9,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "United Nalicnal lndependence Pauty",
+      "recognition_score": 0.9304327368736267,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 8,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          292.0,
+          406.0
+        ],
+        [
+          2410.0,
+          382.0
+        ],
+        [
+          2411.0,
+          483.0
+        ],
+        [
+          294.0,
+          507.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          292.0,
+          406.0
+        ],
+        [
+          2410.0,
+          382.0
+        ],
+        [
+          2411.0,
+          483.0
+        ],
+        [
+          294.0,
+          507.0
+        ]
+      ],
+      "detector_score": 0.8603089688502421,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a01-011u-9a51f16d9c34",
+        "detector_index": 8,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "(280, 000 membes) and Mur. Harry Nhubulas",
+      "recognition_score": 0.9618666768074036,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 7,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          318.0,
+          581.0
+        ],
+        [
+          2347.0,
+          571.0
+        ],
+        [
+          2347.0,
+          666.0
+        ],
+        [
+          319.0,
+          677.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          318.0,
+          581.0
+        ],
+        [
+          2347.0,
+          571.0
+        ],
+        [
+          2347.0,
+          666.0
+        ],
+        [
+          319.0,
+          677.0
+        ]
+      ],
+      "detector_score": 0.8731007127458175,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a01-011u-9a51f16d9c34",
+        "detector_index": 7,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "African Naticnal Caugueos (400, 000 ) will",
+      "recognition_score": 0.8954085111618042,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 6,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          333.0,
+          767.0
+        ],
+        [
+          2431.0,
+          752.0
+        ],
+        [
+          2431.0,
+          839.0
+        ],
+        [
+          334.0,
+          855.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          333.0,
+          767.0
+        ],
+        [
+          2431.0,
+          752.0
+        ],
+        [
+          2431.0,
+          839.0
+        ],
+        [
+          334.0,
+          855.0
+        ]
+      ],
+      "detector_score": 0.8889453370383579,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a01-011u-9a51f16d9c34",
+        "detector_index": 6,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "meet in Lonclon todcay to discuss a common",
+      "recognition_score": 0.9330437779426575,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 5,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          318.0,
+          928.0
+        ],
+        [
+          2227.0,
+          922.0
+        ],
+        [
+          2228.0,
+          1038.0
+        ],
+        [
+          318.0,
+          1044.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          318.0,
+          928.0
+        ],
+        [
+          2227.0,
+          922.0
+        ],
+        [
+          2228.0,
+          1038.0
+        ],
+        [
+          318.0,
+          1044.0
+        ]
+      ],
+      "detector_score": 0.7550455906864607,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a01-011u-9a51f16d9c34",
+        "detector_index": 5,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "caurse of action. Sir Roy is violently",
+      "recognition_score": 0.9328827857971191,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 4,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          310.0,
+          1127.0
+        ],
+        [
+          2301.0,
+          1105.0
+        ],
+        [
+          2302.0,
+          1201.0
+        ],
+        [
+          311.0,
+          1222.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          310.0,
+          1127.0
+        ],
+        [
+          2301.0,
+          1105.0
+        ],
+        [
+          2302.0,
+          1201.0
+        ],
+        [
+          311.0,
+          1222.0
+        ]
+      ],
+      "detector_score": 0.8615794178561461,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a01-011u-9a51f16d9c34",
+        "detector_index": 4,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "opposed to Africano geting and elecded",
+      "recognition_score": 0.9531370401382446,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 3,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          318.0,
+          1303.0
+        ],
+        [
+          2265.0,
+          1270.0
+        ],
+        [
+          2266.0,
+          1376.0
+        ],
+        [
+          319.0,
+          1408.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          318.0,
+          1303.0
+        ],
+        [
+          2265.0,
+          1270.0
+        ],
+        [
+          2266.0,
+          1376.0
+        ],
+        [
+          319.0,
+          1408.0
+        ]
+      ],
+      "detector_score": 0.8041562234390063,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a01-011u-9a51f16d9c34",
+        "detector_index": 3,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "majonity in Northen Rholeoia, Out the",
+      "recognition_score": 0.938454270362854,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 2,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          349.0,
+          1475.0
+        ],
+        [
+          2317.0,
+          1472.0
+        ],
+        [
+          2317.0,
+          1568.0
+        ],
+        [
+          349.0,
+          1571.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          349.0,
+          1475.0
+        ],
+        [
+          2317.0,
+          1472.0
+        ],
+        [
+          2317.0,
+          1568.0
+        ],
+        [
+          349.0,
+          1571.0
+        ]
+      ],
+      "detector_score": 0.8677431324979684,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a01-011u-9a51f16d9c34",
+        "detector_index": 2,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Colanial Secvetary, Mr. lain Mac leod,",
+      "recognition_score": 0.9490724802017212,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 1,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          356.0,
+          1654.0
+        ],
+        [
+          2138.0,
+          1643.0
+        ],
+        [
+          2139.0,
+          1749.0
+        ],
+        [
+          357.0,
+          1759.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          356.0,
+          1654.0
+        ],
+        [
+          2138.0,
+          1643.0
+        ],
+        [
+          2139.0,
+          1749.0
+        ],
+        [
+          357.0,
+          1759.0
+        ]
+      ],
+      "detector_score": 0.8320085346838924,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a01-011u-9a51f16d9c34",
+        "detector_index": 1,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "is inststing on a policy of change.",
+      "recognition_score": 0.9815965890884399,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 0,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          372.0,
+          2082.0
+        ],
+        [
+          530.0,
+          2082.0
+        ],
+        [
+          530.0,
+          2147.0
+        ],
+        [
+          372.0,
+          2147.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          372.0,
+          2082.0
+        ],
+        [
+          530.0,
+          2082.0
+        ],
+        [
+          530.0,
+          2147.0
+        ],
+        [
+          372.0,
+          2147.0
+        ]
+      ],
+      "detector_score": 0.8950339068554113,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a01-011u-9a51f16d9c34",
+        "detector_index": 0,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999479055404663,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "Delegates fram hr. Kenmeth Kaunda's\nUnited Nalicnal lndependence Pauty\n(280, 000 membes) and Mur. Harry Nhubulas\nAfrican Naticnal Caugueos (400, 000 ) will\nmeet in Lonclon todcay to discuss a common\ncaurse of action. Sir Roy is violently\nopposed to Africano geting and elecded\nmajonity in Northen Rholeoia, Out the\nColanial Secvetary, Mr. lain Mac leod,\nis inststing on a policy of change.\nName:",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 124.94010000955313,
+    "detection_ms": 9661.407899984624,
+    "sorting_ms": 0.35840002237819135,
+    "cropping_ms": 33.76890000072308,
+    "recognition_ms": 11408.258000010392,
+    "serialization_ms": 403.7980000139214
+  },
+  "status": "success",
+  "errors": []
+}

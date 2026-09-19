@@ -1,0 +1,792 @@
+{
+  "document_id": "a05-121-4b5575af9193",
+  "source_image": "a05-121.png",
+  "source_path": "a05-121.png",
+  "source_image_sha256": "4b5575af919354f594f23ec16f01a41124d8d5aff689d2862e80c8d77d5e798e",
+  "image_metadata": {
+    "width": 2479,
+    "height": 2480,
+    "channels": 3,
+    "input_handling": {
+      "decoder": "opencv_imread_unchanged",
+      "operations": [
+        "preserved_bgr"
+      ],
+      "decoded_dtype": "uint8",
+      "model_input_channels": 3
+    }
+  },
+  "pipeline_metadata": {
+    "paddleocr_version": "3.7.0",
+    "paddlex_version": "3.7.2",
+    "paddlepaddle_version": "3.3.1",
+    "detector_model": "PP-OCRv6_medium_det",
+    "recognizer_model": "PP-OCRv6_medium_rec",
+    "detector_device": "cpu",
+    "recognizer_device": "cpu",
+    "coordinate_space": "source_image",
+    "ordering": "PaddleX SortQuadBoxes"
+  },
+  "regions": [
+    {
+      "region_id": "line-0000",
+      "detector_index": 10,
+      "sorted_index": 0,
+      "raw_polygon": [
+        [
+          336.0,
+          23.0
+        ],
+        [
+          2231.0,
+          36.0
+        ],
+        [
+          2231.0,
+          132.0
+        ],
+        [
+          335.0,
+          119.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          336.0,
+          23.0
+        ],
+        [
+          2231.0,
+          36.0
+        ],
+        [
+          2231.0,
+          132.0
+        ],
+        [
+          335.0,
+          119.0
+        ]
+      ],
+      "detector_score": 0.824397156326889,
+      "crop_path": "crops/line-0000.png",
+      "crop_provenance": {
+        "source_document": "a05-121-4b5575af9193",
+        "detector_index": 10,
+        "sorted_index": 0,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "14 was aitmed by 60 Labar M.?.s, many",
+      "recognition_score": 0.8541942238807678,
+      "recognition_order": 5,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0001",
+      "detector_index": 9,
+      "sorted_index": 1,
+      "raw_polygon": [
+        [
+          346.0,
+          201.0
+        ],
+        [
+          2257.0,
+          207.0
+        ],
+        [
+          2257.0,
+          305.0
+        ],
+        [
+          346.0,
+          300.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          346.0,
+          201.0
+        ],
+        [
+          2257.0,
+          207.0
+        ],
+        [
+          2257.0,
+          305.0
+        ],
+        [
+          346.0,
+          300.0
+        ]
+      ],
+      "detector_score": 0.8007119515428529,
+      "crop_path": "crops/line-0001.png",
+      "crop_provenance": {
+        "source_document": "a05-121-4b5575af9193",
+        "detector_index": 9,
+        "sorted_index": 1,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "of then left- wins sgaatis o gumpatnises.",
+      "recognition_score": 0.7897496819496155,
+      "recognition_order": 4,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0002",
+      "detector_index": 8,
+      "sorted_index": 2,
+      "raw_polygon": [
+        [
+          297.0,
+          387.0
+        ],
+        [
+          2231.0,
+          393.0
+        ],
+        [
+          2231.0,
+          483.0
+        ],
+        [
+          297.0,
+          478.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          297.0,
+          387.0
+        ],
+        [
+          2231.0,
+          393.0
+        ],
+        [
+          2231.0,
+          483.0
+        ],
+        [
+          297.0,
+          478.0
+        ]
+      ],
+      "detector_score": 0.8107034513405911,
+      "crop_path": "crops/line-0002.png",
+      "crop_provenance": {
+        "source_document": "a05-121-4b5575af9193",
+        "detector_index": 8,
+        "sorted_index": 2,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "It candemed a the poluticen at uhe worla's",
+      "recognition_score": 0.8464407920837402,
+      "recognition_order": 9,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0003",
+      "detector_index": 7,
+      "sorted_index": 3,
+      "raw_polygon": [
+        [
+          328.0,
+          568.0
+        ],
+        [
+          2174.0,
+          568.0
+        ],
+        [
+          2174.0,
+          656.0
+        ],
+        [
+          328.0,
+          656.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          328.0,
+          568.0
+        ],
+        [
+          2174.0,
+          568.0
+        ],
+        [
+          2174.0,
+          656.0
+        ],
+        [
+          328.0,
+          656.0
+        ]
+      ],
+      "detector_score": 0.8254163107418605,
+      "crop_path": "crops/line-0003.png",
+      "crop_provenance": {
+        "source_document": "a05-121-4b5575af9193",
+        "detector_index": 7,
+        "sorted_index": 3,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "abmcophere as a crime aganist hmanity.\"",
+      "recognition_score": 0.8850581049919128,
+      "recognition_order": 6,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0004",
+      "detector_index": 6,
+      "sorted_index": 4,
+      "raw_polygon": [
+        [
+          341.0,
+          744.0
+        ],
+        [
+          2208.0,
+          752.0
+        ],
+        [
+          2208.0,
+          840.0
+        ],
+        [
+          341.0,
+          832.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          341.0,
+          744.0
+        ],
+        [
+          2208.0,
+          752.0
+        ],
+        [
+          2208.0,
+          840.0
+        ],
+        [
+          341.0,
+          832.0
+        ]
+      ],
+      "detector_score": 0.8544754151881542,
+      "crop_path": "crops/line-0004.png",
+      "crop_provenance": {
+        "source_document": "a05-121-4b5575af9193",
+        "detector_index": 6,
+        "sorted_index": 4,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "A peocnal eller of pualerst agansh bhe",
+      "recognition_score": 0.8749690651893616,
+      "recognition_order": 8,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0005",
+      "detector_index": 5,
+      "sorted_index": 5,
+      "raw_polygon": [
+        [
+          341.0,
+          930.0
+        ],
+        [
+          2190.0,
+          930.0
+        ],
+        [
+          2190.0,
+          1018.0
+        ],
+        [
+          341.0,
+          1018.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          341.0,
+          930.0
+        ],
+        [
+          2190.0,
+          930.0
+        ],
+        [
+          2190.0,
+          1018.0
+        ],
+        [
+          341.0,
+          1018.0
+        ]
+      ],
+      "detector_score": 0.8426189363698485,
+      "crop_path": "crops/line-0005.png",
+      "crop_provenance": {
+        "source_document": "a05-121-4b5575af9193",
+        "detector_index": 5,
+        "sorted_index": 5,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Lests fran Canan Colhin., cucirma",
+      "recognition_score": 0.9045458436012268,
+      "recognition_order": 7,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0006",
+      "detector_index": 4,
+      "sorted_index": 6,
+      "raw_polygon": [
+        [
+          339.0,
+          1095.0
+        ],
+        [
+          1927.0,
+          1103.0
+        ],
+        [
+          1926.0,
+          1199.0
+        ],
+        [
+          338.0,
+          1191.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          339.0,
+          1095.0
+        ],
+        [
+          1927.0,
+          1103.0
+        ],
+        [
+          1926.0,
+          1199.0
+        ],
+        [
+          338.0,
+          1191.0
+        ]
+      ],
+      "detector_score": 0.8251697763634575,
+      "crop_path": "crops/line-0006.png",
+      "crop_provenance": {
+        "source_document": "a05-121-4b5575af9193",
+        "detector_index": 4,
+        "sorted_index": 6,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "of hme Campaign fer Nuclear",
+      "recognition_score": 0.9143995642662048,
+      "recognition_order": 2,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0007",
+      "detector_index": 3,
+      "sorted_index": 7,
+      "raw_polygon": [
+        [
+          264.0,
+          1279.0
+        ],
+        [
+          1947.0,
+          1284.0
+        ],
+        [
+          1947.0,
+          1372.0
+        ],
+        [
+          263.0,
+          1367.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          264.0,
+          1279.0
+        ],
+        [
+          1947.0,
+          1284.0
+        ],
+        [
+          1947.0,
+          1372.0
+        ],
+        [
+          263.0,
+          1367.0
+        ]
+      ],
+      "detector_score": 0.8409686267702395,
+      "crop_path": "crops/line-0007.png",
+      "crop_provenance": {
+        "source_document": "a05-121-4b5575af9193",
+        "detector_index": 3,
+        "sorted_index": 7,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Digarmanent, adanersed to Mr.",
+      "recognition_score": 0.9224358797073364,
+      "recognition_order": 3,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0008",
+      "detector_index": 2,
+      "sorted_index": 8,
+      "raw_polygon": [
+        [
+          307.0,
+          1465.0
+        ],
+        [
+          2249.0,
+          1467.0
+        ],
+        [
+          2249.0,
+          1555.0
+        ],
+        [
+          307.0,
+          1553.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          307.0,
+          1465.0
+        ],
+        [
+          2249.0,
+          1467.0
+        ],
+        [
+          2249.0,
+          1555.0
+        ],
+        [
+          307.0,
+          1553.0
+        ]
+      ],
+      "detector_score": 0.8740058271753894,
+      "crop_path": "crops/line-0008.png",
+      "crop_provenance": {
+        "source_document": "a05-121-4b5575af9193",
+        "detector_index": 2,
+        "sorted_index": 8,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "trno Klrnochev, was aso tanen to he",
+      "recognition_score": 0.8416240811347961,
+      "recognition_order": 10,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0009",
+      "detector_index": 1,
+      "sorted_index": 9,
+      "raw_polygon": [
+        [
+          319.0,
+          1630.0
+        ],
+        [
+          1302.0,
+          1643.0
+        ],
+        [
+          1300.0,
+          1749.0
+        ],
+        [
+          317.0,
+          1736.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          319.0,
+          1630.0
+        ],
+        [
+          1302.0,
+          1643.0
+        ],
+        [
+          1300.0,
+          1749.0
+        ],
+        [
+          317.0,
+          1736.0
+        ]
+      ],
+      "detector_score": 0.766430285092964,
+      "crop_path": "crops/line-0009.png",
+      "crop_provenance": {
+        "source_document": "a05-121-4b5575af9193",
+        "detector_index": 1,
+        "sorted_index": 9,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Ruosien Enbassy.",
+      "recognition_score": 0.8073087930679321,
+      "recognition_order": 1,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    },
+    {
+      "region_id": "line-0010",
+      "detector_index": 0,
+      "sorted_index": 10,
+      "raw_polygon": [
+        [
+          325.0,
+          2092.0
+        ],
+        [
+          485.0,
+          2092.0
+        ],
+        [
+          485.0,
+          2160.0
+        ],
+        [
+          325.0,
+          2160.0
+        ]
+      ],
+      "sorted_polygon": [
+        [
+          325.0,
+          2092.0
+        ],
+        [
+          485.0,
+          2092.0
+        ],
+        [
+          485.0,
+          2160.0
+        ],
+        [
+          325.0,
+          2160.0
+        ]
+      ],
+      "detector_score": 0.8904387324410996,
+      "crop_path": "crops/line-0010.png",
+      "crop_provenance": {
+        "source_document": "a05-121-4b5575af9193",
+        "detector_index": 0,
+        "sorted_index": 10,
+        "polygon_coordinate_space": "source_image",
+        "generation_method": "PaddleX _OCRPipeline._crop_by_polys",
+        "status": "saved"
+      },
+      "raw_text": "Name:",
+      "recognition_score": 0.9999266862869263,
+      "recognition_order": 0,
+      "correction": {
+        "status": "skipped",
+        "corrected_text": null,
+        "method": null,
+        "changes": []
+      },
+      "timing": {
+        "crop_ms": null,
+        "recognition_ms": null
+      },
+      "metadata": {
+        "crop_generation_method": "PaddleX _OCRPipeline._crop_by_polys"
+      }
+    }
+  ],
+  "document_text_raw": "14 was aitmed by 60 Labar M.?.s, many\nof then left- wins sgaatis o gumpatnises.\nIt candemed a the poluticen at uhe worla's\nabmcophere as a crime aganist hmanity.\"\nA peocnal eller of pualerst agansh bhe\nLests fran Canan Colhin., cucirma\nof hme Campaign fer Nuclear\nDigarmanent, adanersed to Mr.\ntrno Klrnochev, was aso tanen to he\nRuosien Enbassy.\nName:",
+  "document_text_corrected": null,
+  "evaluation": {
+    "ground_truth_available": false,
+    "status": "ground_truth_unavailable",
+    "reference_text": null,
+    "evaluation_hypothesis_text": null,
+    "normalized_reference_text": null,
+    "normalized_hypothesis_text": null,
+    "exclusion": {},
+    "character": null,
+    "word": null
+  },
+  "timing": {
+    "image_load_ms": 146.4241000066977,
+    "detection_ms": 9720.293799997307,
+    "sorting_ms": 0.8894999918993562,
+    "cropping_ms": 34.745899989502504,
+    "recognition_ms": 11356.265300011728,
+    "serialization_ms": 401.2110999901779
+  },
+  "status": "success",
+  "errors": []
+}
