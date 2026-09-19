@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Copy, Check, ShieldCheck, Hash } from 'lucide-react';
+import { Copy, Check, ShieldCheck, Hash, Lock, Download } from 'lucide-react';
 
 interface RawTextViewProps {
   rawText: string;
@@ -37,22 +37,43 @@ export const RawTextView: React.FC<RawTextViewProps> = ({ rawText, sha256, docId
           <span>{charCount} chars</span>
         </div>
 
-        <button
-          onClick={handleCopy}
-          className="flex items-center gap-1.5 px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-200 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer"
-        >
-          {copied ? (
-            <>
-              <Check className="w-3.5 h-3.5 text-emerald-600" />
-              <span className="text-emerald-600 font-semibold">Copied!</span>
-            </>
-          ) : (
-            <>
-              <Copy className="w-3.5 h-3.5 text-slate-500" />
-              <span>Copy Raw</span>
-            </>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={handleCopy}
+            className="flex items-center gap-1.5 px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-200 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer"
+          >
+            {copied ? (
+              <>
+                <Check className="w-3.5 h-3.5 text-emerald-600" />
+                <span className="text-emerald-600 font-semibold">Copied!</span>
+              </>
+            ) : (
+              <>
+                <Copy className="w-3.5 h-3.5 text-slate-500" />
+                <span>Copy Raw</span>
+              </>
+            )}
+          </button>
+
+          {rawText && (
+            <button
+              onClick={() => {
+                const blob = new Blob([rawText], { type: 'text/plain' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `${docId}_raw.txt`;
+                a.click();
+                URL.revokeObjectURL(url);
+              }}
+              className="flex items-center gap-1.5 px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-200 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer"
+              title="Download raw.txt"
+            >
+              <Download className="w-3.5 h-3.5 text-slate-500" />
+              <span className="hidden sm:inline">.txt</span>
+            </button>
           )}
-        </button>
+        </div>
       </div>
 
       {/* SHA256 info banner */}
@@ -63,6 +84,13 @@ export const RawTextView: React.FC<RawTextViewProps> = ({ rawText, sha256, docId
           <span className="truncate">{sha256}</span>
         </div>
       )}
+
+      {/* Immutability invariant */}
+      <div className="bg-emerald-50 border-b border-emerald-200 px-4 py-2 text-[11px] text-emerald-800 flex items-center gap-2">
+        <Lock className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+        <span className="font-semibold">Immutable Invariant:</span>
+        <span>This raw OCR text is never modified. Correction status = <code className="font-mono bg-emerald-100 px-1 rounded">skipped</code>. Notes generation does not alter this artifact.</span>
+      </div>
 
       {/* Line-numbered raw view */}
       <div className="flex-1 overflow-y-auto p-4 max-w-4xl mx-auto w-full">

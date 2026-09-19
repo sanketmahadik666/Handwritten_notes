@@ -15,6 +15,7 @@ import {
   ExternalLink,
 } from 'lucide-react';
 import { DocumentData, OCRRegion } from '../types';
+import { EvaluationPanel } from './EvaluationPanel';
 
 interface DocumentViewerProps {
   jobId: string;
@@ -129,18 +130,15 @@ export const DocumentViewer: React.FC<DocumentViewerProps> = ({
             </button>
           </div>
 
-          {/* Evaluation Indicator */}
+          {/* Evaluation Indicator (compact) */}
           {isVerifiedDoc ? (
-            <button
-              onClick={() => setShowEvalDetails(!showEvalDetails)}
-              className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-100 transition-colors cursor-pointer"
-            >
+            <span className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200">
               <FileCheck2 className="w-3.5 h-3.5 text-emerald-600" />
-              <span>Verified GT: CER 7.09% • WER 24.49%</span>
-            </button>
+              Verified GT
+            </span>
           ) : (
             <span className="text-[11px] text-slate-500 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
-              Unverified Ground Truth (CER/WER Skipped)
+              Unverified GT
             </span>
           )}
         </div>
@@ -156,48 +154,12 @@ export const DocumentViewer: React.FC<DocumentViewerProps> = ({
         </button>
       </div>
 
-      {/* Ground Truth Evaluation Drawer (Expandable) */}
-      {showEvalDetails && isVerifiedDoc && evalData && (
-        <div className="bg-emerald-50/90 border-b border-emerald-200 p-4 text-xs text-emerald-950 shrink-0 space-y-2">
-          <div className="flex items-center justify-between">
-            <span className="font-bold flex items-center gap-1.5">
-              <ShieldCheck className="w-4 h-4 text-emerald-600" />
-              Verified IAM Ground Truth Annotation Audit (config/a01-000u.ground_truth.json)
-            </span>
-            <button
-              onClick={() => setShowEvalDetails(false)}
-              className="text-emerald-700 hover:text-emerald-900 font-mono text-[11px] cursor-pointer"
-            >
-              ✕ Close
-            </button>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 bg-white p-3 rounded-lg border border-emerald-200">
-            <div>
-              <span className="text-[10px] text-slate-500 block">Character Error Rate (CER)</span>
-              <span className="text-sm font-bold font-mono text-emerald-700">7.0866%</span>
-              <span className="text-[10px] text-slate-500 block">
-                15 subs + 2 ins + 1 del = 18 edits / 254 chars
-              </span>
-            </div>
-            <div>
-              <span className="text-[10px] text-slate-500 block">Word Error Rate (WER)</span>
-              <span className="text-sm font-bold font-mono text-slate-800">24.4898%</span>
-              <span className="text-[10px] text-slate-500 block">
-                12 subs + 0 ins + 0 del = 12 edits / 49 words
-              </span>
-            </div>
-            <div>
-              <span className="text-[10px] text-slate-500 block">Exclusion Specification</span>
-              <span className="text-[11px] font-mono text-amber-700 font-semibold">
-                Trailing "Name:" excluded
-              </span>
-              <span className="text-[10px] text-slate-500 block">
-                Applied from ground truth annotation
-              </span>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* Ground Truth Evaluation Panel */}
+      <EvaluationPanel
+        evaluation={evalData}
+        documentId={docId}
+        isVerified={isVerifiedDoc}
+      />
 
       {/* Main Split: Canvas + Line Inspector */}
       <div className="flex-1 flex flex-col lg:flex-row overflow-hidden">

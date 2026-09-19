@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Markdown from 'react-markdown';
-import { Sparkles, Copy, Check, RefreshCw, FileText, Code } from 'lucide-react';
+import { Sparkles, Copy, Check, RefreshCw, FileText, Code, Download, Clock } from 'lucide-react';
 
 interface NotesViewProps {
   notesMarkdown: string;
@@ -53,6 +53,18 @@ export const NotesView: React.FC<NotesViewProps> = ({
               <span>Markdown Source</span>
             </button>
           </div>
+
+          {/* Stats */}
+          {notesMarkdown && (
+            <div className="hidden sm:flex items-center gap-3 text-[11px] text-slate-400 font-mono">
+              <span>{notesMarkdown.split(/\s+/).filter(Boolean).length} words</span>
+              <span>•</span>
+              <span className="flex items-center gap-1">
+                <Clock className="w-3 h-3" />
+                ~{Math.max(1, Math.round(notesMarkdown.split(/\s+/).filter(Boolean).length / 200))} min read
+              </span>
+            </div>
+          )}
         </div>
 
         <div className="flex items-center gap-2">
@@ -84,14 +96,37 @@ export const NotesView: React.FC<NotesViewProps> = ({
             <RefreshCw className={`w-3.5 h-3.5 ${isGeneratingNotes ? 'animate-spin' : ''}`} />
             <span>{isGeneratingNotes ? 'Synthesizing...' : 'Regenerate Notes'}</span>
           </button>
+
+          {/* Download as .md */}
+          {notesMarkdown && (
+            <button
+              onClick={() => {
+                const blob = new Blob([notesMarkdown], { type: 'text/markdown' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'study_notes.md';
+                a.click();
+                URL.revokeObjectURL(url);
+              }}
+              className="flex items-center gap-1.5 px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-200 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer"
+              title="Download Markdown"
+            >
+              <Download className="w-3.5 h-3.5 text-slate-500" />
+              <span className="hidden sm:inline">.md</span>
+            </button>
+          )}
         </div>
       </div>
 
       {/* Generation Stream Progress Alert */}
       {isGeneratingNotes && (
-        <div className="bg-blue-50 border-b border-blue-100 px-4 py-2 flex items-center gap-2 text-xs text-blue-700 animate-pulse">
-          <Sparkles className="w-4 h-4 text-blue-600 shrink-0" />
-          <span>{notesDelta || 'Synthesizing structured Markdown study notes from raw OCR tokens...'}</span>
+        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-b border-blue-100 px-4 py-2.5 flex items-center gap-2 text-xs text-blue-700">
+          <Sparkles className="w-4 h-4 text-blue-600 shrink-0 animate-pulse" />
+          <span className="font-medium">{notesDelta || 'Synthesizing structured Markdown study notes from raw OCR tokens...'}</span>
+          <div className="ml-auto w-24 h-1.5 bg-blue-200 rounded-full overflow-hidden">
+            <div className="h-full bg-blue-600 rounded-full animate-pulse" style={{ width: '60%' }}></div>
+          </div>
         </div>
       )}
 

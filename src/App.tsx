@@ -286,6 +286,16 @@ export default function App() {
       .catch(console.error);
   };
 
+  const handleUpdateProvider = (id: string, updates: any) => {
+    fetch(`/api/providers/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(updates),
+    })
+      .then(() => fetchProviders())
+      .catch(console.error);
+  };
+
   return (
     <div className="flex flex-col h-screen bg-slate-100 text-slate-900 overflow-hidden">
       {/* Top Header */}
@@ -504,6 +514,7 @@ export default function App() {
         onClose={() => setIsProvidersOpen(false)}
         providers={providerData?.providers || []}
         onAddProvider={handleAddProvider}
+        onUpdateProvider={handleUpdateProvider}
       />
     </div>
   );

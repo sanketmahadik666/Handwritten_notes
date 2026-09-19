@@ -7,6 +7,7 @@ interface ProvidersModalProps {
   onClose: () => void;
   providers: ProviderModel[];
   onAddProvider: (provider: any) => void;
+  onUpdateProvider?: (id: string, updates: any) => void;
 }
 
 export const ProvidersModal: React.FC<ProvidersModalProps> = ({
@@ -14,8 +15,11 @@ export const ProvidersModal: React.FC<ProvidersModalProps> = ({
   onClose,
   providers,
   onAddProvider,
+  onUpdateProvider,
 }) => {
   const [showAddForm, setShowAddForm] = useState(false);
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [editApiKey, setEditApiKey] = useState('');
   const [newId, setNewId] = useState('');
   const [newLabel, setNewLabel] = useState('');
   const [newBaseUrl, setNewBaseUrl] = useState('http://localhost:11434/v1');
@@ -81,12 +85,29 @@ export const ProvidersModal: React.FC<ProvidersModalProps> = ({
                       </span>
                     )}
                   </div>
-                  <span className="text-[11px] font-mono text-slate-400 bg-slate-50 px-2 py-0.5 rounded border border-slate-100">
-                    {p.protocol}
-                  </span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-[11px] font-mono text-slate-400 bg-slate-50 px-2 py-0.5 rounded border border-slate-100">
+                      {p.protocol}
+                    </span>
+                    {onUpdateProvider && (
+                      <button
+                        onClick={() => {
+                          if (editingId === p.id) {
+                            setEditingId(null);
+                          } else {
+                            setEditingId(p.id);
+                            setEditApiKey('');
+                          }
+                        }}
+                        className="text-[10px] px-2 py-0.5 rounded border border-slate-200 bg-white hover:bg-slate-50 text-slate-600 cursor-pointer"
+                      >
+                        {editingId === p.id ? 'Cancel' : 'Edit Key'}
+                      </button>
+                    )}
+                  </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-2 text-xs text-slate-600 font-mono">
+                <div className="grid grid-cols-2 gap-2 text-xs text-slate-600 font-mono mb-2">
                   <div>
                     <span className="text-slate-400 font-sans">Model: </span>
                     <span className="text-slate-800 font-semibold">{p.model}</span>
@@ -96,6 +117,31 @@ export const ProvidersModal: React.FC<ProvidersModalProps> = ({
                     <span className="text-slate-700 truncate block">{p.base_url}</span>
                   </div>
                 </div>
+
+                {editingId === p.id && onUpdateProvider && (
+                  <div className="mt-3 pt-3 border-t border-slate-100 flex items-center gap-2">
+                    <div className="relative flex-1">
+                      <Key className="w-3.5 h-3.5 absolute left-2 top-1/2 -translate-y-1/2 text-slate-400" />
+                      <input
+                        type="password"
+                        placeholder="Enter new API key"
+                        value={editApiKey}
+                        onChange={(e) => setEditApiKey(e.target.value)}
+                        className="w-full pl-7 pr-3 py-1.5 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
+                      />
+                    </div>
+                    <button
+                      onClick={() => {
+                        onUpdateProvider(p.id, { api_key: editApiKey });
+                        setEditingId(null);
+                      }}
+                      disabled={!editApiKey}
+                      className="px-3 py-1.5 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg cursor-pointer disabled:opacity-50"
+                    >
+                      Save
+                    </button>
+                  </div>
+                )}
               </div>
             ))}
           </div>
