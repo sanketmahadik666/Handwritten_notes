@@ -4,6 +4,8 @@ import { JobList } from './components/JobList';
 import { DocumentViewer } from './components/DocumentViewer';
 import { NotesView } from './components/NotesView';
 import { RawTextView } from './components/RawTextView';
+import { CropViewer } from './components/CropViewer';
+import { ErrorRecovery } from './components/ErrorRecovery';
 import { LiveSSETerminal } from './components/LiveSSETerminal';
 import { BenchmarkDashboard } from './components/BenchmarkDashboard';
 import { HealthScreen } from './components/HealthScreen';
@@ -19,7 +21,7 @@ import {
   DocumentData,
   SSEEventRecord,
 } from './types';
-import { Eye, BookOpen, ShieldCheck, Terminal } from 'lucide-react';
+import { Eye, BookOpen, ShieldCheck, Terminal, LayoutGrid } from 'lucide-react';
 
 export default function App() {
   const [currentView, setCurrentView] = useState<'workspace' | 'benchmark' | 'health' | 'artifacts'>('workspace');
@@ -34,7 +36,7 @@ export default function App() {
   const [rawText, setRawText] = useState<string>('');
   const [notesMarkdown, setNotesMarkdown] = useState<string>('');
 
-  const [activeTab, setActiveTab] = useState<'viewer' | 'notes' | 'raw' | 'terminal'>('viewer');
+  const [activeTab, setActiveTab] = useState<'viewer' | 'crops' | 'notes' | 'raw' | 'terminal'>('viewer');
   const [isNewJobOpen, setIsNewJobOpen] = useState(false);
   const [isProvidersOpen, setIsProvidersOpen] = useState(false);
 
@@ -119,6 +121,33 @@ export default function App() {
       setSseEvents((prev) => [record, ...prev].slice(0, 100));
 
       const { type, data } = record;
+      
+      setSelectedJob((prevJob) => {
+        if (!prevJob) return prevJob;
+        const newJob = { ...prevJob, pages: [...prevJob.pages] };
+        
+        if (data?.document_id) {
+          const pageIndex = newJob.pages.findIndex(p => p.document_id === data.document_id);
+          if (pageIndex !== -1) {
+            const page = { ...newJob.pages[pageIndex] };
+            if (type === 'page.ocr_started') page.status = 'ocr_running';
+            else if (type === 'page.ocr_complete') page.status = 'ocr_complete';
+            else if (type === 'page.ocr_failed') page.status = 'ocr_failed';
+            else if (type === 'page.notes_queued') page.status = 'notes_queued';
+            else if (type === 'page.notes_started') page.status = 'notes_running';
+            else if (type === 'page.notes_complete') page.status = 'notes_ready';
+            else if (type === 'page.notes_failed') page.status = 'notes_failed';
+            else if (type === 'page.failed') page.status = 'failed';
+            newJob.pages[pageIndex] = page;
+          }
+        }
+        
+        if (type === 'job.finished') newJob.status = 'completed';
+        else if (type === 'job.failed') newJob.status = 'failed';
+        
+        return newJob;
+      });
+
       if (type === 'page.notes_started') {
         setIsGeneratingNotes(true);
         setNotesDelta(null);
@@ -128,7 +157,7 @@ export default function App() {
         setIsGeneratingNotes(false);
         setNotesDelta(null);
         // Refresh notes
-        if (selectedJobId && selectedDocId) {
+        if (selectedJobId && selectedDocId && data?.document_id === selectedDocId) {
           loadDocumentArtifacts(selectedJobId, selectedDocId);
         }
       } else if (type === 'job.finished') {
@@ -195,6 +224,21 @@ export default function App() {
   }, [selectedJobId, selectedDocId, loadDocumentArtifacts]);
 
   // Actions
+  const handleCancelJob = useCallback(async (jobId: string) => {
+    try {
+      await fetch(`/api/jobs/${jobId}`, { method: 'DELETE' });
+      if (selectedJobId === jobId) {
+        setSelectedJobId(null);
+        setSelectedJob(null);
+        setSelectedDocId(null);
+        setDocumentData(null);
+      }
+      fetchJobs();
+    } catch (err) {
+      console.error('Failed to cancel job:', err);
+    }
+  }, [selectedJobId]);
+
   const handleRetryNotes = () => {
     if (!selectedJobId || !selectedDocId) return;
     setIsGeneratingNotes(true);
@@ -252,6 +296,8 @@ export default function App() {
         onRefreshHealth={fetchHealth}
         onOpenProviders={() => setIsProvidersOpen(true)}
         onNewJob={() => setIsNewJobOpen(true)}
+        activeJobId={selectedJobId}
+        activeJobStatus={selectedJob?.status}
       />
 
       {/* Main Content Area based on currentView */}
@@ -273,6 +319,7 @@ export default function App() {
               selectedDocId={selectedDocId}
               onSelectDoc={(id) => setSelectedDocId(id)}
               onNewJobClick={() => setIsNewJobOpen(true)}
+              onCancelJob={handleCancelJob}
             />
           </aside>
 
@@ -291,6 +338,18 @@ export default function App() {
                 >
                   <Eye className="w-3.5 h-3.5" />
                   <span>OCR Visualizer & Polygons</span>
+                </button>
+
+                <button
+                  onClick={() => setActiveTab('crops')}
+                  className={`flex items-center gap-1.5 py-3 px-3.5 text-xs font-semibold border-b-2 transition-colors cursor-pointer ${
+                    activeTab === 'crops'
+                      ? 'border-blue-600 text-blue-600'
+                      : 'border-transparent text-slate-500 hover:text-slate-700'
+                  }`}
+                >
+                  <LayoutGrid className="w-3.5 h-3.5" />
+                  <span>Line Crops</span>
                 </button>
 
                 <button
@@ -353,6 +412,22 @@ export default function App() {
               )}
             </div>
 
+            {/* Error Recovery Banner */}
+            {selectedJob && selectedDocId && (() => {
+              const page = selectedJob.pages.find(p => p.document_id === selectedDocId);
+              if (page && (page.status === 'ocr_failed' || page.status === 'notes_failed' || page.status === 'failed')) {
+                return (
+                  <ErrorRecovery 
+                    status={page.status} 
+                    onRetryOcr={handleRetryOcr}
+                    onRetryNotes={handleRetryNotes}
+                    isRetrying={isOcrRetrying || isGeneratingNotes}
+                  />
+                );
+              }
+              return null;
+            })()}
+
             {/* Active Tab Views */}
             <div className="flex-1 overflow-hidden">
               {activeTab === 'viewer' && selectedJobId && selectedDocId && (
@@ -362,6 +437,14 @@ export default function App() {
                   documentData={documentData}
                   onRetryOcr={handleRetryOcr}
                   isOcrRetrying={isOcrRetrying}
+                />
+              )}
+
+              {activeTab === 'crops' && selectedJobId && selectedDocId && (
+                <CropViewer
+                  jobId={selectedJobId}
+                  docId={selectedDocId}
+                  documentData={documentData}
                 />
               )}
 

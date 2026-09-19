@@ -37,6 +37,7 @@ export interface PageStatusModel {
   error?: string;
   elapsed_ms?: number;
   retry_count?: number;
+  notes_status?: string;
 }
 
 export interface JobStatusResponse {
@@ -348,5 +349,35 @@ export interface RunHistoryItem {
   cer: number | null;
   wer: number | null;
   status: string;
+}
+
+export interface CropInfo {
+  region_id: string;
+  sorted_index: number;
+  detector_score: number | null;
+  recognition_score: number | null;
+  crop_status: string;
+  path: string;
+}
+
+export interface LineInspectionData {
+  region_id: string;
+  detector_index: number;
+  sorted_index: number;
+  recognition_order?: number;
+  raw_text: string;
+  detector_score: number | null;
+  recognition_score: number | null;
+  crop_status: string;
+  polygon: [number, number][];
+  correction_status: string;
+  crop_url: string;
+}
+
+export interface ProviderTestResult {
+  success: boolean;
+  latency_ms?: number;
+  message?: string;
+  error?: string;
 }
 

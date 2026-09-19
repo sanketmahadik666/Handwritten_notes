@@ -118,7 +118,7 @@ let defaultProviderId = 'gemini-flash';
 interface PageState {
   document_id: string;
   index: number;
-  status: 'queued' | 'ocr_running' | 'ocr_complete' | 'notes_running' | 'notes_ready' | 'failed';
+  status: 'queued' | 'ocr_running' | 'ocr_failed' | 'ocr_complete' | 'notes_queued' | 'notes_running' | 'notes_failed' | 'notes_ready' | 'failed';
   raw_sha256?: string | null;
   has_overlay: boolean;
   has_notes: boolean;
@@ -1172,6 +1172,43 @@ function findDocumentDir(documentId: string): string | null {
   }
   return null;
 }
+
+// 17. GET /api/jobs/:job_id/pages/:document_id/crops
+app.get('/api/jobs/:job_id/pages/:document_id/crops', (req, res) => {
+  const { document_id } = req.params;
+  const docPath = findDocumentDir(document_id);
+  if (!docPath) return res.json([]);
+  
+  const cropsDir = path.join(docPath, 'crops');
+  if (!fs.existsSync(cropsDir)) return res.json([]);
+  
+  const crops = fs.readdirSync(cropsDir)
+    .filter(f => f.endsWith('.png'))
+    .map(f => ({
+      region_id: f.replace('.png', ''),
+      path: `/api/jobs/${req.params.job_id}/pages/${document_id}/crops/${f}`
+    }));
+  res.json(crops);
+});
+
+// 18. PATCH /api/providers/:id
+app.patch('/api/providers/:id', (req, res) => {
+  const { id } = req.params;
+  const idx = providers.findIndex(p => p.id === id);
+  if (idx === -1) return res.status(404).json({ error: 'Provider not found' });
+  
+  providers[idx] = { ...providers[idx], ...req.body };
+  res.json(providers[idx]);
+});
+
+// 19. DELETE /api/jobs/:job_id
+app.delete('/api/jobs/:job_id', (req, res) => {
+  const { job_id } = req.params;
+  if (!jobsMap.has(job_id)) return res.status(404).json({ error: 'Job not found' });
+  
+  jobsMap.delete(job_id);
+  res.status(200).json({ success: true });
+});
 
 // ==========================================
 // Vite Middleware & Static Serving Setup

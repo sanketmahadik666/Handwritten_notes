@@ -10,6 +10,7 @@ interface JobListProps {
   selectedDocId: string | null;
   onSelectDoc: (docId: string) => void;
   onNewJobClick: () => void;
+  onCancelJob?: (jobId: string) => void;
 }
 
 export const JobList: React.FC<JobListProps> = ({
@@ -20,6 +21,7 @@ export const JobList: React.FC<JobListProps> = ({
   selectedDocId,
   onSelectDoc,
   onNewJobClick,
+  onCancelJob,
 }) => {
   const [filterQuery, setFilterQuery] = useState('');
 
@@ -100,8 +102,16 @@ export const JobList: React.FC<JobListProps> = ({
                 {/* Expanded pages list when this job is selected */}
                 {isSelected && selectedJob && (
                   <div className="bg-slate-50/80 px-2 py-1.5 border-t border-slate-100 divide-y divide-slate-100/60 max-h-56 overflow-y-auto">
-                    <div className="text-[10px] font-bold text-slate-400 uppercase tracking-wider px-2 py-1">
-                      Pages in this run ({selectedJob.pages.length})
+                    <div className="text-[10px] font-bold text-slate-400 uppercase tracking-wider px-2 py-1 flex justify-between items-center">
+                      <span>Pages in this run ({selectedJob.pages.length})</span>
+                      {job.status === 'processing' && onCancelJob && (
+                        <button 
+                          onClick={(e) => { e.stopPropagation(); onCancelJob(job.job_id); }}
+                          className="text-red-500 hover:text-red-700 bg-red-50 hover:bg-red-100 px-1.5 py-0.5 rounded cursor-pointer transition-colors"
+                        >
+                          Cancel
+                        </button>
+                      )}
                     </div>
                     {selectedJob.pages.map((p) => {
                       const isDocSelected = p.document_id === selectedDocId;
@@ -121,17 +131,28 @@ export const JobList: React.FC<JobListProps> = ({
                               {p.document_id}
                             </span>
                           </div>
-                          <span
-                            className={`text-[9px] px-1.5 py-0.5 rounded font-medium ${
-                              isDocSelected
-                                ? 'bg-blue-700 text-white'
-                                : p.status === 'notes_ready'
-                                ? 'bg-emerald-100 text-emerald-700'
-                                : 'bg-blue-100 text-blue-700'
-                            }`}
-                          >
-                            {p.status === 'notes_ready' ? 'Ready' : p.status}
-                          </span>
+                          <div className="flex flex-col items-end gap-1 shrink-0">
+                            <span
+                              className={`text-[9px] px-1.5 py-0.5 rounded font-medium capitalize ${
+                                p.status === 'queued' ? 'badge-queued' :
+                                p.status === 'ocr_running' ? 'badge-ocr-running' :
+                                p.status === 'ocr_complete' ? 'badge-ocr-complete' :
+                                p.status === 'ocr_failed' ? 'badge-ocr-failed' :
+                                p.status === 'notes_queued' ? 'badge-notes-queued' :
+                                p.status === 'notes_running' ? 'badge-notes-running' :
+                                p.status === 'notes_failed' ? 'badge-notes-failed' :
+                                p.status === 'notes_ready' ? 'badge-notes-ready' :
+                                'badge-ocr-failed'
+                              }`}
+                            >
+                              {p.status.replace('_', ' ')}
+                            </span>
+                            {p.elapsed_ms !== undefined && (
+                              <span className="text-[9px] text-slate-400 font-mono">
+                                {(p.elapsed_ms / 1000).toFixed(1)}s
+                              </span>
+                            )}
+                          </div>
                         </button>
                       );
                     })}
