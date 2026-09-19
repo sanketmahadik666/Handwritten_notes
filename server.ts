@@ -126,6 +126,7 @@ interface PageState {
   line_count: number;
   error?: string;
   doc_dir_path: string;
+  notes_content?: string;
 }
 
 interface JobState {
@@ -176,10 +177,10 @@ function loadExistingRuns() {
         lineCount = rawContent.toString('utf-8').split('\n').filter(Boolean).length;
       }
 
-      // Check or generate initial notes.md if not yet present
+      let notesContent: string | undefined = undefined;
       const hasNotes = fs.existsSync(notesPath);
-      if (!hasNotes && fs.existsSync(rawTxtPath)) {
-        generateDefaultMarkdownNotes(docPath, docSub, rawTxtPath);
+      if (hasNotes) {
+        notesContent = fs.readFileSync(notesPath, 'utf-8');
       }
 
       const sourceImage = docSub.split('-')[0] + '-' + docSub.split('-')[1] + '.png';
@@ -194,6 +195,7 @@ function loadExistingRuns() {
         source_image: sourceImage,
         line_count: lineCount,
         doc_dir_path: docPath,
+        notes_content: notesContent,
       });
     }
 
@@ -217,9 +219,8 @@ function loadExistingRuns() {
 }
 
 // Generate default clean Markdown notes following config/notes_prompt.md format
-function generateDefaultMarkdownNotes(docDir: string, docId: string, rawPath: string) {
+function generateDefaultMarkdownNotes(rawText: string): string {
   try {
-    const rawText = fs.readFileSync(rawPath, 'utf-8');
     const lines = rawText.split('\n').map((l) => l.trim()).filter(Boolean);
     const nonBoilerplate = lines.filter((l) => !l.toLowerCase().startsWith('name:'));
     const boilerplate = lines.filter((l) => l.toLowerCase().startsWith('name:'));
@@ -242,14 +243,68 @@ ${nonBoilerplate.map((l) => `- ${l}`).join('\n')}
 ${boilerplate.length > 0 ? boilerplate.map((b) => `- Omitted form marker: \`${b}\``).join('\n') : '- None detected'}
 `;
 
-    fs.writeFileSync(path.join(docDir, 'notes.md'), notesMd, 'utf-8');
+    return notesMd;
   } catch (err) {
     console.error('Failed to generate default notes:', err);
+    return '# Error\nFailed to generate default notes.';
   }
 }
 
 // Initial load
 loadExistingRuns();
+
+function buildNotesPayload(docPath: string, rawText: string, documentId: string) {
+  let docData: any = {};
+  const jsonPath = path.join(docPath, 'document.json');
+  if (fs.existsSync(jsonPath)) {
+    try {
+      docData = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
+    } catch (e) {}
+  }
+
+  const imageMeta = docData.image_metadata || {};
+  const h = imageMeta.height || 1;
+  const w = imageMeta.width || 1;
+
+  const regions = docData.regions || [];
+  const sortedLines = [...regions].sort((a: any, b: any) => (a.sorted_index || 0) - (b.sorted_index || 0));
+
+  let hasFormLabel = false;
+  const formattedLines = sortedLines.map((r: any) => {
+    const text = r.raw_text || '';
+    if (/^(Name|Date|Signed|Total|Page):?\s*$/i.test(text)) {
+      hasFormLabel = true;
+    }
+    const poly = r.sorted_polygon || [];
+    let nearBottom = false;
+    if (poly.length >= 4) {
+      const avgY = poly.reduce((sum: number, pt: number[]) => sum + pt[1], 0) / poly.length;
+      nearBottom = (avgY / h) > 0.90;
+    }
+    return {
+      region_id: r.region_id,
+      sorted_index: r.sorted_index,
+      raw_text: text,
+      detector_score: r.detector_score,
+      recognition_score: r.recognition_score,
+      crop_status: r.crop_provenance?.status || 'missing',
+      near_bottom: nearBottom,
+    };
+  });
+
+  const hint = hasFormLabel ? "trailing form fields detected (e.g. 'Name:') - exclude from body notes" : null;
+
+  return {
+    document_id: documentId,
+    source_image: docData.source_image ? path.basename(docData.source_image) : '',
+    source_image_sha256: docData.source_image_sha256,
+    page_status: docData.status || 'success',
+    image: { width: w, height: h },
+    document_text_raw: rawText,
+    form_label_hint: hint,
+    lines: formattedLines,
+  };
+}
 
 // ==========================================
 // Gemini AI Notes Generator (Lazy SDK)
@@ -264,39 +319,23 @@ function getGenAI(): GoogleGenAI | null {
   return aiClient;
 }
 
-async function generateAINotesWithGemini(rawText: string, docId: string): Promise<string> {
+async function generateAINotesWithGemini(payload: any): Promise<string> {
   const ai = getGenAI();
   if (!ai) {
     throw new Error('GEMINI_API_KEY environment variable is not configured.');
   }
 
-  const prompt = `You convert one page of handwritten OCR into clean study notes in Markdown.
-
-Document OCR text:
-${rawText}
-
-Hard rules:
-1. Output Markdown only, strictly using this skeleton:
-
-# <short title from the page topic>
-
-## Summary
-2–4 sentences of cleaned, grammatical English.
-
-## Notes
-- Bullet points in reading order, merging wrapped lines into complete thoughts.
-
-## Uncertain readings
-- \`OCR token\` → likely \`repair\` (region_id, approximate score) — reason
-
-## Boilerplate omitted
-- e.g. form field \`Name:\` or empty markers
-
-Do not include any conversational preamble or backticks around the entire document.`;
+  let prompt = '';
+  try {
+    const promptPath = path.join(process.cwd(), 'config', 'notes_prompt.md');
+    prompt = fs.readFileSync(promptPath, 'utf-8');
+  } catch (err) {
+    prompt = 'You convert one page of handwritten OCR into clean study notes in Markdown.';
+  }
 
   const response = await ai.models.generateContent({
     model: 'gemini-2.5-flash',
-    contents: prompt,
+    contents: prompt + '\n\nPayload:\n```json\n' + JSON.stringify(payload, null, 2) + '\n```'
   });
 
   return response.text?.trim() || '';
@@ -811,11 +850,12 @@ app.post('/api/jobs', upload.array('files'), async (req, res) => {
             document_id: page.document_id,
             delta: 'Extracting structured headings and analyzing reading order...',
           });
-          const generatedNotes = await generateAINotesWithGemini(rawText, page.document_id);
-          fs.writeFileSync(path.join(page.doc_dir_path, 'notes.md'), generatedNotes, 'utf-8');
+          const payload = buildNotesPayload(page.doc_dir_path, rawText, page.document_id);
+          const generatedNotes = await generateAINotesWithGemini(payload);
+          page.notes_content = generatedNotes;
         } else {
           // Rule based generator
-          generateDefaultMarkdownNotes(page.doc_dir_path, page.document_id, rawTxtPath);
+          page.notes_content = generateDefaultMarkdownNotes(rawText);
           broadcaster.publish(jobId, 'page.notes_delta', {
             type: 'page.notes_delta',
             job_id: jobId,
@@ -916,6 +956,11 @@ app.get('/api/jobs/:job_id/pages/:document_id/notes.md', (req, res) => {
   const page = job?.pages.find((p) => p.document_id === document_id);
   const docPath = page?.doc_dir_path || findDocumentDir(document_id);
 
+  if (page && page.notes_content) {
+    res.setHeader('Content-Type', 'text/markdown; charset=utf-8');
+    return res.send(page.notes_content);
+  }
+
   if (docPath) {
     const notesFile = path.join(docPath, 'notes.md');
     if (fs.existsSync(notesFile)) {
@@ -925,11 +970,11 @@ app.get('/api/jobs/:job_id/pages/:document_id/notes.md', (req, res) => {
     // Try to generate on the fly
     const rawFile = path.join(docPath, 'raw.txt');
     if (fs.existsSync(rawFile)) {
-      generateDefaultMarkdownNotes(docPath, document_id, rawFile);
-      if (fs.existsSync(notesFile)) {
-        res.setHeader('Content-Type', 'text/markdown; charset=utf-8');
-        return res.sendFile(notesFile);
-      }
+      const rawText = fs.readFileSync(rawFile, 'utf-8');
+      const notesMd = generateDefaultMarkdownNotes(rawText);
+      if (page) page.notes_content = notesMd;
+      res.setHeader('Content-Type', 'text/markdown; charset=utf-8');
+      return res.send(notesMd);
     }
   }
 
@@ -1045,10 +1090,12 @@ app.post('/api/jobs/:job_id/pages/:document_id/retry-notes', async (req, res) =>
           document_id,
           delta: 'Synthesizing clean study notes with Gemini Flash...',
         });
-        const aiNotes = await generateAINotesWithGemini(rawText, document_id);
-        fs.writeFileSync(path.join(docPath, 'notes.md'), aiNotes, 'utf-8');
+        const payload = buildNotesPayload(docPath, rawText, document_id);
+        const aiNotes = await generateAINotesWithGemini(payload);
+        if (page) page.notes_content = aiNotes;
       } else {
-        generateDefaultMarkdownNotes(docPath, document_id, rawFile);
+        const notesMd = generateDefaultMarkdownNotes(rawText);
+        if (page) page.notes_content = notesMd;
         broadcaster.publish(job_id, 'page.notes_delta', {
           type: 'page.notes_delta',
           job_id,

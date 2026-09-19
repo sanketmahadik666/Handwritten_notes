@@ -12,7 +12,8 @@ Hard rules:
 4. Do not invent facts that are not supported by the lines. If a name or place is garbled, give the most likely English repair and list it under Uncertain readings.
 5. Drop printed form leftovers such as a trailing "Name:" from the notes body. Mention them once under Boilerplate omitted.
 6. Keep OCR correction status skipped: you produce notes.md only. You do not overwrite raw.txt or region raw_text.
-7. Output Markdown only, using this skeleton:
+7. Output Markdown only, strictly using this skeleton. Do not include any conversational preamble or backticks around the entire document:
+
 
 # <short title from the page topic>
 
