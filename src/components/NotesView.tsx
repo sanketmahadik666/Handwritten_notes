@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import Markdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import rehypeHighlight from 'rehype-highlight';
+import 'highlight.js/styles/github-dark-dimmed.css';
 import { Sparkles, Copy, Check, RefreshCw, FileText, Code, Download, Clock } from 'lucide-react';
 
 interface NotesViewProps {
@@ -133,8 +136,10 @@ export const NotesView: React.FC<NotesViewProps> = ({
       {/* Main Content Area */}
       <div className="flex-1 overflow-y-auto p-6 max-w-4xl mx-auto w-full">
         {viewMode === 'rendered' ? (
-          <div className="prose prose-slate max-w-none prose-headings:font-bold prose-h1:text-xl prose-h2:text-base prose-h2:text-blue-900 prose-h2:border-b prose-h2:border-slate-100 prose-h2:pb-1.5 prose-p:text-sm prose-p:leading-relaxed prose-li:text-sm prose-code:text-xs prose-code:bg-slate-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded">
-            <Markdown>{notesMarkdown || '*No study notes generated yet. Click Regenerate Notes above.*'}</Markdown>
+          <div className="prose prose-slate max-w-none prose-headings:font-bold prose-h1:text-2xl prose-h2:text-xl prose-h2:text-blue-900 prose-h2:border-b prose-h2:border-slate-100 prose-h2:pb-2 prose-h2:mb-4 prose-p:text-sm prose-p:leading-relaxed prose-li:text-sm prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:bg-slate-100 prose-code:text-rose-600 prose-code:before:content-none prose-code:after:content-none prose-pre:p-0 prose-pre:bg-transparent prose-table:border prose-table:border-slate-200 prose-th:bg-slate-50 prose-th:p-2 prose-th:border prose-th:border-slate-200 prose-td:p-2 prose-td:border prose-td:border-slate-200">
+            <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight]}>
+              {notesMarkdown || '*No study notes generated yet. Click Regenerate Notes above.*'}
+            </Markdown>
           </div>
         ) : (
           <div className="relative">

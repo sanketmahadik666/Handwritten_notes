@@ -40,6 +40,13 @@ export interface PageStatusModel {
   notes_status?: string;
 }
 
+export interface JobMetrics {
+  cer?: number | null;
+  wer?: number | null;
+  character_accuracy?: number | null;
+  word_accuracy?: number | null;
+}
+
 export interface JobStatusResponse {
   job_id: string;
   status: 'queued' | 'processing' | 'completed' | 'completed_with_errors' | 'failed';
@@ -47,6 +54,7 @@ export interface JobStatusResponse {
   total_pages: number;
   created_at: string;
   pages: PageStatusModel[];
+  metrics?: JobMetrics;
 }
 
 export interface OCRRegion {

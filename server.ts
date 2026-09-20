@@ -1,13 +1,16 @@
 import express from 'express';
 import path from 'path';
 import fs from 'fs';
+import fsPromises from 'fs/promises';
 import crypto from 'crypto';
+import { spawn } from 'child_process';
 import { createServer as createViteServer } from 'vite';
 import { GoogleGenAI } from '@google/genai';
 import multer from 'multer';
 
 const app = express();
 const PORT = 3000;
+const PYTHON_EXECUTABLE = process.env.HANDWRITTEN_OCR_PYTHON || 'python';
 
 app.use(express.json());
 
@@ -136,6 +139,12 @@ interface JobState {
   total_pages: number;
   created_at: string;
   pages: PageState[];
+  metrics?: {
+    cer?: number | null;
+    wer?: number | null;
+    character_accuracy?: number | null;
+    word_accuracy?: number | null;
+  };
 }
 
 const jobsMap: Map<string, JobState> = new Map();
@@ -339,6 +348,230 @@ async function generateAINotesWithGemini(payload: any): Promise<string> {
   });
 
   return response.text?.trim() || '';
+}
+
+/** Persists markdown notes directly to the document artifact directory. */
+async function persistNotesToDisk(docDirPath: string | undefined, notesMarkdown: string): Promise<void> {
+  if (!docDirPath) return;
+  try {
+    const notesFilePath = path.join(docDirPath, 'notes.md');
+    await fsPromises.writeFile(notesFilePath, notesMarkdown, 'utf-8');
+    console.log(`Notes persisted to ${notesFilePath}`);
+  } catch (error) {
+    console.error(`Notes persistence failed at ${docDirPath}:`, error);
+  }
+}
+
+/**
+ * Runs one OCR page outside the request lifecycle, then generates its notes.
+ * The Python CLI creates a unique run directory below jobOutputDir, so the
+ * generated document directory is discovered only after the child exits.
+ */
+async function runRealOcrPipeline(
+  jobId: string,
+  pageIndex: number,
+  sourceFilePath: string,
+  providerId: string,
+): Promise<void> {
+  const job = jobsMap.get(jobId);
+  const page = job?.pages[pageIndex];
+  if (!job || !page) {
+    throw new Error(`Unable to find page ${pageIndex} for job ${jobId}.`);
+  }
+
+  job.status = 'processing';
+  page.status = 'ocr_running';
+  broadcaster.publish(jobId, 'page.ocr_started', {
+    type: 'page.ocr_started',
+    job_id: jobId,
+    document_id: page.document_id,
+  });
+
+  const jobOutputDir = path.join(process.cwd(), 'outputs', `job_${jobId}_${pageIndex}`);
+  const groundTruthCandidates = [
+    path.join(process.cwd(), 'data', 'ground_truth.json'),
+    path.join(process.cwd(), 'data', 'manifest.json'),
+    path.join(process.cwd(), 'tests', 'data', 'ground_truth.json'),
+    path.join(process.cwd(), 'config', 'a01-000u.ground_truth.json'),
+  ];
+  let groundTruthPath: string | undefined;
+  for (const candidate of groundTruthCandidates) {
+    try {
+      await fsPromises.access(candidate);
+      groundTruthPath = candidate;
+      break;
+    } catch {
+      // Evaluation is optional; continue looking for another manifest.
+    }
+  }
+
+  try {
+    await fsPromises.mkdir(jobOutputDir, { recursive: true });
+    const ocrArgs = [
+      '-m', 'handwritten_ocr', 'run',
+      '--input', sourceFilePath,
+      '--config', 'config/baseline.yaml',
+      '--output-root', jobOutputDir,
+    ];
+    if (groundTruthPath) {
+      ocrArgs.push('--ground-truth', groundTruthPath);
+    }
+    await new Promise<void>((resolve, reject) => {
+      const child = spawn(PYTHON_EXECUTABLE, ocrArgs);
+      let stderr = '';
+
+      child.stderr?.on('data', (chunk: Buffer) => {
+        stderr += chunk.toString();
+      });
+      child.on('error', reject);
+      child.on('close', (code) => {
+        if (code === 0) {
+          resolve();
+        } else {
+          reject(new Error(stderr.trim() || `OCR script exited with code ${code}.`));
+        }
+      });
+    });
+
+    const runEntries = await fsPromises.readdir(jobOutputDir, { withFileTypes: true });
+    const runDirectory = runEntries.find((entry) => entry.isDirectory());
+    if (!runDirectory) {
+      throw new Error('OCR script completed without creating an output directory.');
+    }
+
+    const runDirectoryPath = path.join(jobOutputDir, runDirectory.name);
+    const manifestPaths = [
+      path.join(runDirectoryPath, 'run_manifest.json'),
+      path.join(jobOutputDir, 'run_manifest.json'),
+    ];
+    for (const manifestPath of manifestPaths) {
+      try {
+        const manifest = JSON.parse(await fsPromises.readFile(manifestPath, 'utf-8'));
+        const charRate = manifest.aggregate_evaluation?.character?.rate;
+        const wordRate = manifest.aggregate_evaluation?.word?.rate;
+        job.metrics = {
+          cer: charRate != null ? Number(charRate) : null,
+          wer: wordRate != null ? Number(wordRate) : null,
+          character_accuracy: charRate != null ? Math.max(0, 1 - Number(charRate)) : null,
+          word_accuracy: wordRate != null ? Math.max(0, 1 - Number(wordRate)) : null,
+        };
+        break;
+      } catch (manifestErr) {
+        console.warn(`[Job ${jobId}]: Could not read run_manifest.json:`, manifestErr);
+      }
+    }
+
+    const documentsDir = path.join(runDirectoryPath, 'documents');
+    const documentEntries = await fsPromises.readdir(documentsDir, { withFileTypes: true });
+    const documentDirectory = documentEntries.find((entry) => entry.isDirectory());
+    if (!documentDirectory) {
+      throw new Error('OCR script completed without creating a document directory.');
+    }
+
+    page.doc_dir_path = path.join(documentsDir, documentDirectory.name);
+    const rawText = await fsPromises.readFile(path.join(page.doc_dir_path, 'raw.txt'), 'utf-8');
+    page.raw_sha256 = crypto.createHash('sha256').update(rawText).digest('hex');
+    page.line_count = rawText.split('\n').filter(Boolean).length;
+    page.has_overlay = fs.existsSync(path.join(page.doc_dir_path, 'overlay.png'));
+    page.status = 'ocr_complete';
+    broadcaster.publish(jobId, 'page.ocr_completed', {
+      type: 'page.ocr_completed',
+      job_id: jobId,
+      document_id: page.document_id,
+    });
+  } catch (error) {
+    page.status = 'ocr_failed';
+    page.error = 'OCR script returned non-zero code';
+    broadcaster.publish(jobId, 'page.failed', {
+      type: 'page.failed',
+      job_id: jobId,
+      document_id: page.document_id,
+      stage: 'ocr',
+      error: page.error,
+    });
+    throw error;
+  }
+
+  page.status = 'notes_running';
+  broadcaster.publish(jobId, 'page.notes_started', {
+    type: 'page.notes_started',
+    job_id: jobId,
+    document_id: page.document_id,
+    provider_id: providerId,
+    model: providerId === 'gemini-flash' ? 'gemini-2.5-flash' : 'llama3.2',
+  });
+
+  try {
+    const rawText = await fsPromises.readFile(path.join(page.doc_dir_path, 'raw.txt'), 'utf-8');
+    let generatedNotes = '';
+    let usedFallback = false;
+
+    if (job.provider_id === 'gemini-flash' && process.env.GEMINI_API_KEY) {
+      try {
+        broadcaster.publish(job.job_id, 'page.notes_delta', {
+          type: 'page.notes_delta',
+          job_id: job.job_id,
+          document_id: page.document_id,
+          delta: 'Extracting structured headings and analyzing reading order with Gemini...',
+        });
+        generatedNotes = await generateAINotesWithGemini(
+          buildNotesPayload(page.doc_dir_path, rawText, page.document_id),
+        );
+        if (!generatedNotes.trim()) {
+          throw new Error('Gemini returned an empty response.');
+        }
+      } catch (geminiError: any) {
+        console.warn(
+          `[Job ${job.job_id} - Doc ${page.document_id}] Gemini failed; using rule-based fallback:`,
+          geminiError?.message || geminiError,
+        );
+        broadcaster.publish(job.job_id, 'page.notes_delta', {
+          type: 'page.notes_delta',
+          job_id: job.job_id,
+          document_id: page.document_id,
+          delta: 'Gemini unavailable. Generated formatted study notes using PP-OCR confidence fallback skeleton.',
+        });
+        generatedNotes = generateDefaultMarkdownNotes(rawText);
+        usedFallback = true;
+      }
+    } else {
+      broadcaster.publish(job.job_id, 'page.notes_delta', {
+        type: 'page.notes_delta',
+        job_id: job.job_id,
+        document_id: page.document_id,
+        delta: 'Formatted study notes according to PP-OCRv6 confidence skeleton.',
+      });
+      generatedNotes = generateDefaultMarkdownNotes(rawText);
+      usedFallback = true;
+    }
+
+    if (!generatedNotes.trim()) {
+      throw new Error('Notes generator returned an empty response.');
+    }
+    page.notes_content = generatedNotes;
+    page.status = 'notes_ready';
+    page.has_notes = true;
+    await persistNotesToDisk(page.doc_dir_path, generatedNotes);
+    broadcaster.publish(jobId, 'page.notes_complete', {
+      type: 'page.notes_complete',
+      job_id: jobId,
+      document_id: page.document_id,
+      notes_path: `documents/${page.document_id}/notes.md`,
+      status: 'succeeded',
+      fallback_used: usedFallback,
+    });
+  } catch (error: any) {
+    page.status = 'notes_failed';
+    page.error = error?.message || 'Notes generation failed';
+    broadcaster.publish(jobId, 'page.failed', {
+      type: 'page.failed',
+      job_id: jobId,
+      document_id: page.document_id,
+      stage: 'notes',
+      error: page.error,
+    });
+    throw error;
+  }
 }
 
 // ==========================================
@@ -752,175 +985,68 @@ app.get('/api/jobs', (req, res) => {
 });
 
 // 5. POST /api/jobs (create a new job)
-app.post('/api/jobs', upload.array('files'), async (req, res) => {
-  const providerId = req.body.provider_id || defaultProviderId;
-  const filePaths: string[] = req.body.file_paths
-    ? Array.isArray(req.body.file_paths)
-      ? req.body.file_paths
-      : [req.body.file_paths]
+app.post('/api/jobs', upload.array('files'), (req, res) => {
+  const providerId = req.body.provider_id || req.body.providerId || defaultProviderId;
+  const files = req.files as Express.Multer.File[] | undefined;
+  const submittedPaths = req.body.file_paths
+    ? (Array.isArray(req.body.file_paths) ? req.body.file_paths : [req.body.file_paths])
     : [];
+  const sampleRoot = fs.existsSync(path.join(process.cwd(), 'data', 'samples'))
+    ? path.join(process.cwd(), 'data', 'samples')
+    : path.join(process.cwd(), 'data');
+  const targetFiles: { name: string; path: string }[] = files && files.length > 0
+    ? files.map((file) => ({ name: file.originalname, path: file.path }))
+    : (submittedPaths.length > 0 ? submittedPaths : ['a01-000u.png'])
+      .map((name: string) => ({ name, path: path.join(sampleRoot, path.basename(name)) }));
 
-  const timestamp = new Date().toISOString().replace(/[-:.]/g, '').slice(0, 15) + 'Z';
-  const randomSuffix = crypto.randomBytes(6).toString('hex');
-  const jobId = `run-${timestamp}-${randomSuffix}`;
+  const jobId = crypto.randomUUID();
   const nowIso = new Date().toISOString();
-
-  // Determine target files: either chosen sample image, existing precomputed image, or uploaded file
-  const chosenSamples = filePaths.length > 0 ? filePaths : ['a01-000u.png'];
-  const newPages: PageState[] = [];
-
-  // Check if matching documents exist in precomputed runs
-  const sampleDocRun = jobsMap.get('run-20260919T021249Z-012e7ef8dba7');
-
-  let idx = 0;
-  for (const sampleFile of chosenSamples) {
-    const baseName = path.basename(sampleFile, path.extname(sampleFile));
-    const matchedDoc = sampleDocRun?.pages.find((p) => p.document_id.startsWith(baseName));
-
-    const docId = matchedDoc
-      ? matchedDoc.document_id
-      : `${baseName}-${crypto.randomBytes(6).toString('hex')}`;
-    const docDirPath = matchedDoc
-      ? matchedDoc.doc_dir_path
-      : path.join(process.cwd(), 'outputs', 'run-20260919T021249Z-012e7ef8dba7', 'documents', 'a01-000u-f1764d425a84');
-
-    newPages.push({
-      document_id: docId,
-      index: idx++,
-      status: 'queued',
-      raw_sha256: matchedDoc?.raw_sha256 || 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855',
-      has_overlay: true,
-      has_notes: false,
-      source_image: sampleFile,
-      line_count: matchedDoc?.line_count || 8,
-      doc_dir_path: docDirPath,
-    });
-  }
-
   const newJob: JobState = {
     job_id: jobId,
-    status: 'processing',
+    status: 'queued',
     provider_id: providerId,
-    total_pages: newPages.length,
+    total_pages: targetFiles.length,
     created_at: nowIso,
-    pages: newPages,
+    pages: targetFiles.map((file, index) => ({
+      document_id: `${path.basename(file.name, path.extname(file.name))}-${crypto.randomBytes(6).toString('hex')}`,
+      index,
+      status: 'queued',
+      raw_sha256: null,
+      has_overlay: false,
+      has_notes: false,
+      source_image: file.name,
+      line_count: 0,
+      doc_dir_path: '',
+    })),
   };
 
   jobsMap.set(jobId, newJob);
-
-  // Return 202 Accepted per spec
-  res.status(202).json({
+  broadcaster.publish(jobId, 'job.started', {
+    type: 'job.started',
     job_id: jobId,
-    total_pages: newPages.length,
-    status: 'queued',
-    created_at: nowIso,
+    total_pages: newJob.total_pages,
+    provider_id: providerId,
   });
 
-  // Execute job progression asynchronously, broadcasting SSE lifecycle events
-  setTimeout(async () => {
-    // 1. job.started
-    broadcaster.publish(jobId, 'job.started', {
-      type: 'job.started',
+  void Promise.allSettled(
+    targetFiles.map((file, index) => runRealOcrPipeline(jobId, index, file.path, providerId)),
+  ).then(() => {
+    const hasFailures = newJob.pages.some((page) =>
+      page.status === 'ocr_failed' || page.status === 'notes_failed' || page.status === 'failed',
+    );
+    newJob.status = hasFailures ? 'completed_with_errors' : 'completed';
+    broadcaster.publish(jobId, 'job.completed', {
+      type: 'job.completed',
       job_id: jobId,
-      total_pages: newPages.length,
-      provider_id: providerId,
-      started_at: new Date().toISOString(),
+      final_status: newJob.status,
     });
+  });
 
-    for (const page of newPages) {
-      // 2. page.ocr_started
-      page.status = 'ocr_running';
-      broadcaster.publish(jobId, 'page.ocr_started', {
-        type: 'page.ocr_started',
-        job_id: jobId,
-        document_id: page.document_id,
-        index: page.index,
-        attempt: 1,
-      });
-
-      await new Promise((r) => setTimeout(r, 600));
-
-      // 3. page.ocr_complete
-      page.status = 'ocr_complete';
-      broadcaster.publish(jobId, 'page.ocr_complete', {
-        type: 'page.ocr_complete',
-        job_id: jobId,
-        document_id: page.document_id,
-        raw_sha256: page.raw_sha256 || 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855',
-        raw_path: `documents/${page.document_id}/raw.txt`,
-        duration_ms: 184,
-      });
-
-      await new Promise((r) => setTimeout(r, 400));
-
-      // 4. page.notes_started
-      page.status = 'notes_running';
-      broadcaster.publish(jobId, 'page.notes_started', {
-        type: 'page.notes_started',
-        job_id: jobId,
-        document_id: page.document_id,
-        provider_id: providerId,
-        model: providerId === 'gemini-flash' ? 'gemini-2.5-flash' : 'llama3.2',
-      });
-
-      // Try AI Notes Generation or default
-      const rawTxtPath = path.join(page.doc_dir_path, 'raw.txt');
-      let rawText = '';
-      if (fs.existsSync(rawTxtPath)) {
-        rawText = fs.readFileSync(rawTxtPath, 'utf-8');
-      }
-
-      try {
-        if (providerId === 'gemini-flash' && process.env.GEMINI_API_KEY && rawText) {
-          // Stream deltas
-          broadcaster.publish(jobId, 'page.notes_delta', {
-            type: 'page.notes_delta',
-            job_id: jobId,
-            document_id: page.document_id,
-            delta: 'Extracting structured headings and analyzing reading order...',
-          });
-          const payload = buildNotesPayload(page.doc_dir_path, rawText, page.document_id);
-          const generatedNotes = await generateAINotesWithGemini(payload);
-          page.notes_content = generatedNotes;
-        } else {
-          // Rule based generator
-          page.notes_content = generateDefaultMarkdownNotes(rawText);
-          broadcaster.publish(jobId, 'page.notes_delta', {
-            type: 'page.notes_delta',
-            job_id: jobId,
-            document_id: page.document_id,
-            delta: 'Formatted study notes according to PP-OCRv6 confidence skeleton.',
-          });
-        }
-      } catch (err: any) {
-        console.warn('Notes generation note:', err?.message || err);
-      }
-
-      await new Promise((r) => setTimeout(r, 400));
-
-      // 6. page.notes_complete
-      page.status = 'notes_ready';
-      page.has_notes = true;
-      broadcaster.publish(jobId, 'page.notes_complete', {
-        type: 'page.notes_complete',
-        job_id: jobId,
-        document_id: page.document_id,
-        notes_path: `documents/${page.document_id}/notes.md`,
-        status: 'succeeded',
-      });
-    }
-
-    // 8. job.finished
-    newJob.status = 'completed';
-    broadcaster.publish(jobId, 'job.finished', {
-      type: 'job.finished',
-      job_id: jobId,
-      status: 'completed',
-      total_pages: newPages.length,
-      completed_pages: newPages.length,
-      failed_pages: 0,
-    });
-  }, 100);
+  return res.status(202).json({
+    jobId,
+    pages_queued: targetFiles.length,
+    status: 'queued',
+  });
 });
 
 // 6. GET /api/jobs/{job_id}
@@ -935,6 +1061,7 @@ app.get('/api/jobs/:job_id', (req, res) => {
     provider_id: job.provider_id,
     total_pages: job.total_pages,
     created_at: job.created_at,
+    metrics: job.metrics,
     pages: job.pages.map((p) => ({
       document_id: p.document_id,
       index: p.index,
@@ -979,20 +1106,23 @@ app.get('/api/jobs/:job_id/events', (req, res) => {
 });
 
 // 8. GET /api/jobs/{job_id}/pages/{document_id}/notes.md
-app.get('/api/jobs/:job_id/pages/:document_id/notes.md', (req, res) => {
+app.get('/api/jobs/:job_id/pages/:document_id/notes.md', async (req, res) => {
   const { job_id, document_id } = req.params;
   const job = jobsMap.get(job_id);
   const page = job?.pages.find((p) => p.document_id === document_id);
   const docPath = page?.doc_dir_path || findDocumentDir(document_id);
+  const notesFile = docPath ? path.join(docPath, 'notes.md') : undefined;
 
   if (page && page.notes_content) {
+    if (notesFile && !fs.existsSync(notesFile)) {
+      await persistNotesToDisk(docPath, page.notes_content);
+    }
     res.setHeader('Content-Type', 'text/markdown; charset=utf-8');
     return res.send(page.notes_content);
   }
 
   if (docPath) {
-    const notesFile = path.join(docPath, 'notes.md');
-    if (fs.existsSync(notesFile)) {
+    if (notesFile && fs.existsSync(notesFile)) {
       res.setHeader('Content-Type', 'text/markdown; charset=utf-8');
       return res.sendFile(notesFile);
     }
@@ -1002,6 +1132,7 @@ app.get('/api/jobs/:job_id/pages/:document_id/notes.md', (req, res) => {
       const rawText = fs.readFileSync(rawFile, 'utf-8');
       const notesMd = generateDefaultMarkdownNotes(rawText);
       if (page) page.notes_content = notesMd;
+      await persistNotesToDisk(docPath, notesMd);
       res.setHeader('Content-Type', 'text/markdown; charset=utf-8');
       return res.send(notesMd);
     }
@@ -1030,21 +1161,21 @@ app.get('/api/jobs/:job_id/pages/:document_id/raw.txt', (req, res) => {
 });
 
 // 10. GET /api/jobs/{job_id}/pages/{document_id}/document.json
-app.get('/api/jobs/:job_id/pages/:document_id/document.json', (req, res) => {
+app.get('/api/jobs/:job_id/pages/:document_id/document.json', async (req, res) => {
   const { job_id, document_id } = req.params;
   const job = jobsMap.get(job_id);
   const page = job?.pages.find((p) => p.document_id === document_id);
-  const docPath = page?.doc_dir_path || findDocumentDir(document_id);
-
-  if (docPath) {
-    const jsonFile = path.join(docPath, 'document.json');
-    if (fs.existsSync(jsonFile)) {
-      res.setHeader('Content-Type', 'application/json');
-      return res.sendFile(jsonFile);
-    }
+  if (!page?.doc_dir_path) {
+    return res.status(404).json({ error: 'document.json not found' });
   }
 
-  res.status(404).json({ error: 'document.json not found' });
+  try {
+    const docJsonPath = path.join(page.doc_dir_path, 'document.json');
+    const docData = await fsPromises.readFile(docJsonPath, 'utf-8');
+    return res.json(JSON.parse(docData));
+  } catch (error) {
+    return res.status(404).json({ error: 'document.json not found' });
+  }
 });
 
 // 11. GET /api/jobs/{job_id}/pages/{document_id}/overlay.png
@@ -1112,31 +1243,56 @@ app.post('/api/jobs/:job_id/pages/:document_id/retry-notes', async (req, res) =>
     const rawText = fs.existsSync(rawFile) ? fs.readFileSync(rawFile, 'utf-8') : '';
 
     try {
-      if (process.env.GEMINI_API_KEY && rawText) {
-        broadcaster.publish(job_id, 'page.notes_delta', {
-          type: 'page.notes_delta',
-          job_id,
-          document_id,
-          delta: 'Synthesizing clean study notes with Gemini Flash...',
-        });
-        const payload = buildNotesPayload(docPath, rawText, document_id);
-        const aiNotes = await generateAINotesWithGemini(payload);
-        if (page) page.notes_content = aiNotes;
+      let generatedNotes = '';
+      let usedFallback = false;
+      if (job?.provider_id === 'gemini-flash' && process.env.GEMINI_API_KEY) {
+        try {
+          broadcaster.publish(job_id, 'page.notes_delta', {
+            type: 'page.notes_delta',
+            job_id,
+            document_id,
+            delta: 'Extracting structured headings and analyzing reading order with Gemini...',
+          });
+          generatedNotes = await generateAINotesWithGemini(
+            buildNotesPayload(docPath, rawText, document_id),
+          );
+          if (!generatedNotes.trim()) {
+            throw new Error('Gemini returned an empty response.');
+          }
+        } catch (geminiError: any) {
+          console.warn(
+            `[Job ${job_id} - Doc ${document_id}] Gemini failed; using rule-based fallback:`,
+            geminiError?.message || geminiError,
+          );
+          broadcaster.publish(job_id, 'page.notes_delta', {
+            type: 'page.notes_delta',
+            job_id,
+            document_id,
+            delta: 'Gemini unavailable. Generated formatted study notes using PP-OCR confidence fallback skeleton.',
+          });
+          generatedNotes = generateDefaultMarkdownNotes(rawText);
+          usedFallback = true;
+        }
       } else {
-        const notesMd = generateDefaultMarkdownNotes(rawText);
-        if (page) page.notes_content = notesMd;
         broadcaster.publish(job_id, 'page.notes_delta', {
           type: 'page.notes_delta',
           job_id,
           document_id,
-          delta: 'Generated structured notes following baseline rules.',
+          delta: 'Formatted study notes according to PP-OCRv6 confidence skeleton.',
         });
+        generatedNotes = generateDefaultMarkdownNotes(rawText);
+        usedFallback = true;
       }
 
+      if (!generatedNotes.trim()) {
+        throw new Error('Notes generator returned an empty response.');
+      }
       if (page) {
+        page.notes_content = generatedNotes;
         page.status = 'notes_ready';
         page.has_notes = true;
       }
+      await persistNotesToDisk(page?.doc_dir_path || docPath, generatedNotes);
 
       broadcaster.publish(job_id, 'page.notes_complete', {
         type: 'page.notes_complete',
@@ -1144,8 +1300,12 @@ app.post('/api/jobs/:job_id/pages/:document_id/retry-notes', async (req, res) =>
         document_id,
         notes_path: `documents/${document_id}/notes.md`,
         status: 'succeeded',
+        fallback_used: usedFallback,
       });
     } catch (err: any) {
+      if (page) {
+        page.status = 'notes_failed';
+      }
       broadcaster.publish(job_id, 'page.failed', {
         type: 'page.failed',
         job_id,
